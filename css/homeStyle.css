@@ -1,0 +1,20 @@
+header{
+    background: url("../img/default/banner_background.jpeg");
+}
+
+.top-header{
+    background: #ffffff;
+}
+
+.email{
+    color: #6666CC;
+}
+
+.banner-text{
+    padding-top: 15px;
+}
+
+.banner-name{
+    font-weight: bold;
+    font-size: 80px;
+}

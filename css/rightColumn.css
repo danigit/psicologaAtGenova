@@ -1,0 +1,51 @@
+.right-col-profile-image{
+    margin: 10px 0 0 0;
+    box-shadow: 0 9px 6px -1px rgba(124, 124, 125, 1);
+    border-radius: 50%;
+}
+
+.right-col-profile-image-footer{
+    margin-top: 10px;
+    border-bottom: 1px solid #0099FF;
+    border-top: 1px solid #0099FF;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.fast-contact{
+    margin-top: 15px;
+    padding: 3px;
+    text-align: center;
+    color: white;
+    background-color: rgba(102, 102, 204, 0.8);
+    border: 2px solid #0099FF;
+    border-radius: 5px;
+}
+
+.side-menu{
+    display: none;
+    margin-top: 25px;
+}
+
+.menu-content li{
+    color: #6666CC!important;
+    margin-bottom: 10px;
+    padding: 10px 0 5px 0;
+    border-left: 15px solid #6666CC;
+    border-right: 15px solid #6666CC;
+    border-bottom: 1px solid #23282e;
+}
+
+.menu-item{
+    width: 100%;
+    background-color: #CCCCFF;
+}
+
+.social-container{
+    margin-top: 30px;
+}
+
+.facebook{
+    margin-top: 10px;
+}

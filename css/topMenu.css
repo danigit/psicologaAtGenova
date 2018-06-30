@@ -1,0 +1,26 @@
+.menu-nav{
+    border-bottom: 5px solid rgba(124, 124, 125, 0.5)
+}
+
+.top-menu-list{
+    width: 1000%;
+    margin: auto;
+    padding-top: 0;
+    border-top: 3px solid #0099FF;
+    border-bottom: 3px solid #0099FF;
+    border-radius: 21px;
+}
+
+.top-menu-list a{
+    padding: 10px 0 10px 0;
+}
+
+.top-menu-item{
+    width: 100%;
+    margin: 0;
+}
+
+.top-menu-button-pressed{
+    font-weight: 900;
+    color: #6666CC!important;
+}
