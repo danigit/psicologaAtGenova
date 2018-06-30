@@ -227,6 +227,7 @@ $url = $_SESSION['REQUEST_URI'];
         <!-- custom js-->
         <script src="js/pageLoad.js"></script>
         <script src="js/menu.js"></script>
+        <script src="js/helper.js"></script>
     </body>
 
 </html>

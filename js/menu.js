@@ -3,6 +3,7 @@
 let navSideMenu = document.querySelector('.nav-side-menu');
 
 function menuInteraction(){
+    mouseHover();
     document.onclick = function (event) {
         clickButton(event);
     }
@@ -13,32 +14,32 @@ function clickButton(event) {
     switch (event.target.id){
         case 'home-button':
             setTopMenu(document.querySelector('#home-button'));
-            hideRightMenu();
+            hideElement(document.querySelector('#side-menu'));
             break;
         case 'about-me-button':
             setTopMenu(document.querySelector('#about-me-button'));
-            hideRightMenu();
+            hideElement(document.querySelector('#side-menu'));
             break;
         case 'services':
             setTopMenu(document.querySelector('#services'));
-            showRightMenu();
+            showElement(document.querySelector('#side-menu'));
             break;
         case 'events':
             setTopMenu(document.querySelector('#events'));
-            hideRightMenu();
+            hideElement(document.querySelector('#side-menu'));
             break;
         case 'theory-practice':
             setTopMenu(document.querySelector('#theory-practice'));
-            hideRightMenu();
+            hideElement(document.querySelector('#side-menu'));
             break;
         case 'contact':
             setTopMenu(document.querySelector('#contact'));
-            hideRightMenu();
+            hideElement(document.querySelector('#side-menu'));
             break;
         case 'fast-contact':
             fastContact();
             setTopMenu(document.querySelector('#contact'));
-            hideRightMenu();
+            hideElement(document.querySelector('#side-menu'));
             break;
     }
 }
@@ -66,12 +67,4 @@ function setTopMenu(button) {
             elem[0].classList.remove('top-menu-button-pressed');
     });
     button.className += ' top-menu-button-pressed';
-}
-
-function hideRightMenu() {
-    let rightMenuContainer = document.querySelector('#side-menu').style.display = 'none';
-}
-
-function showRightMenu() {
-    var rightMenuContainer = document.querySelector('#side-menu').style.display = 'block';
 }
