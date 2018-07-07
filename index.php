@@ -17,7 +17,12 @@ $url = $_SESSION['REQUEST_URI'];
         <link href="css/default/carusel.css" type="text/css" rel="stylesheet">
 
         <!--bootstrap css CDN-->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
 
         <!--philosopher font CDN-->
         <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
@@ -29,6 +34,7 @@ $url = $_SESSION['REQUEST_URI'];
         <link href="css/topMenu.css" type="text/css" rel="stylesheet">
         <link href="css/rightColumn.css" type="text/css" rel="stylesheet">
         <link href="css/botomHeader.css" type="text/css" rel="stylesheet">
+        <link href="css/contentLayout.css" type="text/css" rel="stylesheet">
 
         <!-- facebook script and redirect variable-->
         <script>
@@ -43,7 +49,8 @@ $url = $_SESSION['REQUEST_URI'];
             }(document, 'script', 'facebook-jssdk'));
         </script>
     </head>
-        <header>
+    <body>
+        <header class="line-height-1">
             <!-- First navabar with contact information -->
             <nav class="navbar top-header">
                 <div class="container">
@@ -74,27 +81,27 @@ $url = $_SESSION['REQUEST_URI'];
                 <div class="navbar-collapse collapse menu-nav" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto top-menu-list">
                         <li class="top-menu-item">
-                            <a id="home-button" class=" nav-link text-lg-center">HOME</a>
+                            <a id="home-button" class="nav-link text-center full-width">HOME</a>
                         </li>
 
                         <li class="top-menu-item">
-                            <a id="about-me-button" class="nav-link text-lg-center">CHI SONO</a>
+                            <a id="about-me-button" class="nav-link text-center full-width">CHI SONO</a>
                         </li>
 
                         <li class="top-menu-item">
-                            <a id="services" class="nav-link text-lg-center">SERVIZI </a>
+                            <a id="services" class="nav-link text-center full-width">SERVIZI </a>
                         </li>
 
                         <li class="top-menu-item">
-                            <a id="events" class="nav-link text-lg-center">EVENTI</a>
+                            <a id="events" class="nav-link text-center full-width">EVENTI</a>
                         </li>
 
                         <li class="top-menu-item">
-                            <a id="theory-practice" class="nav-link text-lg-center">TEORIA&PRATICA</a>
+                            <a id="theory-practice" class="nav-link text-center full-width">TEORIA&PRATICA</a>
                         </li>
 
                         <li class="top-menu-item">
-                            <a id="contact" class="nav-link text-lg-center">CONTATTI</a>
+                            <a id="contact" class="nav-link text-center full-width">CONTATTI</a>
                         </li>
                     </ul>
                 </div>
@@ -266,7 +273,12 @@ $url = $_SESSION['REQUEST_URI'];
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
         <!-- bootstrap javascript CDN -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
 
         <!-- carousel -->
         <script src="js/carusel/main.js"></script>
@@ -278,6 +290,7 @@ $url = $_SESSION['REQUEST_URI'];
         <script src="js/pageLoad.js"></script>
         <script src="js/menu.js"></script>
         <script src="js/helper.js"></script>
+        <script src="js/websiteInformations.js"></script>
     </body>
 
 </html>

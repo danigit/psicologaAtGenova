@@ -24,3 +24,9 @@ function changePointer(elem) {
         elem.style.color = "#808080"
     }
 }
+
+function changeLayout(element, content) {
+    let childrens = [].slice.call(element.children);
+    element.removeChild(childrens[0]);
+    element.innerHTML = content;
+}

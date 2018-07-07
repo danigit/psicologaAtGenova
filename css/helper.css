@@ -10,6 +10,10 @@
     font-family: Philosopher, sans-serif;
 }
 
+.open-font{
+    font-family: Open Sans, sans-serif;
+}
+
 .font-x-large{
     font-size: x-large;
 }
@@ -32,4 +36,17 @@
 
 .center-text{
     text-align: center;
+}
+
+.blue-text{
+    color: #0099FF;
+}
+
+.horizontal-line{
+    margin-top: 0;
+    background-color: #0099FF;
+}
+
+.bold-text{
+    font-weight: bold;
 }
