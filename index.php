@@ -22,11 +22,13 @@ $url = $_SESSION['REQUEST_URI'];
         <!--philosopher font CDN-->
         <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
 
+        <!-- custom css-->
         <link href="css/default/reset.css" type="text/css" rel="stylesheet">
         <link href="css/helper.css" type="text/css" rel="stylesheet">
         <link href="css/homeStyle.css" type="text/css" rel="stylesheet">
         <link href="css/topMenu.css" type="text/css" rel="stylesheet">
         <link href="css/rightColumn.css" type="text/css" rel="stylesheet">
+        <link href="css/botomHeader.css" type="text/css" rel="stylesheet">
 
         <!-- facebook script and redirect variable-->
         <script>
@@ -124,7 +126,7 @@ $url = $_SESSION['REQUEST_URI'];
         <main>
             <div class="container zero-padding">
                 <div class="row">
-                    <div class="col-12 col-lg-9 col-md-9 col-sm-12">
+                    <div class="col-12 col-lg-9 col-md-9 col-sm-12" id="carusel-column">
                         <div class="container zero-padding">
                             <!-- Slider -->
                             <div class="cd-testimonials-wrapper cd-container z-depth-1" id="carusel-container">
@@ -210,6 +212,54 @@ $url = $_SESSION['REQUEST_URI'];
                     </div>
                 </div>
             </div>
+            <div class="container bottom-header-container zero-padding philosopher-font">
+                <div class="row" id="bottom-header-row">
+                    <div class="col col-lg-3 col-md-3">
+                        <div class="bottom-image-container">
+                            <img src="img/default/icona_contatti.png" class="bottom-image">
+                        </div>
+                        <div class="bottom-text-container">
+                            <h4 class="center-text font-x-large">CONTATTI</h4>
+
+                            <p class="center-text">Tel: 333 87.37.231<br>
+                                Email: <a href="mailto:psicologaatgenova@gmail.com?Subject=" target="_top" class="email">
+                                    psicologaatgenova@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-3">
+                        <div class="bottom-image-container">
+                            <img src="img/default/icona_dove_sono.png" class="bottom-image" id="bottom-dove">
+                        </div>
+                        <div class="bottom-text-container">
+                            <h4 class="center-text font-x-large">DOVE SONO</h4>
+
+                            <p class="center-text">Via XXV Aprile, 8/6<br>
+                                Genova, Liguria, CAP 16121
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-3">
+                        <div class="bottom-image-container">
+                            <img src="img/default/icona_chi_sono.png" class="bottom-image" id="bottom-chi">
+                        </div>
+                        <div class="bottom-text-container">
+                            <h4 class="center-text font-x-large">CHI SONO</h4>
+
+                            <p class="center-text">Psicologa<br>Analisi Transazionale - EMDR</p>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-3">
+                        <div class="bottom-image-container">
+                            <img src="img/default/icona_servizi.png" class="bottom-image" id="bottom-services">
+                        </div>
+                        <div class="bottom-text-container">
+                            <h4 class="center-text font-x-large">SERVIZI</h4>
+
+                            <p class="center-text">Colloqui psicologici<br>individuali e di coppia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <!-- jquery -->
@@ -219,10 +269,10 @@ $url = $_SESSION['REQUEST_URI'];
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
         <!-- carousel -->
-        <script src="js/carousel/main.js"></script>
-        <script src="js/carousel/masonry.pkgd.min.js"></script>
-        <script src="js/carousel/jquery.flexslider-min.js"></script>
-        <script src="js/carousel/modernizr.js"></script>
+        <script src="js/carusel/main.js"></script>
+        <script src="js/carusel/masonry.pkgd.min.js"></script>
+        <script src="js/carusel/jquery.flexslider-min.js"></script>
+        <script src="js/carusel/modernizr.js"></script>
 
         <!-- custom js-->
         <script src="js/pageLoad.js"></script>

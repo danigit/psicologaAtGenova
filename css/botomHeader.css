@@ -1,0 +1,25 @@
+.bottom-header-container{
+    padding-top: 40px;
+}
+
+.bottom-image{
+    display: block;
+    margin: auto;
+}
+
+.bottom-text-container{
+    margin-top: 30px;
+    color: #31708f;
+}
+
+.bottom-text-container a:link{
+    color: #6666CC;
+}
+
+.bottom-text-container a:hover{
+    color: #6666CC;
+}
+
+.bottom-text-container h4{
+    margin-bottom: 15px;
+}

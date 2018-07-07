@@ -7,10 +7,10 @@ function showElement(elem) {
     elem.style.display = 'block';
 }
 
-function mouseHover() {
-    let childrens = Array.prototype.slice.call(document.querySelector('.top-menu-list').children);
+function mouseHover(element, tag) {
+    let childrens = Array.prototype.slice.call(element.children);
     childrens.forEach(function (child) {
-        changePointer(child.getElementsByTagName('a')[0])
+        changePointer(child.getElementsByTagName(tag)[0])
     });
     changePointer(document.querySelector('#fast-contact'));
 }

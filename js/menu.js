@@ -1,9 +1,11 @@
 //TOP MENU
 //variables declaration
 let navSideMenu = document.querySelector('.nav-side-menu');
+var caruselColumn = document.querySelector('#carusel-column');
 
 function menuInteraction(){
-    mouseHover();
+    mouseHover(document.querySelector('.top-menu-list'), 'a');
+    mouseHover(document.querySelector('#bottom-header-row'), 'div');
     document.onclick = function (event) {
         clickButton(event);
     }
@@ -15,26 +17,32 @@ function clickButton(event) {
         case 'home-button':
             setTopMenu(document.querySelector('#home-button'));
             hideElement(document.querySelector('#side-menu'));
+            showElement(document.querySelector('#fast-contact'));
             break;
         case 'about-me-button':
             setTopMenu(document.querySelector('#about-me-button'));
             hideElement(document.querySelector('#side-menu'));
+            showElement(document.querySelector('#fast-contact'));
             break;
         case 'services':
             setTopMenu(document.querySelector('#services'));
             showElement(document.querySelector('#side-menu'));
+            showElement(document.querySelector('#fast-contact'));
             break;
         case 'events':
             setTopMenu(document.querySelector('#events'));
             hideElement(document.querySelector('#side-menu'));
+            showElement(document.querySelector('#fast-contact'));
             break;
         case 'theory-practice':
             setTopMenu(document.querySelector('#theory-practice'));
             hideElement(document.querySelector('#side-menu'));
+            showElement(document.querySelector('#fast-contact'));
             break;
         case 'contact':
             setTopMenu(document.querySelector('#contact'));
             hideElement(document.querySelector('#side-menu'));
+            hideElement(document.querySelector('#fast-contact'));
             break;
         case 'fast-contact':
             fastContact();
@@ -67,4 +75,9 @@ function setTopMenu(button) {
             elem[0].classList.remove('top-menu-button-pressed');
     });
     button.className += ' top-menu-button-pressed';
+}
+
+function changeLayout() {
+    let childrens = [].slice.call(caruselColumn.children);
+    caruselColumn.removeChild(childrens[0]);
 }
