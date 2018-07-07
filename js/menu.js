@@ -31,6 +31,7 @@ function clickButton(event) {
             setTopMenu(document.querySelector('#services'));
             showElement(document.querySelector('#side-menu'));
             showElement(document.querySelector('#fast-contact'));
+            changeLayout(caruselColumn, services);
             break;
         case 'events':
             setTopMenu(document.querySelector('#events'));
@@ -46,6 +47,7 @@ function clickButton(event) {
             setTopMenu(document.querySelector('#contact'));
             hideElement(document.querySelector('#side-menu'));
             hideElement(document.querySelector('#fast-contact'));
+            changeLayout(caruselColumn, contact);
             break;
         case 'fast-contact':
             fastContact();

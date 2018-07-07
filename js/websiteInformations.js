@@ -7,133 +7,136 @@ var aboutMe = '<div class="container">'
     + '</div></div>'
     + '<div class="row">'
     + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font font-large">'
-    + '<p><b><i>&lt;&lt;Perché hai deciso di fare la psicologa?&gt;&gt;    &lt;&lt;Per capire come funziona la mente e aiutare le persone!&gt;&gt; </i></b></p><br>'
+    + '<p><b><i>&lt;&lt;Perché hai deciso di fare la psicologa?&gt;&gt;    &lt;&lt;Per capire come funziona la mente e '
+    + 'aiutare le persone!&gt;&gt; </i></b></p><br>'
     + "<h2 class='d-inline' style='font-family: Philosopher'>H</h2>"
     + "<p class='d-inline'>o sempre avuto una grande curiosità verso tutto ciò che riguarda la psiche: "
     + "trovare le risposte alle domande su come funziona la mente, perché facciamo quello che facciamo e come "
     + "possiamo smettere di ripetere quello che non ci fa stare bene,"
     + " comprendere le dinamiche che regolano (e dis-regolano) le emozioni, i pensieri, "
-    + "la comunicazione, le disfunzioni e le psicopatologie.</p><br>"
+    + "la comunicazione, le disfunzioni e le psicopatologie.</p><br><br>"
 
     + "<p>La mia preparazione inizia con la collaborazione alla cattedra di Psicologia Dinamica dell\'Università di Genova: "
     + "partecipando a ricerche sulla <b>genitorialità adottiva</b>, sulla <b>psicologia di coppia</b> "
     + "(argomento della mia tesi di laurea dal titolo: “Attaccamento e Adattamento Diadico: una ricerca empirica”), "
-    + "sulla <b>psiconcologia</b>, sono entrata a contatto con realtà psicologiche complesse, a volte dolorose, a volte conflittuali, "
-    + "sempre intense e arricchenti.</p><br>"
+    + "sulla <b>psiconcologia</b>, sono entrata a contatto con realtà psicologiche complesse, a volte dolorose, a volte"
+    + " conflittuali, sempre intense e arricchenti.</p><br>"
 
-    + "<p>Ho svolto i tirocini formativi presso l\'ASL 3 Genovese: al Centro Diurno \"Le Peschiere\" per l\'accoglienza di <b>pazienti psichiatrici</b>; "
-    + "al Laboratorio dei Conflitti, per la mediazione nelle <b>coppie in fase di separazione o divorzio</b> in presenza di figli minori; "
-    + "attualmente collaboro con il Centro Adozioni e Affidi, in qualità di psicologa specializzanda in psicoterapia, per la valutazione "
-    + "dell\'idoneità delle famiglie all\'accoglienza di un minore, sostegno alla <b>genitorialità adottiva e affidataria</b>, sostegno psicologico "
-    + "a minori e adolescenti adottati e loro famiglie, situazioni di trauma, abuso e maltrattamento. Contemporaneamente, ho seguito "
-    + "corsi avanzati sull\'adozione nazionale e internazionale, sul <b>maltrattamento e l\'abuso nell\'infanzia</b>, sull\'utilizzo dei <b>test grafici proiettivi</b>, "
-    + "sulle tecniche di <b>rilassamento psico-corporeo</b>, <b>training autogeno</b>, <b>visualizzazione guidata</b>, <b>tecniche induttive e immaginative</b>.</p><br>"
+    + "<p>Ho svolto i tirocini formativi presso l\'ASL 3 Genovese: al Centro Diurno \"Le Peschiere\" per l\'accoglienza "
+    + "di <b>pazienti psichiatrici</b>; "
+    + "al Laboratorio dei Conflitti, per la mediazione nelle <b>coppie in fase di separazione o divorzio</b> in presenza"
+    + " di figli minori; attualmente collaboro con il Centro Adozioni e Affidi, in qualità di psicologa specializzanda "
+    + "in psicoterapia, per la valutazione dell\'idoneità delle famiglie all\'accoglienza di un minore, sostegno alla "
+    + "<b>genitorialità adottiva e affidataria</b>, sostegno psicologico a minori e adolescenti adottati e loro "
+    + "famiglie, situazioni di trauma, abuso e maltrattamento. Contemporaneamente, ho seguito corsi avanzati sull\'"
+    + "adozione nazionale e internazionale, sul <b>maltrattamento e l\'abuso nell\'infanzia</b>, sull\'utilizzo dei "
+    + "<b>test grafici proiettivi</b>, sulle tecniche di <b>rilassamento psico-corporeo</b>, <b>training autogeno</b>, "
+    + "<b>visualizzazione guidata</b>, <b>tecniche induttive e immaginative</b>.</p><br>"
 
-    + "<p>La mia formazione è proseguita con la frequenza della Scuola di <b>Specializzazione in Psicoterapia</b> (ITAT – Torino) ad orientamento <b>Analitico-Transazionale</b>, "
-    + "grazie alla quale ho imparato <b>tecniche cognitive, comportamentali, psicodinamiche, relazionali e gestaltiche</b> per affrontare le sfide"
-    + "e gli eventi ai quali la vita ci espone: nel mio studio presso il <a href='https://www.genovapsicologia.it/' target='_blank' style='color: #0099FF'>Centro di Psicoterapia 2.0</a> seguo adolescenti e adulti nell\'accompagnamento "
-    + "in <b>periodi difficili della vita</b> (lutti, separazioni, malattia propria o di una persona cara, ecc.), nell\'approfondimento della propria storia, "
-    + "nel disvelamento del proprio <b>\"copione\" psicologico</b>, e nell\'affrontare percorsi riabilitativi rispetto a disturbi psicologici complessi come <b>ansia</b>, "
-    + "<b>depressione, attacchi di panico, fobie, disturbi alimentari, disturbi relazionali</b>, ecc.; mi sono specializzata sul trattamento del <b>trauma</b> "
-    + "acquisendo la certificazione <b>EMDR di I e II livello</b> e frequentando regolarmente corsi di aggiornamento.</p><br>"
+    + "<p>La mia formazione è proseguita con la frequenza della Scuola di <b>Specializzazione in Psicoterapia</b> "
+    + "(ITAT – Torino) ad orientamento <b>Analitico-Transazionale</b>, grazie alla quale ho imparato <b>tecniche "
+    + "cognitive, comportamentali, psicodinamiche, relazionali e gestaltiche</b> per affrontare le sfide"
+    + "e gli eventi ai quali la vita ci espone: nel mio studio presso il <a href='https://www.genovapsicologia.it/' "
+    + "target='_blank' style='color: #0099FF'>Centro di Psicoterapia 2.0</a> seguo adolescenti e adulti nell\'accompagnamento "
+    + "in <b>periodi difficili della vita</b> (lutti, separazioni, malattia propria o di una persona cara, ecc.), "
+    + "nell\'approfondimento della propria storia, nel disvelamento del proprio <b>\"copione\" psicologico</b>, e nell\'"
+    + "affrontare percorsi riabilitativi rispetto a disturbi psicologici complessi come <b>ansia</b>, "
+    + "<b>depressione, attacchi di panico, fobie, disturbi alimentari, disturbi relazionali</b>, ecc.; mi sono "
+    + "specializzata sul trattamento del <b>trauma</b> acquisendo la certificazione <b>EMDR di I e II livello</b> e "
+    + "frequentando regolarmente corsi di aggiornamento.</p><br>"
 
-    + "<p>Quello che ho osservato è che le menti di tutte le persone funzionano complessivamente in modo simile, ma <b>sono le differenze che ci rendono unici</b>: "
-    + "l\’insieme delle esperienze personali, il modo in cui sono state elaborate, gli eventi di vita, le nostre risorse innate o apprese e le nostre fragilità, "
-    + "rendono ogni persona unica e irripetibile. Di conseguenza, \“capire come funziona la mente\” è riduttivo, e insufficiente a comprendere e aiutare una persona. "
-    + "I suoi <b>sintomi</b> raccontano una storia che sarà differente dagli stessi sintomi presentati da un\’altra persona, e andranno capiti e trattati in modo diverso. "
-    + "Per questo ogni terapia verrà \"cucita\" su quella particolare persona: la base sarà sempre l\'accettazione e <b>l\’assenza di giudizio</b>, "
-    + "le tecniche terapeutiche verranno scelte e combinate in base alle caratteristiche e peculiarità dell\’individuo e del problema che porta.</p><br>"
+    + "<p>Quello che ho osservato è che le menti di tutte le persone funzionano complessivamente in modo simile, ma "
+    + "<b>sono le differenze che ci rendono unici</b>: l\’insieme delle esperienze personali, il modo in cui sono state "
+    + "elaborate, gli eventi di vita, le nostre risorse innate o apprese e le nostre fragilità, "
+    + "rendono ogni persona unica e irripetibile. Di conseguenza, \“capire come funziona la mente\” è riduttivo, e "
+    + "insufficiente a comprendere e aiutare una persona. I suoi <b>sintomi</b> raccontano una storia che sarà differente "
+    + "dagli stessi sintomi presentati da un\’altra persona, e andranno capiti e trattati in modo diverso. "
+    + "Per questo ogni terapia verrà \"cucita\" su quella particolare persona: la base sarà sempre l\'accettazione e "
+    + "<b>l\’assenza di giudizio</b>, le tecniche terapeutiche verranno scelte e combinate in base alle caratteristiche e "
+    + "peculiarità dell\’individuo e del problema che porta.</p><br>"
 
-    + "<b><i>Oggi, alla domanda &lt;&lt;Perché fai la psicologa?&gt;&gt; rispondo: &lt;&lt;Per l'esperienza unica, emozionante, di accompagnare le persone nella scoperta di se stesse&gt;&gt;</i></b><br><br>"
-    + "<hr class='horizontal-line open-font'><br><p class='bold-text'>Ricevo su appuntamento a Genova presso il mio studio nel Centro di Psicoterapia 2.0 situato in Via XXV Aprile 8/6.</p><br>"
+    + "<b><i>Oggi, alla domanda &lt;&lt;Perché fai la psicologa?&gt;&gt; rispondo: &lt;&lt;Per l'esperienza unica, "
+    + "emozionante, di accompagnare le persone nella scoperta di se stesse&gt;&gt;</i></b><br><br>"
+    + "<hr class='horizontal-line open-font'><br><p class='bold-text'>Ricevo su appuntamento a Genova presso il mio "
+    + "studio nel Centro di Psicoterapia 2.0 situato in Via XXV Aprile 8/6.</p><br>"
+    + '</div> </div> </div>';
+
+var services = '<div class="container">'
+    + '<div class="row">'
+    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center display-4 page-title philosopher-font blue-text">'
+    + 'Attività professionale<br>'
     + '</div> </div>'
-    + '</div>';
+    + '<div class="row">'
+    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font font-large">'
+    + "<h2 class='d-inline' style='font-family: Philosopher'>N</h2><p class='d-inline'>ella mia pratica clinica mi "
+    + "occupo di adolescenti, adulti e coppie.</p><br><br>"
+    + "<p>In particolare mi dedico ai seguenti ambiti:</p>"
 
-//adds the content in the main page when the button Servizi is pressed
-function addServices(){
-    var services = '<div id="services">'
-        + '<div class="container">'
-        + '<div class="row">'
-        + '<div class="col-12 col-lg-12 col-md-12 col-sm-12" id="left-column">'
-        + '<div class="row services">'
-        + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center display-4 page-title center-block">'
-        + 'Attività professionale<br>'
-        + '</div> </div>'
-        + '<div class="row">'
-        + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font">'
-        + "<h2 class='d-inline' style='font-family: Philosopher'>N</h2>ella mia pratica clinica mi occupo di adolescenti, adulti e coppie."
-        + "<br><br>In particolare mi dedico ai seguenti ambiti:"
-        + "<ul class='activity-list open-font'>"
-        + "<li><b>diagnosi</b></li>"
-        + "<li>orientamento e sostegno per chi presenta un <b>malessere</b> noto o al quale non riesce a dare un nome</li>"
-        + "<li>percorsi di riabilitazione per <b>pazienti psichiatrici</b> o loro <b>familiari</b></li>"
-        + "<li>problematiche <b>adolescenziali</b></li>"
-        + "<li>relazione di <b>coppia</b></li>"
-        + "<li>sostegno alla <b>genitorialità</b> naturale, adottiva, affidataria</li>"
-        + "<li>sostegno nell’elaborazione del <b>lutto</b></li>"
-        + "<li>elaborazione <b>traumi</b> passati o recenti</li>"
-        + "<li>percorsi per la <b>egolazione delle emozioni</b> (Es. gestione della rabbia, di stati ansiosi, ecc.)</li>"
-        + "<li>percorsi per l’aumento e il mantenimento di una buona <b>autostima</b></li>"
-        + "</ul>"
-        + "Considerando che la scelta di intraprendere un percorso psicologico può cambiare la vita,"
-        + " <b>il primo colloquio è gratuito</b>, per conoscerci reciprocamente e valutare, in totale serenità,"
-        + " se c’è la sintonia giusta e necessaria per cominciare a lavorare insieme.<br><br>Ogni seduta successiva avrà un costo di <b>60€</b> per i colloqui individuali e <b>80€</b> per i colloqui rivolti alle coppie.<br><br><br>"
-        + "<hr class='horizontal-line open-font'><br><b>N.B.</b> Le fatture relative alle prestazioni psicologiche sono fatture sanitarie a tutti gli effetti e, come tali, sono detraibili al momento della dichiarazione dei redditi nella misura del 19%.<br><br>"
-        + '</div> </div>';
-    $('#carousel-column').append(services).hide().fadeIn(200);
-}
+    + "<ul class='ul-formatting'>"
+    + "<li><b>diagnosi</b></li>"
+    + "<li>orientamento e sostegno per chi presenta un <b>malessere</b> noto o al quale non riesce a dare un nome</li>"
+    + "<li>percorsi di riabilitazione per <b>pazienti psichiatrici</b> o loro <b>familiari</b></li>"
+    + "<li>problematiche <b>adolescenziali</b></li>"
+    + "<li>relazione di <b>coppia</b></li>"
+    + "<li>sostegno alla <b>genitorialità</b> naturale, adottiva, affidataria</li>"
+    + "<li>sostegno nell’elaborazione del <b>lutto</b></li>"
+    + "<li>elaborazione <b>traumi</b> passati o recenti</li>"
+    + "<li>percorsi per la <b>egolazione delle emozioni</b> (Es. gestione della rabbia, di stati ansiosi, ecc.)</li>"
+    + "<li>percorsi per l’aumento e il mantenimento di una buona <b>autostima</b></li>"
+    + "</ul><br>"
 
-//adds the content in the main page when the button Contactis pressed
-function addContact(){
-    var contact = '<div id="contact">'
-        + '<div class="container">'
-        + '<div class="row">'
-        + '<div class="col-12 col-lg-12 col-md-12 col-sm-12" id="left-column">'
-        + '<div class="card-block" style="padding-top: 0px">'
-        + '<div class="row services">'
-        + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center display-4 page-title center-block" style="color: #0099FF;">'
-        + 'Come e dove trovarmi<br>'
-        + '</div> </div>'
-        + '<div class="text-center open-font">'
-        + '<h4>Per ogni dubbio, richiesta informazioni, o per fissare un primo colloquio gratuito, compila il form qui sotto, ti risponderò al più presto:</h4>'
-        + '<hr class="mt-2 mb-2">'
-        + '</div>'
-        + '<p class="open-font" id="forced-fields">I campi contrassegnati con l\'asterisco (*) sono obbligatori.</p><br>'
-        + '<form id="myForm" action="#" method="post" name="contact">'
-        + '<div class="md-form">'
-        + '<i class="fa fa-user prefix"></i>'
-        + '<input type="text" id="form1" class="form-control" name="nome">'
-        + '<label for="form1">Nome*</label>'
-        + '</div>'
-        + '<div class="md-form">'
-        + '<i class="fa fa-envelope prefix"></i>'
-        + '<input type="text" id="form2" class="form-control" name="email">'
-        + '<label for="form2">E-mail*</label>'
-        + '</div>'
-        + '<div class="md-form">'
-        + '<i class="fa fa-tag prefix"></i>'
-        + '<input type="text" id="form3" class="form-control" name="oggetto">'
-        + '<label for="form3">Oggetto</label>'
-        + '</div>'
-        + '<div class="md-form">'
-        + '<i class="fa fa-pencil prefix"></i>'
-        + '<textarea type="text" id="form4" class="md-textarea" name="contenuto"></textarea>'
-        + '<label for="form4">Contenuto*</label>'
-        + '</div>'
-        + '</form>'
-        + '<div class="text-center">'
-        + '<button class="btn btn-default contact-button" id="send-mail">Invia</button>'
-        + '<div class="call"><br>'
-        + '<h4><p class="open-font">Oppure invia un SMS e ti richiamerò non appena mi sarà possibile:<br>'
-        + '<span><i class="fa fa-phone"> </i></span> 333 87 37 231</p></h4>'
-        + '</div> </div> </div>'
-        + '<div class="row">'
-        + '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 map-ontainer">'
-        + '<div id="map" class="mapClass">'
-        + '</div> </div> </div>'
-        + '</div> </div> </div> </div>';
-    $('#carousel-column').append(contact).hide().fadeIn(200);
-}
+    + "<p>Considerando che la scelta di intraprendere un percorso psicologico può cambiare la vita,"
+    + " <b>il primo colloquio è gratuito</b>, per conoscerci reciprocamente e valutare, in totale serenità,"
+    + " se c’è la sintonia giusta e necessaria per cominciare a lavorare insieme.<br><br>Ogni seduta successiva avrà un "
+    + "costo di <b>60€</b> per i colloqui individuali e <b>80€</b> per i colloqui rivolti alle coppie.</p><br>"
+    + "<hr class='horizontal-line open-font'><br><b>N.B.</b> Le fatture relative alle prestazioni psicologiche sono "
+    + "fatture sanitarie a tutti gli effetti e, come tali, sono detraibili al momento della dichiarazione dei redditi "
+    + "nella misura del 19%.<br><br>"
+    + '</div> </div>';
+
+var contact = '<div class="container">'
+    + '<div class="row">'
+    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center display-4 page-title philosopher-font blue-text">'
+    + 'Come e dove trovarmi<br>'
+    + '</div> </div>'
+    + '<div class="text-center open-font font-large">'
+    + '<h4>Per ogni dubbio, richiesta informazioni, o per fissare un primo colloquio gratuito, compila il form qui sotto, ti risponderò al più presto:</h4><br><br>'
+    + '<hr class="mt-2 mb-2">'
+    + '</div>'
+    + '<p class="open-font" id="forced-fields">I campi contrassegnati con l\'asterisco (*) sono obbligatori.</p><br>'
+    + '<form id="myForm" action="#" method="post" name="contact">'
+    + '<div class="md-form">'
+    + '<i class="fa fa-user prefix"></i>'
+    + '<input type="text" id="form1" class="form-control" name="nome">'
+    + '<label for="form1">Nome*</label>'
+    + '</div>'
+    + '<div class="md-form">'
+    + '<i class="fa fa-envelope prefix"></i>'
+    + '<input type="text" id="form2" class="form-control" name="email">'
+    + '<label for="form2">E-mail*</label>'
+    + '</div>'
+    + '<div class="md-form">'
+    + '<i class="fa fa-tag prefix"></i>'
+    + '<input type="text" id="form3" class="form-control" name="oggetto">'
+    + '<label for="form3">Oggetto</label>'
+    + '</div>'
+    + '<div class="md-form">'
+    + '<i class="fa fa-pencil prefix"></i>'
+    + '<textarea type="text" id="form4" class="md-textarea" name="contenuto"></textarea>'
+    + '<label for="form4">Contenuto*</label>'
+    + '</div>'
+    + '</form>'
+    + '<div class="text-center">'
+    + '<button class="btn btn-default contact-button" id="send-mail">Invia</button>'
+    + '<div class="call"><br>'
+    + '<h4>Oppure invia un SMS e ti richiamerò non appena mi sarà possibile:<br>'
+    + '<span><i class="fa fa-phone"> </i></span> 333 87 37 231</p></h4>'
+    + '</div> </div> </div>'
+    + '<div class="row">'
+    + '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 map-ontainer">'
+    + '<div id="map" class="mapClass">'
+    + '</div> </div> </div>'
+    + '</div> </div>';
 
 function addStudioImage() {
     return '<div id="studio"'
