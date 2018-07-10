@@ -58,3 +58,7 @@
 .blue-border{
     border: 2px solid #0099FF;
 }
+
+.prevent-pointer{
+    pointer-events: none;
+}

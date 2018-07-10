@@ -52,60 +52,62 @@ $url = $_SESSION['REQUEST_URI'];
     <body>
         <header class="line-height-1">
             <!-- First navabar with contact information -->
-            <nav class="navbar top-header">
-                <div class="container">
-                    <div class="row full-width philosopher-font">
-                        <div class="col col-12 col-lg-6 col-md-12 col-sm-12">
-                            <div class="text-xl-lef gray-text">
-                                Dott.ssa <b>Simona Bettoli</b> | Psicologa@Genova - Via XXV Aprile 8/6
+            <div class="header-container">
+                <nav class="navbar top-header">
+                    <div class="container">
+                        <div class="row full-width philosopher-font">
+                            <div class="col col-12 col-lg-6 col-md-12 col-sm-12">
+                                <div class="text-xl-lef gray-text">
+                                    Dott.ssa <b>Simona Bettoli</b> | Psicologa@Genova - Via XXV Aprile 8/6
+                                </div>
                             </div>
-                        </div>
-                        <div class="col col-12 col-lg-6 col-md-12 col-sm-12">
-                            <div class="text-xl-right gray-text">
-                                Telefono: 333 873.72.31 | E-mail:
-                                <a href="mailto:psicologaatgenova@gmail.com?Subject=" target="_top" class="email">
-                                    <b>psicologaatgenova@gmail.com</b></a>
+                            <div class="col col-12 col-lg-6 col-md-12 col-sm-12">
+                                <div class="text-xl-right gray-text">
+                                    Telefono: 333 873.72.31 | E-mail:
+                                    <a href="mailto:psicologaatgenova@gmail.com?Subject=" target="_top" class="email">
+                                        <b>psicologaatgenova@gmail.com</b></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </nav>
+                <!-- end first navbar -->
+
+                <!-- menu navbar-->
+                <nav class="navbar navbar-expand-md navbar-light bg-light zero-padding">
+                    <button class="navbar-toggler collapsed top-menu-button" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="img/default/logo_150.png">
+                    </button>
+                    <div class="navbar-collapse collapse menu-nav" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto top-menu-list">
+                            <li class="top-menu-item">
+                                <a id="home-button" class="nav-link text-center full-width">HOME</a>
+                            </li>
+
+                            <li class="top-menu-item">
+                                <a id="about-me-button" class="nav-link text-center full-width">CHI SONO</a>
+                            </li>
+
+                            <li class="top-menu-item">
+                                <a id="services" class="nav-link text-center full-width">SERVIZI </a>
+                            </li>
+
+                            <li class="top-menu-item">
+                                <a id="events" class="nav-link text-center full-width">EVENTI</a>
+                            </li>
+
+                            <li class="top-menu-item">
+                                <a id="theory-practice" class="nav-link text-center full-width">TEORIA&PRATICA</a>
+                            </li>
+
+                            <li class="top-menu-item">
+                                <a id="contact" class="nav-link text-center full-width">CONTATTI</a>
+                            </li>
+                        </ul>
+                    </div>
             </nav>
-            <!-- end first navbar -->
-
-            <!-- menu navbar-->
-            <nav class="navbar navbar-expand-md navbar-light bg-light zero-padding">
-                <button class="navbar-toggler collapsed top-menu-button" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <img src="img/default/logo_150.png">
-                </button>
-                <div class="navbar-collapse collapse menu-nav" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto top-menu-list">
-                        <li class="top-menu-item">
-                            <a id="home-button" class="nav-link text-center full-width">HOME</a>
-                        </li>
-
-                        <li class="top-menu-item">
-                            <a id="about-me-button" class="nav-link text-center full-width">CHI SONO</a>
-                        </li>
-
-                        <li class="top-menu-item">
-                            <a id="services" class="nav-link text-center full-width">SERVIZI </a>
-                        </li>
-
-                        <li class="top-menu-item">
-                            <a id="events" class="nav-link text-center full-width">EVENTI</a>
-                        </li>
-
-                        <li class="top-menu-item">
-                            <a id="theory-practice" class="nav-link text-center full-width">TEORIA&PRATICA</a>
-                        </li>
-
-                        <li class="top-menu-item">
-                            <a id="contact" class="nav-link text-center full-width">CONTATTI</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            </div>
             <!-- banner-->
             <nav class="navbar zero-padding">
                 <div class="container zero-padding">
@@ -168,24 +170,24 @@ $url = $_SESSION['REQUEST_URI'];
                             </div>
                             <div id="side-menu" class="nav-side-menu side-menu">
                                 <ul class="menu-content">
-                                    <li class="menu-item font-medium btn btn-primary">
-                                        <a id="transactional" class="center-text">ANALISI TRANSAZIONALE</a>
+                                    <li id="transactional" class="menu-item font-medium btn btn-primary">
+                                        <a class="center-text prevent-pointer">ANALISI TRANSAZIONALE</a>
                                     </li>
 
-                                    <li class="menu-item font-medium btn btn-primary">
-                                        <a id="emdr" class="center-text">EMDR</a>
+                                    <li id="emdr" class="menu-item font-medium btn btn-primary">
+                                        <a class="center-text prevent-pointer">EMDR</a>
                                     </li>
 
-                                    <li class="menu-item font-medium btn btn-primary">
-                                        <a id="training" class="center-text">TRAINING AUTOGENO </a>
+                                    <li id="training" class="menu-item font-medium btn btn-primary">
+                                        <a class="center-text prevent-pointer">TRAINING AUTOGENO </a>
                                     </li>
 
-                                    <li class="menu-item font-medium btn btn-primary">
-                                        <a id="relax" class="center-text">BENESSERE PSICOLOGICO</a>
+                                    <li id="relax" class="menu-item font-medium btn btn-primary">
+                                        <a class="center-text prevent-pointer">BENESSERE PSICOLOGICO</a>
                                     </li>
 
-                                    <li class="menu-item font-medium btn btn-primary">
-                                        <a id="technique" class="center-text">TECNICHE IMMAGINATIVE</a>
+                                    <li id="technique" class="menu-item font-medium btn btn-primary">
+                                        <a class="center-text prevent-pointer">TECNICHE IMMAGINATIVE</a>
                                     </li>
                                 </ul>
                         </div>

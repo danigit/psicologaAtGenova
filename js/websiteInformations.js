@@ -70,7 +70,7 @@ var services = '<div class="container">'
     + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font font-large">'
     + "<h2 class='d-inline' style='font-family: Philosopher'>N</h2><p class='d-inline'>ella mia pratica clinica mi "
     + "occupo di adolescenti, adulti e coppie.</p><br><br>"
-    + "<p>In particolare mi dedico ai seguenti ambiti:</p>"
+    + "<p>In particolare mi dedico ai seguenti ambiti:</p><br>"
 
     + "<ul class='ul-formatting'>"
     + "<li><b>diagnosi</b></li>"
