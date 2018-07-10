@@ -29,6 +29,7 @@
 }
 
 .menu-content li{
+    background-color: #CCCCFF!important;
     color: #6666CC!important;
     margin-bottom: 10px;
     padding: 10px 0 5px 0;

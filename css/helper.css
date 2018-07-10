@@ -22,6 +22,10 @@
     font-size: large;
 }
 
+.font-medium{
+    font-size: medium;
+}
+
 .zero-padding{
     padding: 0;
 }
@@ -49,4 +53,8 @@
 
 .bold-text{
     font-weight: bold;
+}
+
+.blue-border{
+    border: 2px solid #0099FF;
 }

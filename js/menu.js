@@ -37,6 +37,7 @@ function clickButton(event) {
             setTopMenu(document.querySelector('#events'));
             hideElement(document.querySelector('#side-menu'));
             showElement(document.querySelector('#fast-contact'));
+            changeLayout(caruselColumn, eventi);
             break;
         case 'theory-practice':
             setTopMenu(document.querySelector('#theory-practice'));
@@ -53,6 +54,21 @@ function clickButton(event) {
             fastContact();
             setTopMenu(document.querySelector('#contact'));
             hideElement(document.querySelector('#side-menu'));
+            break;
+        case 'transactional':
+            changeLayout(caruselColumn, transactional);
+            break;
+        case 'emdr':
+            changeLayout(caruselColumn, emdr);
+            break;
+        case 'training':
+            changeLayout(caruselColumn, training);
+            break;
+        case 'relax':
+            changeLayout(caruselColumn, relax);
+            break;
+        case 'technique':
+            changeLayout(caruselColumn, technique);
             break;
     }
 }

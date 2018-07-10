@@ -168,24 +168,24 @@ $url = $_SESSION['REQUEST_URI'];
                             </div>
                             <div id="side-menu" class="nav-side-menu side-menu">
                                 <ul class="menu-content">
-                                    <li class="menu-item btn btn-primary">
-                                        <a class="center-text">ANALISI TRANSAZIONALE</a>
+                                    <li class="menu-item font-medium btn btn-primary">
+                                        <a id="transactional" class="center-text">ANALISI TRANSAZIONALE</a>
                                     </li>
 
-                                    <li class="menu-item btn btn-primary">
-                                        <a class="center-text">EMDR</a>
+                                    <li class="menu-item font-medium btn btn-primary">
+                                        <a id="emdr" class="center-text">EMDR</a>
                                     </li>
 
-                                    <li class="menu-item btn btn-primary">
-                                        <a class="center-text">TRAINING AUTOGENO </a>
+                                    <li class="menu-item font-medium btn btn-primary">
+                                        <a id="training" class="center-text">TRAINING AUTOGENO </a>
                                     </li>
 
-                                    <li class="menu-item btn btn-primary">
-                                        <a class="center-text">BENESSERE PSICOLOGICO</a>
+                                    <li class="menu-item font-medium btn btn-primary">
+                                        <a id="relax" class="center-text">BENESSERE PSICOLOGICO</a>
                                     </li>
 
-                                    <li class="menu-item btn btn-primary">
-                                        <a class="center-text">TECNICHE IMMAGINATIVE</a>
+                                    <li class="menu-item font-medium btn btn-primary">
+                                        <a id="technique" class="center-text">TECNICHE IMMAGINATIVE</a>
                                     </li>
                                 </ul>
                         </div>
