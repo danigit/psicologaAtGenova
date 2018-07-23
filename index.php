@@ -74,7 +74,7 @@ $url = $_SESSION['REQUEST_URI'];
                 <!-- end first navbar -->
 
                 <!-- menu navbar-->
-                <nav class="navbar navbar-expand-md navbar-light bg-light zero-padding">
+                <nav class="navbar navbar-expand-md navbar-light bg-white zero-padding">
                     <button class="navbar-toggler collapsed top-menu-button" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <img src="img/default/logo_150.png">
@@ -106,7 +106,7 @@ $url = $_SESSION['REQUEST_URI'];
                             </li>
                         </ul>
                     </div>
-            </nav>
+                </nav>
             </div>
             <!-- banner-->
             <nav class="navbar zero-padding">
@@ -273,14 +273,15 @@ $url = $_SESSION['REQUEST_URI'];
 
         <!-- jquery -->
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
-        <!-- bootstrap javascript CDN -->
         <!-- Bootstrap tooltips -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
         <!-- Bootstrap core JavaScript -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <!-- MDB core JavaScript -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+        <!-- maps-->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYoluX3kHHBNEb_bSvSK8ddYf8pWgXVX8&callback=myMap"
+                type="text/javascript"></script>
 
         <!-- carousel -->
         <script src="js/carusel/main.js"></script>
@@ -293,6 +294,7 @@ $url = $_SESSION['REQUEST_URI'];
         <script src="js/menu.js"></script>
         <script src="js/helper.js"></script>
         <script src="js/websiteInformations.js"></script>
+        <script src="js/maps.js"></script>
     </body>
 
 </html>

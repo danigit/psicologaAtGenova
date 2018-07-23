@@ -30,3 +30,28 @@ function changeLayout(element, content) {
     element.removeChild(childrens[0]);
     element.innerHTML = content;
 }
+
+
+function httpPost(url, input) {
+    return new Promise(function (resolve, reject) {
+        let httpReq = new XMLHttpRequest();
+
+        httpReq.open('POST', url, true);
+        httpReq.onreadystatechange = function () {
+            if(httpReq.readyState === 4){
+                if(httpReq.status === 200){
+                    resolve(JSON.parse(httpReq.responseText));
+                }else{
+                    reject(httpReq.statusText);
+                }
+            }
+        };
+        httpReq.send(input);
+    });
+}
+
+function resetForm(form){
+    form[0].reset();
+    form.find('label').classList.remove('active');
+    form.find('i').classList.remove('active').css.color = '';
+}

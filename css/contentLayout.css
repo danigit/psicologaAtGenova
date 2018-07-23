@@ -28,3 +28,10 @@ textarea{
 #send-mail{
     background-color: #0099FF!important;
 }
+
+.mapClass{
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    box-shadow: 0 0 5px 5px #0099FF;
+}

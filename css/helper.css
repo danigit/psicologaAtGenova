@@ -2,6 +2,11 @@
     width: 100%;
 }
 
+.color-magenta-white{
+    background-color: #6666CC;
+    color: #FFFFFF;
+}
+
 .gray-text{
     color: #808080;
 }
@@ -44,6 +49,10 @@
 
 .blue-text{
     color: #0099FF;
+}
+
+.orange-text{
+    color: #FF5733;
 }
 
 .horizontal-line{
