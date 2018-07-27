@@ -38,7 +38,7 @@ $url = $_SESSION['REQUEST_URI'];
 
         <!-- facebook script and redirect variable-->
         <script>
-            let url = "<?= $url ?>";
+            var url = "<?= $url ?>";
             <?php $_SESSION['previous_location'] = ""; ?>
             (function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
@@ -82,11 +82,11 @@ $url = $_SESSION['REQUEST_URI'];
                     <div class="navbar-collapse collapse menu-nav" id="navbarCollapse">
                         <ul class="navbar-nav mr-auto top-menu-list">
                             <li class="top-menu-item">
-                                <a id="home-button" class="nav-link text-center full-width">HOME</a>
+                                <a id="home" class="nav-link text-center full-width">HOME</a>
                             </li>
 
                             <li class="top-menu-item">
-                                <a id="about-me-button" class="nav-link text-center full-width">CHI SONO</a>
+                                <a id="about" class="nav-link text-center full-width">CHI SONO</a>
                             </li>
 
                             <li class="top-menu-item">
@@ -109,7 +109,7 @@ $url = $_SESSION['REQUEST_URI'];
                 </nav>
             </div>
             <!-- banner-->
-            <nav class="navbar zero-padding">
+            <nav class="navbar zero-padding no-shadow">
                 <div class="container zero-padding">
                     <div class="row auto-margin">
                         <div class="col col-3 col-lg-3 col-md-3 col-sm-3">

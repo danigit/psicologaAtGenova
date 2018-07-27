@@ -99,3 +99,8 @@ function showCentralModal(type, icon, title, text) {
         centralModal.modal('show');
     }, 500);
 }
+
+function pushHistory(historyStr, state) {
+    if(state)
+        history.pushState(null, null, historyStr);
+}

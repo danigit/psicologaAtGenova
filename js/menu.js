@@ -8,41 +8,46 @@ function menuInteraction(){
     mouseHover(document.querySelector('.top-menu-list'), 'a');
     mouseHover(document.querySelector('#bottom-header-row'), 'div');
     document.onclick = function (event) {
-        clickButton(event);
+        clickButton(event.target.id, true);
     }
 }
 
-function clickButton(event) {
-    console.log("button pressed: " + event.target.id);
-    switch (event.target.id){
-        case 'home-button':
-            setTopMenu(document.querySelector('#home-button'));
+function clickButton(button, state) {
+    console.log("button pressed: " + button);
+    switch (button){
+        case 'home':
+            setTopMenu(document.querySelector('#home'));
             hideElement(document.querySelector('#side-menu'));
             showElement(document.querySelector('#fast-contact'));
             changeLayout(caruselColumn, carusel.outerHTML);
+            pushHistory('home', state);
             break;
-        case 'about-me-button':
-            setTopMenu(document.querySelector('#about-me-button'));
+        case 'about':
+            setTopMenu(document.querySelector('#about'));
             hideElement(document.querySelector('#side-menu'));
             showElement(document.querySelector('#fast-contact'));
             changeLayout(caruselColumn, aboutMe);
+            pushHistory('about', state);
             break;
         case 'services':
             setTopMenu(document.querySelector('#services'));
             showElement(document.querySelector('#side-menu'));
             showElement(document.querySelector('#fast-contact'));
             changeLayout(caruselColumn, services);
+            pushHistory('services', state);
             break;
         case 'events':
             setTopMenu(document.querySelector('#events'));
             hideElement(document.querySelector('#side-menu'));
             showElement(document.querySelector('#fast-contact'));
             changeLayout(caruselColumn, eventi);
+            pushHistory('events', state);
             break;
         case 'theory-practice':
             setTopMenu(document.querySelector('#theory-practice'));
             hideElement(document.querySelector('#side-menu'));
             showElement(document.querySelector('#fast-contact'));
+            pushHistory('theroyAndpractice', state);
             break;
         case 'contact':
             setTopMenu(document.querySelector('#contact'));
@@ -51,26 +56,33 @@ function clickButton(event) {
             changeLayout(caruselColumn, contact);
             sendMail();
             myMap();
+            pushHistory('contact', state);
             break;
         case 'fast-contact':
             fastContact();
             setTopMenu(document.querySelector('#contact'));
             hideElement(document.querySelector('#side-menu'));
+            pushHistory('contact', state);
             break;
         case 'transactional':
             changeLayout(caruselColumn, transactional);
+            pushHistory('transactional', state);
             break;
         case 'emdr':
             changeLayout(caruselColumn, emdr);
+            pushHistory('emdr', state);
             break;
         case 'training':
             changeLayout(caruselColumn, training);
+            pushHistory('training', state);
             break;
         case 'relax':
             changeLayout(caruselColumn, relax);
+            pushHistory('relax', state);
             break;
         case 'technique':
             changeLayout(caruselColumn, technique);
+            pushHistory('technique', state);
             break;
     }
 }

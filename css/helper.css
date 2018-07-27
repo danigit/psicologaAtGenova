@@ -71,3 +71,7 @@
 .prevent-pointer{
     pointer-events: none;
 }
+
+.no-shadow{
+    box-shadow: none;
+}
