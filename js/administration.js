@@ -1,6 +1,9 @@
+//TODO remove messages and clean modal if is not successfull
+
 let string = '';
 
 document.querySelector('#insert').onclick = function () {
+    resetModal();
     if(document.querySelector('.fr-box').classList.contains('fr-code-view')){
         $('#modalInsertArticle').modal();
         Array.from(document.querySelectorAll('.CodeMirror-line')).forEach(function (line) {
@@ -39,7 +42,7 @@ document.querySelector('#insertArticleForm').onsubmit = function (event) {
     });
 
     if(fileTypeOk) {
-        let promise = httpPost('php/ajax/insert-articel.php', formInput);
+        let promise = httpPost('php/ajax/insert_article.php', formInput);
         promise.then(
             function (data) {
                 if (data.result) {
@@ -99,4 +102,14 @@ function showCentralModal(type, icon, title, text) {
     setTimeout(function(){
         centralModal.modal('show');
     }, 500);
+}
+
+function resetModal() {
+    let formMessage = document.querySelector('#formMsgInsertArticle');
+    formMessage.innerHTML = '';
+    let form = document.querySelector('#insertArticleForm');
+    Array.from(form).forEach(function (item) {
+        if(item.classList.contains('form-control'))
+            item.value = '';
+    })
 }

@@ -130,7 +130,7 @@ if(!isset($_SESSION['id'], $_SESSION['secure'], $_SESSION['username']))
 
                         <!--Footer-->
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-info waves-effect ml-auto modalEditUserClose"
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto"
                                     data-dismiss="modal">Close <i class="fa fa-times-circle ml-1"></i></button>
                         </div>
                     </div>
@@ -163,7 +163,7 @@ if(!isset($_SESSION['id'], $_SESSION['secure'], $_SESSION['username']))
 
                         <!--Footer-->
                         <div id="centralModalFooter" class="modal-footer flex-center">
-                            <button type="button" class="btn btn-outline-secondary-modal waves-effect" data-dismiss="modal">
+                            <button type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">
                                 Close
                             </button>
                         </div>

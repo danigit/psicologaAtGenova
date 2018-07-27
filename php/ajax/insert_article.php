@@ -38,16 +38,16 @@ class insert_article extends cs_interaction
 
         $i = 0;
         $folder = str_replace(' ', '_', $this->name);
-        $this->image_path = '../../img/articles/' . $folder . '/';
-        $this->text_path = '../../articles/'. preg_replace('/\s+/', '_', $this->name) . ".txt";
+        $this->image_path = '../../img/articlesImmages/' . $folder . '/';
+        $this->text_path = '../../articlesText/'. preg_replace('/\s+/', '_', $this->name) . ".txt";
         if(file_exists($this->text_path)) {
             $this->json_error("Un file con questo nome esiste gia'");
         }
         foreach ($uploaded_files as $file) {
             foreach ($file['name'] as $item){
 
-                if(!file_exists('../../img/articles/'. $folder))
-                    mkdir('../../img/articles/'. $folder);
+                if(!file_exists('../../img/articlesImmages/'. $folder))
+                    mkdir('../../img/articlesImmages/'. $folder);
 
                 $this->image_path = $this->image_path . $item;
 
@@ -61,7 +61,7 @@ class insert_article extends cs_interaction
         }
 
         if (!empty($this->content)) {
-            $dir = '../../articles/';
+            $dir = '../../articlesText/';
             $filename = preg_replace('/\s+/', '_', $this->name) . '.txt';
             $handle = fopen($dir . $filename, "w");
             fwrite($handle, $this->content);
