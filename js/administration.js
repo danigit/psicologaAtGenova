@@ -1,5 +1,14 @@
+let string = '';
+
 document.querySelector('#insert').onclick = function () {
-    $('#modalInsertArticle').modal();
+    if(document.querySelector('.fr-box').classList.contains('fr-code-view')){
+        $('#modalInsertArticle').modal();
+        Array.from(document.querySelectorAll('.CodeMirror-line')).forEach(function (line) {
+            string += line.textContent;
+        })
+    }else{
+        showCentralModal( 'warning', 'warning', "Il testo deve essere prima formatato", "Eseguire la formatazione premendo il tasto \'&lt;&#47;&gt;\'");
+    }
 };
 
 document.querySelector('#logout').onclick = function() {
@@ -17,23 +26,28 @@ document.querySelector('#insertArticleForm').onsubmit = function (event) {
     event.preventDefault();
 
     let formMessage = document.querySelector('#formMsgInsertArticle');
-    let formInput = new FormData(document.querySelector('#insertArticleForm'));
-    let fileExtension = document.querySelector('input[type=file]').split('.').pop();
-    console.log('file extension: ' + fileExtension);
+    let form = document.querySelector('#insertArticleForm');
+    form.querySelector('#content').innerHTML = string;
+    let formInput = new FormData(form);
+    let fileTypeOk = true;
+    Array.from(document.querySelector('#fileUpload').files).forEach(function (file) {
+        if(file.name.split('.').pop() !== 'jpg') {
+            fileTypeOk = false;
+           formMessage.innerHTML = '';
+           formMessage.innerHTML = 'Puoi caricare solo file in formato \'jpg\'';
+        }
+    });
 
-    if(!(fileExtension === 'jpg')){
-      formMessage.innerHTML = '';
-      formMessage.innerHTML = 'Puoi caricare solo file in formato \'jpg\'';
-    }else {
+    if(fileTypeOk) {
         let promise = httpPost('php/ajax/insert-articel.php', formInput);
         promise.then(
             function (data) {
-                if(data.result){
+                if (data.result) {
                     $('#modalInsertArticle').modal('hide');
                     showCentralModal('success', 'check', 'Articolo inserito', "L'articolo e' stato inserito correttamente");
                     resetForm(document.querySelector('#insertArticleForm'));
                 }
-                else{
+                else {
                     formMessage.innerHTML = '';
                     formMessage.innerHTML = data.message;
                 }
@@ -45,9 +59,9 @@ document.querySelector('#insertArticleForm').onsubmit = function (event) {
 
 function showCentralModal(type, icon, title, text) {
 
-    let centralModal = document.querySelector('#centralModal');
+    let centralModal = $('#centralModal');
     let centralModalDialog = document.querySelector('#centralModalDialog');
-    let centralModalIcon = document.querySelector('#centralModalIcon');
+    let centralModalIcon = $('#centralModalIcon');
     let centralModalTitle = document.querySelector('#centralModalTitle');
     let centralModalText = document.querySelector('#centralModalText');
 
@@ -76,11 +90,11 @@ function showCentralModal(type, icon, title, text) {
     }
 
     centralModalDialog.classList.add(typeClass);
-    centralModalIcon.classList.add(faIcon);
+    centralModalIcon.addClass(faIcon);
     centralModalTitle.innerHTML = '';
     centralModalTitle.innerHTML = title;
     centralModalText.innerHTML = '';
-    centralModalText.innerHTML = text
+    centralModalText.innerHTML = text;
 
     setTimeout(function(){
         centralModal.modal('show');

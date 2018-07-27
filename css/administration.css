@@ -1,0 +1,37 @@
+.navbarFixed{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.hide-file {
+    position: absolute;
+    z-index: 1000;
+    opacity: 0;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    height: 100%;
+    font-size: 24px;
+    width: 100%;
+
+}
+
+.selectFile{
+    margin: 20px auto;
+}
+
+.fr-box{
+    width: 1110px!important;
+    margin-top: 115px;
+}
+
+.fr-toolbar{
+    position: fixed;
+    width: 1110px;
+    top: 69px!important;
+}
+
+.fr-wrapper{
+    height: 100vh;
+}
