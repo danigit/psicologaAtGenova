@@ -49,6 +49,7 @@ function clickButton(event) {
             hideElement(document.querySelector('#side-menu'));
             hideElement(document.querySelector('#fast-contact'));
             changeLayout(caruselColumn, contact);
+            sendMail();
             myMap();
             break;
         case 'fast-contact':

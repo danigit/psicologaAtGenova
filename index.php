@@ -269,6 +269,38 @@ $url = $_SESSION['REQUEST_URI'];
                     </div>
                 </div>
             </div>
+
+            <!-- Central Modal  -->
+            <div class="modal fade" id="centralModal" tabindex="-1" role="dialog">
+                <div id="centralModalDialog" class="modal-dialog modal-notify" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
+                        <!--Header-->
+                        <div class="modal-header">
+                            <p id="centralModalTitle" class="heading lead"></p>
+
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span  class="white-text">&times;</span>
+                            </button>
+                        </div>
+
+                        <!--Body-->
+                        <div class="modal-body">
+                            <div class="text-center">
+                                <i id="centralModalIcon" class="fa fa-4x mb-1 animated rotateIn"></i>
+                                <p id="centralModalText"></p>
+                            </div>
+                        </div>
+
+                        <!--Footer-->
+                        <div id="centralModalFooter" class="modal-footer flex-center">
+                            <button type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">CHIUDI</button>
+                        </div>
+                    </div>
+                    <!--/.Content-->
+                </div>
+            </div>
+            <!-- /.Central Modal -->
         </main>
 
         <!-- jquery -->
@@ -295,6 +327,7 @@ $url = $_SESSION['REQUEST_URI'];
         <script src="js/helper.js"></script>
         <script src="js/websiteInformations.js"></script>
         <script src="js/maps.js"></script>
+        <script src="js/contact.js"></script>
     </body>
 
 </html>

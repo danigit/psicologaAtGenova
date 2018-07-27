@@ -2,9 +2,10 @@ document.querySelector('#login').onclick = function () {
   $('#loginModal').modal();
 };
 
-document.querySelector('#loginForm').onsubmit = function (event) {
+let form = document.querySelector('#loginForm');
+form.onsubmit = function (event) {
     event.preventDefault();
-    let formInput = new FormData(document.querySelector('#loginForm'));
+    let formInput = new FormData(form);
 
     let promise = httpPost('php/ajax/login.php', formInput);
     promise.then(

@@ -12,14 +12,14 @@ class send_email extends cs_interaction
     protected function input_elaboration(){
         $this->name = $this->validate_string("nome");
         if (!$this->name)
-            $this->json_error("Il campo NOME è obbligatorio");
+            $this->json_error("Il campo nome è obbligatorio");
 
         $this->email = $this->validate_string( "email");
         if(!$this->email)
-            $this->json_error("Il campo EMAIL è obbligatorio");
+            $this->json_error("Il campo e-mail è obbligatorio");
 
         if(!filter_var($this->email, FILTER_VALIDATE_EMAIL))
-            $this->json_error("EMAIL non valida");
+            $this->json_error("e-mail non valida");
 
         $this->email = filter_var($this->email, FILTER_SANITIZE_EMAIL);
 
@@ -27,7 +27,7 @@ class send_email extends cs_interaction
 
         $this->content = $this->validate_string( "contenuto");
         if(!$this->content)
-            $this->json_error("Il campo CONTENUTO è obbligatorio");
+            $this->json_error("Il campo contenuto è obbligatorio");
     }
 
     protected function get_db_informations(){
