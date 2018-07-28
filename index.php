@@ -1,6 +1,6 @@
 <?php
 //getting the url sent from a not existing url
-$url = $_SESSION['REQUEST_URI'];
+$url = $_SERVER['REQUEST_URI'];
 ?>
 
 <!DOCTYPE html>
@@ -39,6 +39,7 @@ $url = $_SESSION['REQUEST_URI'];
         <!-- facebook script and redirect variable-->
         <script>
             var url = "<?= $url ?>";
+            console.log('the url is: ' + url);
             <?php $_SESSION['previous_location'] = ""; ?>
             (function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
@@ -169,24 +170,24 @@ $url = $_SESSION['REQUEST_URI'];
                                 CONTATTAMI PER UN PRIMO COLLOQUIO GRATUITO
                             </div>
                             <div id="side-menu" class="nav-side-menu side-menu">
-                                <ul class="menu-content">
-                                    <li id="transactional" class="menu-item font-medium btn btn-primary">
+                                <ul class="menu-content" id="services-menu">
+                                    <li id="transactional" class="menu-item font-medium btn btn-primary menu-content-element">
                                         <a class="center-text prevent-pointer">ANALISI TRANSAZIONALE</a>
                                     </li>
 
-                                    <li id="emdr" class="menu-item font-medium btn btn-primary">
+                                    <li id="emdr" class="menu-item font-medium btn btn-primary menu-content-element">
                                         <a class="center-text prevent-pointer">EMDR</a>
                                     </li>
 
-                                    <li id="training" class="menu-item font-medium btn btn-primary">
+                                    <li id="training" class="menu-item font-medium btn btn-primary menu-content-element">
                                         <a class="center-text prevent-pointer">TRAINING AUTOGENO </a>
                                     </li>
 
-                                    <li id="relax" class="menu-item font-medium btn btn-primary">
+                                    <li id="relax" class="menu-item font-medium btn btn-primary menu-content-element">
                                         <a class="center-text prevent-pointer">BENESSERE PSICOLOGICO</a>
                                     </li>
 
-                                    <li id="technique" class="menu-item font-medium btn btn-primary">
+                                    <li id="technique" class="menu-item font-medium btn btn-primary menu-content-element">
                                         <a class="center-text prevent-pointer">TECNICHE IMMAGINATIVE</a>
                                     </li>
                                 </ul>

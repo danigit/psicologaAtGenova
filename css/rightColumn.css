@@ -28,7 +28,7 @@
     margin-top: 25px;
 }
 
-.menu-content li{
+.menu-content-element{
     background-color: #CCCCFF!important;
     color: #6666CC!important;
     margin-bottom: 10px;
@@ -49,4 +49,18 @@
 
 .facebook{
     margin-top: 10px;
+}
+
+.pressed{
+    background-color: #6666CC!important;
+    color: #ffffff!important;
+}
+
+.btn-primary{
+    background-color: transparent;
+}
+
+.btn-primary:hover{
+    background-color: transparent;
+    border-color: transparent;
 }

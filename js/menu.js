@@ -65,23 +65,38 @@ function clickButton(button, state) {
             pushHistory('contact', state);
             break;
         case 'transactional':
+            setTopMenu(document.querySelector('#services'));
+            setServicesMenu(document.querySelector('#transactional'));
             changeLayout(caruselColumn, transactional);
+            showElement(document.querySelector('#side-menu'));
             pushHistory('transactional', state);
             break;
         case 'emdr':
+            setTopMenu(document.querySelector('#services'));
+            setServicesMenu(document.querySelector('#emdr'));
             changeLayout(caruselColumn, emdr);
+            showElement(document.querySelector('#side-menu'));
             pushHistory('emdr', state);
             break;
         case 'training':
+            setTopMenu(document.querySelector('#services'));
+            setServicesMenu(document.querySelector('#training'));
             changeLayout(caruselColumn, training);
+            showElement(document.querySelector('#side-menu'));
             pushHistory('training', state);
             break;
         case 'relax':
+            setTopMenu(document.querySelector('#services'));
+            setServicesMenu(document.querySelector('#relax'));
             changeLayout(caruselColumn, relax);
+            showElement(document.querySelector('#side-menu'));
             pushHistory('relax', state);
             break;
         case 'technique':
+            setTopMenu(document.querySelector('#services'));
+            setServicesMenu(document.querySelector('#technique'));
             changeLayout(caruselColumn, technique);
+            showElement(document.querySelector('#side-menu'));
             pushHistory('technique', state);
             break;
     }
@@ -110,4 +125,16 @@ function setTopMenu(button) {
             elem[0].classList.remove('top-menu-button-pressed');
     });
     button.className += ' top-menu-button-pressed';
+}
+
+function setServicesMenu(button) {
+    let children = Array.prototype.slice.call(document.querySelector('#services-menu').children);
+
+    children.forEach(function (child) {
+        console.log('child: ' + child);
+        if(child.classList.contains('pressed'))
+            child.classList.remove('pressed');
+    });
+
+    button.classList.add('pressed');
 }

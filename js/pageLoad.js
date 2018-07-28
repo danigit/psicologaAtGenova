@@ -1,44 +1,46 @@
+console.log('before load');
 window.onload = function () {
+    console.log('load');
     menuInteraction();
     document.querySelector('.right-col-profile-image-footer').innerHTML = "<p class='gray-text font-large'>LA VITA É UN <b class='porpora-text'>VIAGGIO</b> NON UNA <b class='porpora-text'>DESTINAZIONE</b></p>"
     carusel = document.getElementById('carusel-container');
     setTopMenu(document.querySelector('#home'));
-    pushHistory('home', true);
 
-    if(url != ''){
+    console.log('before url: ' + url);
+    if(url !== ""){
         console.log(url);
         switch (url){
-            case '/home':
-                clickButton('home-button');
+            case '/psicologaAtGenova/home':
+                clickButton('home');
                 break;
-            case '/about':
-                clickButton('about-me-button');
+            case '/psicologaAtGenova/about':
+                clickButton('about');
                 break;
-            case '/services':
+            case '/psicologaAtGenova/services':
                 clickButton('services');
                 break;
-            case '/events':
+            case '/psicologaAtGenova/events':
                 clickButton('events');
                 break;
-            case '/theoryAndPractice':
+            case '/psicologaAtGenova/theoryAndPractice':
                 clickButton('theory-practice');
                 break;
-            case '/contact':
+            case '/psicologaAtGenova/contact':
                 clickButton('contact');
                 break;
-            case '/transactional':
+            case '/psicologaAtGenova/transactional':
                 clickButton('transactional');
                 break;
-            case '/emdr':
+            case '/psicologaAtGenova/emdr':
                 clickButton('emdr');
                 break;
-            case '/training':
+            case '/psicologaAtGenova/training':
                 clickButton('training');
                 break;
-            case '/relax':
+            case '/psicologaAtGenova/relax':
                 clickButton('relax');
                 break;
-            case '/technique':
+            case '/psicologaAtGenova/technique':
                 clickButton('technique');
                 break;
             default:
