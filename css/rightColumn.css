@@ -64,3 +64,8 @@
     background-color: transparent;
     border-color: transparent;
 }
+
+.btn-primary:not([disabled]):not(.disabled):active{
+    background-color: #6666CC!important;
+    border-color: #6666CC!important;
+}

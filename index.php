@@ -225,8 +225,8 @@ $url = $_SERVER['REQUEST_URI'];
             <div class="container bottom-header-container zero-padding philosopher-font">
                 <div class="row" id="bottom-header-row">
                     <div class="col col-lg-3 col-md-3">
-                        <div class="bottom-image-container">
-                            <img src="img/default/icona_contatti.png" class="bottom-image">
+                        <div class="bottom-image-container" id="bottom-contact-immage">
+                            <img src="img/default/icona_contatti.png" class="bottom-image prevent-pointer">
                         </div>
                         <div class="bottom-text-container">
                             <h4 class="center-text font-x-large">CONTATTI</h4>
@@ -238,8 +238,8 @@ $url = $_SERVER['REQUEST_URI'];
                         </div>
                     </div>
                     <div class="col col-lg-3 col-md-3">
-                        <div class="bottom-image-container">
-                            <img src="img/default/icona_dove_sono.png" class="bottom-image" id="bottom-dove">
+                        <div class="bottom-image-container" id="bottom-where-immage">
+                            <img src="img/default/icona_dove_sono.png" class="bottom-image prevent-pointer" id="bottom-dove">
                         </div>
                         <div class="bottom-text-container">
                             <h4 class="center-text font-x-large">DOVE SONO</h4>
@@ -249,8 +249,8 @@ $url = $_SERVER['REQUEST_URI'];
                         </div>
                     </div>
                     <div class="col col-lg-3 col-md-3">
-                        <div class="bottom-image-container">
-                            <img src="img/default/icona_chi_sono.png" class="bottom-image" id="bottom-chi">
+                        <div class="bottom-image-container" id="bottom-about-immage">
+                            <img src="img/default/icona_chi_sono.png" class="bottom-image prevent-pointer" id="bottom-chi">
                         </div>
                         <div class="bottom-text-container">
                             <h4 class="center-text font-x-large">CHI SONO</h4>
@@ -259,8 +259,8 @@ $url = $_SERVER['REQUEST_URI'];
                         </div>
                     </div>
                     <div class="col col-lg-3 col-md-3">
-                        <div class="bottom-image-container">
-                            <img src="img/default/icona_servizi.png" class="bottom-image" id="bottom-services">
+                        <div class="bottom-image-container" id="bottom-services-immage">
+                            <img src="img/default/icona_servizi.png" class="bottom-image prevent-pointer" id="bottom-services">
                         </div>
                         <div class="bottom-text-container">
                             <h4 class="center-text font-x-large">SERVIZI</h4>

@@ -14,6 +14,7 @@ function menuInteraction(){
 
 function clickButton(button, state) {
     console.log("button pressed: " + button);
+    scrollToTop();
     switch (button){
         case 'home':
             setTopMenu(document.querySelector('#home'));
@@ -98,6 +99,16 @@ function clickButton(button, state) {
             changeLayout(caruselColumn, technique);
             showElement(document.querySelector('#side-menu'));
             pushHistory('technique', state);
+            break;
+        case 'bottom-contact-immage':
+        case 'bottom-where-immage':
+            clickButton('contact', true);
+            break;
+        case 'bottom-about-immage':
+            clickButton('about', true);
+            break;
+        case 'bottom-services-immage':
+            clickButton('services', true);
             break;
     }
 }
