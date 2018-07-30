@@ -16,6 +16,7 @@ function clickButton(button, state) {
     console.log("button pressed: " + button);
     scrollToTop();
     pushHistory(button, state);
+
     if((button === 'home' || button === 'about' || button === 'services' || button === 'events' || button === 'contact') &&
         document.querySelector('#carusel-column').classList.contains('col-lg-12')) {
         resizeMainPage('small');
@@ -23,16 +24,16 @@ function clickButton(button, state) {
     }
 
     let fastContact = document.querySelector('#fast-contact');
-    if(button !== 'contact' && fastContact.display !== 'block')
-        showHideElement(fastContact, 'show');
-    else
+    if(button === 'contact')
         showHideElement(fastContact, 'hide');
+    else if(button === 'home' || button === 'about' || button === 'services' || button === 'events')
+        showHideElement(fastContact, 'show');
 
     let sideMenu = document.querySelector('#side-menu');
     if((button === 'services' || button === 'transactional' || button === 'emdr' || button === 'training' || button === 'relax'
-        || button === 'technique') && sideMenu.style.display !== 'block')
+        || button === 'technique'))
         showHideElement(sideMenu, 'show');
-    else
+    else if(button === 'home' || button === 'about' || button === 'events' || button === 'contact')
         showHideElement(sideMenu, 'hide');
 
     switch (button){
@@ -96,25 +97,13 @@ function clickButton(button, state) {
             changeLayout(caruselColumn, technique);
             break;
         case 'models':
-            let modelContainer = document.querySelector('#models-container');
-            if(modelContainer.style.display === 'none')
-                showHideElement(modelContainer, 'show');
-            else
-                showHideElement(modelContainer, 'hide');
+            articolsCategoryEvents('#models-container', document.querySelector('#models'));
             break;
         case 'couple':
-            let coupleContainer = document.querySelector('#couple-container');
-            if(coupleContainer.style.display === 'none')
-                showHideElement(coupleContainer, 'show');
-            else
-                showHideElement(coupleContainer, 'hide');
+            articolsCategoryEvents('#couple-container', document.querySelector('#couple'));
             break;
         case 'inspiration':
-            let inspirationContainer = document.querySelector('#inspiration-container');
-            if(inspirationContainer.style.display === 'none')
-                showHideElement(inspirationContainer, 'show');
-            else
-                showHideElement(inspirationContainer, 'hide');
+            articolsCategoryEvents('#inspiration-container', document.querySelector('#inspiration'));
             break;
         case 'bottom-contact-immage':
         case 'bottom-where-immage':
@@ -154,4 +143,16 @@ function setServicesMenu(button) {
     });
 
     button.classList.add('pressed');
+}
+
+function articolsCategoryEvents(container, category) {
+    let modelContainer = document.querySelector(container);
+    if (modelContainer.style.display === 'none') {
+        showHideElement(modelContainer, 'show');
+        category.getElementsByTagName('img')[0].src = "../psicologaAtGenova/img/default/freccia_up.png";
+    }
+    else {
+        showHideElement(modelContainer, 'hide');
+        category.getElementsByTagName('img')[0].src = "../psicologaAtGenova/img/default/freccia_down.png"
+    }
 }
