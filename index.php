@@ -16,6 +16,9 @@ $url = $_SERVER['REQUEST_URI'];
         <!-- carousel -->
         <link href="css/default/carusel.css" type="text/css" rel="stylesheet">
 
+        <!-- JQCloud -->
+        <link href="css/default/jqcloud.css" rel="stylesheet">
+
         <!--bootstrap css CDN-->
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,8 +27,9 @@ $url = $_SERVER['REQUEST_URI'];
         <!-- Material Design Bootstrap -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
 
-        <!--philosopher font CDN-->
+        <!--fonts CDN-->
         <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
 
         <!-- custom css-->
         <link href="css/default/reset.css" type="text/css" rel="stylesheet">
@@ -136,28 +140,38 @@ $url = $_SERVER['REQUEST_URI'];
         <!-- main container-->
         <main>
             <div class="container zero-padding">
-                <div class="row">
+                <div class="row" id="main-container">
                     <div class="col-12 col-lg-9 col-md-9 col-sm-12" id="carusel-column">
-                        <div class="container zero-padding">
+                        <div class="container zero-padding no-margin full-width" id="main-carusel-container">
                             <!-- Slider -->
-                            <div class="cd-testimonials-wrapper cd-container z-depth-1" id="carusel-container">
+                            <div class="cd-testimonials-wrapper cd-container z-depth-1 zero-padding" id="carusel-container">
                                 <ul class="cd-testimonials">
 
                                 </ul>
                                 <!-- Show all slider button -->
-                                <button type="button" class="cd-see-all btn btn-primary">Vedi tutti</button>
+                                <button type="button" class="cd-see-all btn btn-primary auto-margin position-absolute color-magenta-white font-large">Vedi tutti</button>
                             </div>
                             <!-- End of Slider -->
 
                             <!-- Cloud content -->
-                            <div class="row">
-                                <div class="col-11 col-lg-11 col-md-11 col-sm-11" id="cloud-column">
-                                    <div id="cloud">
+                            <div class="col col-lg-12 col-md-12 col-sm-12" id="cloud-column">
+                                <div id="cloud">
 
-                                    </div>
                                 </div>
                             </div>
                             <!-- End Cloud content -->
+
+                            <!-- Popup all articols in one page-->
+                            <div class="cd-testimonials-all">
+                                <div class="cd-testimonials-all-wrapper">
+                                    <ul class="cd-testimonials-all-list">
+
+                                    </ul>
+                                </div>    <!-- cd-testimonials-all-wrapper -->
+
+                                <a class="close-btn">Close</a>
+                            </div>
+                            <!-- End Popup all articols in one page -->
                         </div>
                     </div>
 
@@ -323,6 +337,9 @@ $url = $_SERVER['REQUEST_URI'];
         <script src="js/carusel/jquery.flexslider-min.js"></script>
         <script src="js/carusel/modernizr.js"></script>
 
+        <!-- JQCloud -->
+        <script src="js/default/jqcloud.min.js"></script>
+
         <!-- custom js-->
         <script src="js/pageLoad.js"></script>
         <script src="js/menu.js"></script>
@@ -331,6 +348,7 @@ $url = $_SERVER['REQUEST_URI'];
         <script src="js/maps.js"></script>
         <script src="js/contact.js"></script>
         <script src="js/theoryAndPractice.js"></script>
+        <script src="js/home.js"></script>
     </body>
 
 </html>
