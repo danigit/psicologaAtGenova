@@ -3,8 +3,8 @@
 }
 
 .color-magenta-white{
-    background-color: #6666CC;
-    color: #FFFFFF;
+    background-color: #6666CC!important;
+    color: #FFFFFF!important;
 }
 
 .gray-text{
@@ -82,4 +82,8 @@
 
 .margin-20-bottom{
     margin-bottom: 20px;
+}
+
+.position-absolute{
+    position: absolute;
 }

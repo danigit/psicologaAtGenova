@@ -1,12 +1,9 @@
-console.log('before load');
 window.onload = function () {
-    console.log('load');
     menuInteraction();
     document.querySelector('.right-col-profile-image-footer').innerHTML = "<p class='gray-text font-large'>LA VITA É UN <b class='porpora-text'>VIAGGIO</b> NON UNA <b class='porpora-text'>DESTINAZIONE</b></p>"
-    carusel = document.getElementById('carusel-container');
+    carusel = document.getElementById('carusel-column');
     setTopMenu(document.querySelector('#home'));
 
-    console.log('before url: ' + url);
     if(url !== ""){
         console.log(url);
         switch (url){
@@ -51,7 +48,30 @@ window.onload = function () {
 
     window.addEventListener('popstate', function () {
         let button = location.pathname.split('/').pop();
-        console.log('button ' + button);
         clickButton(button, false);
-    })
+    });
+
+    populateCloud();
 };
+
+function populateCloud() {
+    $('#cloud').jQCloud(words, {
+        shape: 'elliptic',
+        autoResize:true
+    });
+}
+
+function loadSliderContent() {
+    let promise = httpPost('php/ajax/get_all_articles.php', '');
+    promise.then(
+        function (data) {
+            if(data.result){
+                let i = 0;
+                Array.from(data.articles).forEach(function (article) {
+                    addCarousel(article.title, article.description, article.images_path);
+                });
+                loadSlider();
+            }
+        }
+    )
+}

@@ -1,8 +1,10 @@
 //TOP MENU
 //variables declaration
 let navSideMenu = document.querySelector('.nav-side-menu');
-let caruselColumn = document.querySelector('#carusel-column');
+let caruselColumn = document.querySelector('#main-container');
+console.log('carusel: ' + caruselColumn.outerHTML);
 let carusel = '';
+let cloud = '';
 
 function menuInteraction(){
     mouseHover(document.querySelector('.top-menu-list'), 'a');
@@ -15,7 +17,6 @@ function menuInteraction(){
 function clickButton(button, state) {
     console.log("button pressed: " + button);
     scrollToTop();
-    pushHistory(button, state);
 
     if((button === 'home' || button === 'about' || button === 'services' || button === 'events' || button === 'contact') &&
         document.querySelector('#carusel-column').classList.contains('col-lg-12')) {
@@ -40,18 +41,24 @@ function clickButton(button, state) {
         case 'home':
             setTopMenu(document.querySelector('#home'));
             changeLayout(caruselColumn, carusel.outerHTML);
+            loadSliderContent();
+            populateCloud();
+            pushHistory(button, state);
             break;
         case 'about':
             setTopMenu(document.querySelector('#about'));
             changeLayout(caruselColumn, aboutMe);
+            pushHistory(button, state);
             break;
         case 'services':
             setTopMenu(document.querySelector('#services'));
             changeLayout(caruselColumn, services);
+            pushHistory(button, state);
             break;
         case 'events':
             setTopMenu(document.querySelector('#events'));
             changeLayout(caruselColumn, eventi);
+            pushHistory(button, state);
             break;
         case 'theory-practice':
             setTopMenu(document.querySelector('#theory-practice'));
@@ -59,42 +66,50 @@ function clickButton(button, state) {
             resizeMainPage('large');
             changeLayout(caruselColumn, theoryAndPractice);
             createPage();
+            pushHistory(button, state);
             break;
         case 'contact':
             setTopMenu(document.querySelector('#contact'));
             changeLayout(caruselColumn, contact);
             sendMail();
             myMap();
+            pushHistory(button, state);
             break;
         case 'fast-contact':
             fastContact();
             setTopMenu(document.querySelector('#contact'));
             changeLayout(caruselColumn, contact);
+            pushHistory(button, state);
             break;
         case 'transactional':
             setTopMenu(document.querySelector('#services'));
             setServicesMenu(document.querySelector('#transactional'));
             changeLayout(caruselColumn, transactional);
+            pushHistory(button, state);
             break;
         case 'emdr':
             setTopMenu(document.querySelector('#services'));
             setServicesMenu(document.querySelector('#emdr'));
             changeLayout(caruselColumn, emdr);
+            pushHistory(button, state);
             break;
         case 'training':
             setTopMenu(document.querySelector('#services'));
             setServicesMenu(document.querySelector('#training'));
             changeLayout(caruselColumn, training);
+            pushHistory(button, state);
             break;
         case 'relax':
             setTopMenu(document.querySelector('#services'));
             setServicesMenu(document.querySelector('#relax'));
             changeLayout(caruselColumn, relax);
+            pushHistory(button, state);
             break;
         case 'technique':
             setTopMenu(document.querySelector('#services'));
             setServicesMenu(document.querySelector('#technique'));
             changeLayout(caruselColumn, technique);
+            pushHistory(button, state);
             break;
         case 'models':
             articolsCategoryEvents('#models-container', document.querySelector('#models'));
@@ -104,6 +119,12 @@ function clickButton(button, state) {
             break;
         case 'inspiration':
             articolsCategoryEvents('#inspiration-container', document.querySelector('#inspiration'));
+            break;
+        case 'cloud_word_1':
+            clickButton('emdr', true);
+            break;
+        case 'cloud_word_0':
+            clickButton('training', true);
             break;
         case 'bottom-contact-immage':
         case 'bottom-where-immage':

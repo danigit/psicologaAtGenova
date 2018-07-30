@@ -23,9 +23,6 @@ Main components
   position: relative;
   width: 100%;
   max-width: 855px;
-  /*background-image: url("../../img/download/rorschach.jpg");*/
-  background-color: lightblue;
-  background-size: contain;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -73,12 +70,10 @@ Main components
 }
 
 .cd-testimonials p {
-  font-family: "Georgia", serif;
+  font-family: "Bree Serif", serif;
   font-style: normal;
   line-height: 1.4;
-  padding: 10px 5px 10px 5px;
-  margin-bottom: 1em;
-  background-color: black;
+  background-color: #CCCCFF;
   opacity: .8;
 }
 
@@ -94,10 +89,8 @@ Main components
 }
 
 .cd-author img {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  margin-right: 5px;
+  width: 100%;
+  height: 100px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -279,14 +272,13 @@ Main components
 .cd-testimonials-all p {
   position: relative;
   /* backgroun color of the article */
-  background: #0099FF;
-  color: #ffffff;
+  background: #CCCCFF;
+  color: #000000;
   padding: 2em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.4;
   border-radius: 0.25em;
-  margin-bottom: 1em;
 }
 
 .cd-testimonials-all p::after {
@@ -298,12 +290,7 @@ Main components
   height: 0;
   width: 0;
   border: 8px solid transparent;
-  border-top-color: #79b6e4;
-}
-
-.cd-testimonials-all .cd-author {
-  text-align: left;
-  margin-left: 1.5em;
+  border-top-color: #CCCCFF;
 }
 
 .cd-testimonials-all .cd-author img {
@@ -380,6 +367,18 @@ Main components
   font-size: 1.6rem;
 }
 
+.carusel-paragraph{
+  margin-bottom: 50px!important;
+  padding: 30px!important;
+}
+
+.carusel-immage{
+  margin-bottom: -10px;
+  height: 200px;
+  width: 100%;
+}
+
+
 /* The only keyword is to say that the older browsers should ignore this media */
 @media only screen and (min-width: 576px) {
   .cd-testimonials-wrapper {
@@ -408,17 +407,13 @@ Main components
     margin: 0 2% 3em;
   }
 
-  .cd-testimonials-all .cd-author {
-    margin-left: 1em;
-  }
-
   .flex-direction-nav li {
     width: 30px;
   }
 
   .cd-author img {
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 100px;
   }
 
   .cd-author .cd-author-info {
