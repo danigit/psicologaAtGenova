@@ -1,7 +1,8 @@
 //TOP MENU
 //variables declaration
 let navSideMenu = document.querySelector('.nav-side-menu');
-let caruselColumn = document.querySelector('#carusel-column');
+let caruselColumn = document.querySelector('#main-container');
+console.log('carusel: ' + caruselColumn.outerHTML);
 let carusel = '';
 let cloud = '';
 
