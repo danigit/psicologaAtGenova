@@ -15,90 +15,106 @@ function menuInteraction(){
 function clickButton(button, state) {
     console.log("button pressed: " + button);
     scrollToTop();
+    pushHistory(button, state);
+    if((button === 'home' || button === 'about' || button === 'services' || button === 'events' || button === 'contact') &&
+        document.querySelector('#carusel-column').classList.contains('col-lg-12')) {
+        resizeMainPage('small');
+        showHideElement(document.querySelector('#main-right-column'), 'show');
+    }
+
+    let fastContact = document.querySelector('#fast-contact');
+    if(button !== 'contact' && fastContact.display !== 'block')
+        showHideElement(fastContact, 'show');
+    else
+        showHideElement(fastContact, 'hide');
+
+    let sideMenu = document.querySelector('#side-menu');
+    if((button === 'services' || button === 'transactional' || button === 'emdr' || button === 'training' || button === 'relax'
+        || button === 'technique') && sideMenu.style.display !== 'block')
+        showHideElement(sideMenu, 'show');
+    else
+        showHideElement(sideMenu, 'hide');
+
     switch (button){
         case 'home':
             setTopMenu(document.querySelector('#home'));
-            hideElement(document.querySelector('#side-menu'));
-            showElement(document.querySelector('#fast-contact'));
             changeLayout(caruselColumn, carusel.outerHTML);
-            pushHistory('home', state);
             break;
         case 'about':
             setTopMenu(document.querySelector('#about'));
-            hideElement(document.querySelector('#side-menu'));
-            showElement(document.querySelector('#fast-contact'));
             changeLayout(caruselColumn, aboutMe);
-            pushHistory('about', state);
             break;
         case 'services':
             setTopMenu(document.querySelector('#services'));
-            showElement(document.querySelector('#side-menu'));
-            showElement(document.querySelector('#fast-contact'));
             changeLayout(caruselColumn, services);
-            pushHistory('services', state);
             break;
         case 'events':
             setTopMenu(document.querySelector('#events'));
-            hideElement(document.querySelector('#side-menu'));
-            showElement(document.querySelector('#fast-contact'));
             changeLayout(caruselColumn, eventi);
-            pushHistory('events', state);
             break;
         case 'theory-practice':
             setTopMenu(document.querySelector('#theory-practice'));
-            hideElement(document.querySelector('#side-menu'));
-            showElement(document.querySelector('#fast-contact'));
-            pushHistory('theroyAndpractice', state);
+            showHideElement(document.querySelector('#main-right-column'), 'hide');
+            resizeMainPage('large');
+            changeLayout(caruselColumn, theoryAndPractice);
+            createPage();
             break;
         case 'contact':
             setTopMenu(document.querySelector('#contact'));
-            hideElement(document.querySelector('#side-menu'));
-            hideElement(document.querySelector('#fast-contact'));
             changeLayout(caruselColumn, contact);
             sendMail();
             myMap();
-            pushHistory('contact', state);
             break;
         case 'fast-contact':
             fastContact();
             setTopMenu(document.querySelector('#contact'));
-            hideElement(document.querySelector('#side-menu'));
-            pushHistory('contact', state);
+            changeLayout(caruselColumn, contact);
             break;
         case 'transactional':
             setTopMenu(document.querySelector('#services'));
             setServicesMenu(document.querySelector('#transactional'));
             changeLayout(caruselColumn, transactional);
-            showElement(document.querySelector('#side-menu'));
-            pushHistory('transactional', state);
             break;
         case 'emdr':
             setTopMenu(document.querySelector('#services'));
             setServicesMenu(document.querySelector('#emdr'));
             changeLayout(caruselColumn, emdr);
-            showElement(document.querySelector('#side-menu'));
-            pushHistory('emdr', state);
             break;
         case 'training':
             setTopMenu(document.querySelector('#services'));
             setServicesMenu(document.querySelector('#training'));
             changeLayout(caruselColumn, training);
-            showElement(document.querySelector('#side-menu'));
-            pushHistory('training', state);
             break;
         case 'relax':
             setTopMenu(document.querySelector('#services'));
             setServicesMenu(document.querySelector('#relax'));
             changeLayout(caruselColumn, relax);
-            showElement(document.querySelector('#side-menu'));
-            pushHistory('relax', state);
             break;
         case 'technique':
             setTopMenu(document.querySelector('#services'));
             setServicesMenu(document.querySelector('#technique'));
             changeLayout(caruselColumn, technique);
-            showElement(document.querySelector('#side-menu'));
-            pushHistory('technique', state);
+            break;
+        case 'models':
+            let modelContainer = document.querySelector('#models-container');
+            if(modelContainer.style.display === 'none')
+                showHideElement(modelContainer, 'show');
+            else
+                showHideElement(modelContainer, 'hide');
+            break;
+        case 'couple':
+            let coupleContainer = document.querySelector('#couple-container');
+            if(coupleContainer.style.display === 'none')
+                showHideElement(coupleContainer, 'show');
+            else
+                showHideElement(coupleContainer, 'hide');
+            break;
+        case 'inspiration':
+            let inspirationContainer = document.querySelector('#inspiration-container');
+            if(inspirationContainer.style.display === 'none')
+                showHideElement(inspirationContainer, 'show');
+            else
+                showHideElement(inspirationContainer, 'hide');
             break;
         case 'bottom-contact-immage':
         case 'bottom-where-immage':
@@ -110,16 +126,6 @@ function clickButton(button, state) {
         case 'bottom-services-immage':
             clickButton('services', true);
             break;
-    }
-}
-
-function fastContact() {
-    let button = document.querySelector('#fast-contact');
-    if(button.style.display === 'none'){
-        button.style.display = 'block';
-    }else{
-        button.style.display = 'none';
-        navSideMenu.style.display = 'none';
     }
 }
 

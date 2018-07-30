@@ -35,6 +35,7 @@ $url = $_SERVER['REQUEST_URI'];
         <link href="css/rightColumn.css" type="text/css" rel="stylesheet">
         <link href="css/botomHeader.css" type="text/css" rel="stylesheet">
         <link href="css/contentLayout.css" type="text/css" rel="stylesheet">
+        <link href="css/theoryAndPractice.css" type="text/css" rel="stylesheet">
 
         <!-- facebook script and redirect variable-->
         <script>
@@ -161,7 +162,7 @@ $url = $_SERVER['REQUEST_URI'];
                     </div>
 
                     <!-- Right menu container-->
-                    <div class="col-12 col-lg-3 col-md-3 col-sm-12 zero-padding">
+                    <div id="main-right-column" class="col-12 col-lg-3 col-md-3 col-sm-12 zero-padding">
                         <div class="container zero-padding">
                             <img src="img/default/profilo_simo.jpg" class="right-col-profile-image">
                             <div class="right-col-profile-image-footer philosopher-font">
@@ -329,6 +330,7 @@ $url = $_SERVER['REQUEST_URI'];
         <script src="js/websiteInformations.js"></script>
         <script src="js/maps.js"></script>
         <script src="js/contact.js"></script>
+        <script src="js/theoryAndPractice.js"></script>
     </body>
 
 </html>

@@ -75,3 +75,11 @@
 .no-shadow{
     box-shadow: none;
 }
+
+.bottom-border{
+    border-bottom: 1px solid #0099FF;
+}
+
+.margin-20-bottom{
+    margin-bottom: 20px;
+}
