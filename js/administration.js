@@ -30,7 +30,7 @@ document.querySelector('#insertArticleForm').onsubmit = function (event) {
 
     let formMessage = document.querySelector('#formMsgInsertArticle');
     let form = document.querySelector('#insertArticleForm');
-    form.querySelector('#content').innerHTML = string;
+    document.querySelector('#content').value = string;
     let formInput = new FormData(form);
     let fileTypeOk = true;
     Array.from(document.querySelector('#fileUpload').files).forEach(function (file) {

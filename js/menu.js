@@ -1,16 +1,20 @@
 //TOP MENU
 //variables declaration
 let navSideMenu = document.querySelector('.nav-side-menu');
-let caruselColumn = document.querySelector('#main-container');
-console.log('carusel: ' + caruselColumn.outerHTML);
+let caruselColumn = document.querySelector('#carusel-column');
 let carusel = '';
-let cloud = '';
 
 function menuInteraction(){
     mouseHover(document.querySelector('.top-menu-list'), 'a');
     mouseHover(document.querySelector('#bottom-header-row'), 'div');
     document.onclick = function (event) {
-        clickButton(event.target.id, true);
+        let butt = event.target;
+        if(event.target.classList.contains('article-row')) {
+            //theoryMouseEvents(butt.getAttribute('data-name'));
+            openArticle(butt.getAttribute('data-name'));
+        }
+        else
+            clickButton(event.target.id, true);
     }
 }
 

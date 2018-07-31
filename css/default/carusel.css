@@ -378,6 +378,9 @@ Main components
   width: 100%;
 }
 
+#carusel-column{
+  z-index: 0;
+}
 
 /* The only keyword is to say that the older browsers should ignore this media */
 @media only screen and (min-width: 576px) {

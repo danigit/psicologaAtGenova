@@ -9,12 +9,12 @@ class get_article_content extends cs_interaction
     protected function input_elaboration(){
         $this->title = $this->validate_string('title');
         if(!$this->title)
-            $this->json_error("Impossibile reccuperare il titolo dell'articolo");
+            $this->json_error("Impossibile reccuperare il titolo dell'articolo: " . $this->title);
     }
 
     protected function get_db_informations(){
 
-        $this->content = file_get_contents("http://localhost/articles/" . $this->title . '.txt');
+        $this->content = file_get_contents("http://localhost/psicologaAtGenova/articlesText/" . $this->title . '.txt');
 
         if(is_error($this->content))
             $this->json_error("Errore sconosciuto");

@@ -62,8 +62,8 @@ class insert_article extends cs_interaction
 
         if (!empty($this->content)) {
             $dir = '../../articlesText/';
-            $filename = preg_replace('/\s+/', '_', $this->name) . '.txt';
-            $handle = fopen($dir . $filename, "w");
+            $filename = preg_replace('/\s+/', '', $this->name) . '.txt';
+            $handle = fopen($dir . strtolower($filename), "w");
             fwrite($handle, $this->content);
             fclose($handle);
         }else{
