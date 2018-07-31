@@ -1,6 +1,5 @@
 window.onload = function () {
     menuInteraction();
-    document.querySelector('.right-col-profile-image-footer').innerHTML = "<p class='gray-text font-large'>LA VITA É UN <b class='porpora-text'>VIAGGIO</b> NON UNA <b class='porpora-text'>DESTINAZIONE</b></p>"
     carusel = document.getElementById('main-carusel-container');
     setTopMenu(document.querySelector('#home'));
 
@@ -8,40 +7,43 @@ window.onload = function () {
         console.log(url);
         switch (url){
             case '/psicologaAtGenova/home':
-                clickButton('home');
+                clickButton('home', false);
                 break;
             case '/psicologaAtGenova/about':
-                clickButton('about');
+                clickButton('about', false);
                 break;
             case '/psicologaAtGenova/services':
-                clickButton('services');
+                clickButton('services', false);
                 break;
             case '/psicologaAtGenova/events':
-                clickButton('events');
+                clickButton('events', false);
                 break;
-            case '/psicologaAtGenova/theoryAndPractice':
-                clickButton('theory-practice');
+            case '/psicologaAtGenova/theory-practice':
+                clickButton('theory-practice', false);
                 break;
             case '/psicologaAtGenova/contact':
-                clickButton('contact');
+                clickButton('contact', false);
                 break;
             case '/psicologaAtGenova/transactional':
-                clickButton('transactional');
+                clickButton('transactional', false);
                 break;
             case '/psicologaAtGenova/emdr':
-                clickButton('emdr');
+                clickButton('emdr', false);
                 break;
             case '/psicologaAtGenova/training':
-                clickButton('training');
+                clickButton('training', false);
                 break;
             case '/psicologaAtGenova/relax':
-                clickButton('relax');
+                clickButton('relax', false);
                 break;
             case '/psicologaAtGenova/technique':
-                clickButton('technique');
+                clickButton('technique', false);
+                break;
+            case '/psicologaAtGenova/emdr_le8fasideltrattamento':
+                openArticle('emdr:le8fasideltrattamento');
                 break;
             default:
-                clickButton('home');
+                clickButton('home', false);
         }
         url = '';
     }

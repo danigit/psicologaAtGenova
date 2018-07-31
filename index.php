@@ -30,6 +30,7 @@ $url = $_SERVER['REQUEST_URI'];
         <!--fonts CDN-->
         <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
         <!-- custom css-->
         <link href="css/default/reset.css" type="text/css" rel="stylesheet">
@@ -126,7 +127,7 @@ $url = $_SERVER['REQUEST_URI'];
                                 <p>Dott.ssa</p>
                             </div>
                             <div class="container banner-name">
-                                <p>Simona Bettoli</p>
+                                <p class="philosopher-font">Simona Bettoli</p>
                             </div>
                             <div class="container text-lg-right font-x-large">
                                 <p>Psicologa</p>
@@ -216,12 +217,12 @@ $url = $_SERVER['REQUEST_URI'];
 
                         <!-- Social container -->
                         <div class="row social-container">
-                            <div class="col-4 col-lg-4 col-md-4 col-sm-4 social">
-                                <img src="img/default/icona_linkedin.png">
+                            <div id="linkedin" class="col-4 col-lg-4 col-md-4 col-sm-4 social">
+                                <img src="img/default/icona_linkedin.png" class="prevent-pointer">
                             </div>
 
-                            <div class="col-4 col-lg-4 col-md-4 col-sm-4 social">
-                                <img src="img/default/icona_fb.png">
+                            <div id="facebook" class="col-4 col-lg-4 col-md-4 col-sm-4 social">
+                                <img src="img/default/icona_fb.png" class="prevent-pointer">
                             </div>
 
                             <div class="col-4 col-lg-4 col-md-4 col-sm-4 social">

@@ -7,11 +7,14 @@ let carusel = '';
 function menuInteraction(){
     mouseHover(document.querySelector('.top-menu-list'), 'a');
     mouseHover(document.querySelector('#bottom-header-row'), 'div');
+    mouseHover(document.querySelector('#linkedin'), 'img');
+    mouseHover(document.querySelector('#facebook'), 'div');
     document.onclick = function (event) {
         let butt = event.target;
         if(event.target.classList.contains('article-row')) {
             //theoryMouseEvents(butt.getAttribute('data-name'));
-            openArticle(butt.getAttribute('data-name'));
+            openArticle(event.target.getAttribute('data-name'));
+            pushHistory(event.target.getAttribute('data-name').replace(':', '_'), true);
         }
         else
             clickButton(event.target.id, true);
@@ -48,21 +51,29 @@ function clickButton(button, state) {
             loadSliderContent();
             populateCloud();
             pushHistory(button, state);
+            document.querySelector('.right-col-profile-image-footer').innerHTML = "<p class='gray-text font-large'>" +
+                "LA VITA É UN <b class='porpora-text'>VIAGGIO</b> NON UNA <b class='porpora-text'>DESTINAZIONE</b></p>"
             break;
         case 'about':
             setTopMenu(document.querySelector('#about'));
             changeLayout(caruselColumn, aboutMe);
             pushHistory(button, state);
+            document.querySelector('.right-col-profile-image-footer').innerHTML = "<p class='gray-text font-large'>" +
+                "NON VEDIAMO LE COSE PER COME <b class='porpora-text'>SONO</b> MA PER COME <b class='porpora-text'>SIAMO</b></p>"
             break;
         case 'services':
             setTopMenu(document.querySelector('#services'));
             changeLayout(caruselColumn, services);
             pushHistory(button, state);
+            document.querySelector('.right-col-profile-image-footer').innerHTML = "<p class='gray-text font-large'>SE " +
+                "<b class='porpora-text'>SAI</b> DI <b class='porpora-text'>NON SAPERE</b>, SAI GIA' MOLTO</p>"
             break;
         case 'events':
             setTopMenu(document.querySelector('#events'));
             changeLayout(caruselColumn, eventi);
             pushHistory(button, state);
+            document.querySelector('.right-col-profile-image-footer').innerHTML = "<p class='gray-text font-large'>" +
+                "LA VERA FORZA NON SI MISURA DA CHI HAI <b class='porpora-text'>SCONFITTO</b>, MA DA COSA HAI <b class='porpora-text'>PROTETTO</b></p>"
             break;
         case 'theory-practice':
             setTopMenu(document.querySelector('#theory-practice'));
@@ -78,6 +89,8 @@ function clickButton(button, state) {
             sendMail();
             myMap();
             pushHistory(button, state);
+            document.querySelector('.right-col-profile-image-footer').innerHTML = "<p class='gray-text font-large'>" +
+                "HO PAURA DELLE MIE <b class='porpora-text'>SENSAZIONI</b>, DICONO SEMPRE LA <b class='porpora-text'>VERITA'</b></p>"
             break;
         case 'fast-contact':
             fastContact();
@@ -130,6 +143,12 @@ function clickButton(button, state) {
         case 'cloud_word_0':
             clickButton('training', true);
             break;
+        case 'facebook':
+            window.open('https://www.facebook.com/psicologaatgenova/', '_blank');
+            break;
+        case 'linkedin':
+            window.open('https://www.linkedin.com/in/simona-bettoli-738435128', '_blank');
+            break;
         case 'bottom-contact-immage':
         case 'bottom-where-immage':
             clickButton('contact', true);
@@ -140,6 +159,9 @@ function clickButton(button, state) {
         case 'bottom-services-immage':
             clickButton('services', true);
             break;
+        default:
+            //TODO trovare un modo piu furbo per creare la cronologia degli articoli
+            openArticle(button.replace('_', ':'));
     }
 }
 

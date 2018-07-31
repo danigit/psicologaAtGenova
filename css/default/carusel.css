@@ -382,6 +382,10 @@ Main components
   z-index: 0;
 }
 
+#carusel-container{
+  height: 460px;
+  margin-top: 1em!important;
+}
 /* The only keyword is to say that the older browsers should ignore this media */
 @media only screen and (min-width: 576px) {
   .cd-testimonials-wrapper {

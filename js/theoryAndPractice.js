@@ -9,7 +9,7 @@ let theoryAndPractice =
     '<div id="articles" class="col col-lg-12 col-md-12 col-sm-12">' +
     //
     '<div id="models" class="row">' +
-    '<div class="category menu-content-element full-width text-center font-x-large">' +
+    '<div class="category menu-content-element full-width text-center font-x-large prevent-pointer philosopher-font bold-text">' +
     'MODELLI TEORICI <img class="arrow" src="../psicologaAtGenova/img/default/freccia_up.png">' +
     '</div></div> ' +
     //
@@ -20,7 +20,7 @@ let theoryAndPractice =
     '</div> ' +
     //
     '<div id="couple" class="row">' +
-    '<div class="category menu-content-element full-width center-text font-x-large">' +
+    '<div class="category menu-content-element full-width center-text font-x-large prevent-pointer philosopher-font bold-text">' +
     'PSICOLOGIA DI COPPIA <img class="arrow" src="../psicologaAtGenova/img/default/freccia_up.png">' +
     '</div></div> ' +
     //
@@ -31,7 +31,7 @@ let theoryAndPractice =
     '</div> ' +
     //
     '<div id="inspiration" class="row">' +
-    '<div class="category menu-content-element full-width center-text font-x-large">' +
+    '<div class="category menu-content-element full-width center-text font-x-large prevent-pointer philosopher-font bold-text">' +
     'ISPIRAZIONI <img class="arrow" src="../psicologaAtGenova/img/default/freccia_up.png">' +
     '</div></div> ' +
     //
@@ -88,12 +88,12 @@ function createArticleRow(article) {
 
         '</div> ' +
         '<div class="col col-lg-11 col-md-11 col-sm-11 font-large philosopher-font blue-text prevent-pointer">' +
-        '<p class="prevent-pointer">' + article.title + '</p>' +
+        '<p class="prevent-pointer philosopher-font bold-text">' + article.title + '</p>' +
         '</div> ' +
         '</div> ' +
         //
         '<div class="row prevent-pointer">' +
-        '<p class="prevent-pointer">' + article.description + '</p>' +
+        '<p class="prevent-pointer open-font">' + article.description + '</p>' +
         '</div> ' +
         '</div> ' +
         '</div>';

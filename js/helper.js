@@ -8,7 +8,10 @@ function showHideElement(elem, action) {
 function mouseHover(element, tag) {
     let childrens = Array.prototype.slice.call(element.children);
     childrens.forEach(function (child) {
-        changePointer(child.getElementsByTagName(tag)[0])
+        if(child.firstChild)
+            changePointer(child.getElementsByTagName(tag)[0]);
+        else
+            changePointer(child);
     });
     changePointer(document.querySelector('#fast-contact'));
 }

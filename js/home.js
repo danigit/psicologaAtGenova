@@ -88,7 +88,8 @@ let words = [
 
 function addCarousel(title, content, immage, url) {
 
-    var slide = '<li><img src="' + immage + '" class="carusel-immage"><p class="carusel-paragraph"><a href="' + url + '" style="color: black;"><span id="carousel-title">' + title + '</span><br><br>'
+    var slide = '<li><img src="' + immage + '" class="carusel-immage"><p class="carusel-paragraph open-font">' +
+        '<a href="' + url + '" class="black-text"><span id="carousel-title" class="philosopher-font black-text">' + title + '</span><br><br>'
         + content + '</a></p></li>';
 
     var allArticles = '<li class="cd-testimonials-item" id="' + title + '" >'
