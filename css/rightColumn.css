@@ -1,3 +1,6 @@
+#main-right-column{
+    z-index: -1;
+}
 .right-col-profile-image{
     margin: 10px 0 0 0;
     box-shadow: 0 9px 6px -1px rgba(124, 124, 125, 1);
@@ -18,8 +21,8 @@
     padding: 3px;
     text-align: center;
     color: #808080;
-    background-color: #CCCCFF;
     border: 2px solid #0099FF;
+    box-shadow: inset 0px 0px 10px #0099FF;
     border-radius: 5px;
 }
 
@@ -68,4 +71,8 @@
 .btn-primary:not([disabled]):not(.disabled):active{
     background-color: #6666CC!important;
     border-color: #6666CC!important;
+}
+
+#facebook img, #linkedin img{
+    padding: 0 20px;
 }

@@ -1,5 +1,7 @@
 .bottom-header-container{
-    padding-top: 40px;
+    padding-top: 30px;
+    margin-top: 30px;
+    z-index: -1;
 }
 
 .bottom-image{
@@ -22,4 +24,8 @@
 
 .bottom-text-container h4{
     margin-bottom: 15px;
+}
+
+.bottom-column{
+    z-index: -1;
 }

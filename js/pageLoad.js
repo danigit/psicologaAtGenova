@@ -41,6 +41,9 @@ window.onload = function () {
                 break;
             case '/psicologaAtGenova/emdr_le8fasideltrattamento':
                 openArticle('emdr:le8fasideltrattamento');
+                showHideElement(document.querySelector('#main-right-column'), 'hide');
+                resizeMainPage('large');
+                setTopMenu(document.querySelector('#theory-practice'));
                 break;
             default:
                 clickButton('home', false);

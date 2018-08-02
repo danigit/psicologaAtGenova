@@ -1,3 +1,8 @@
+.row{
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
 .full-width{
     width: 100%;
 }
@@ -36,7 +41,7 @@
 }
 
 .auto-margin{
-    margin: auto;
+    margin: auto!important;
 }
 
 .porpora-text{

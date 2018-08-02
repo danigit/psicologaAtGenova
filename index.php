@@ -41,6 +41,7 @@ $url = $_SERVER['REQUEST_URI'];
         <link href="css/botomHeader.css" type="text/css" rel="stylesheet">
         <link href="css/contentLayout.css" type="text/css" rel="stylesheet">
         <link href="css/theoryAndPractice.css" type="text/css" rel="stylesheet">
+        <link href="css/responsive.css" type="text/css" rel="stylesheet">
 
         <!-- facebook script and redirect variable-->
         <script>
@@ -51,7 +52,7 @@ $url = $_SERVER['REQUEST_URI'];
                 var js, fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id)) return;
                 js = d.createElement(s); js.id = id;
-                js.src = 'https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v3.0';
+                js.src = 'https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v3.1';
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
         </script>
@@ -62,7 +63,7 @@ $url = $_SERVER['REQUEST_URI'];
             <div class="header-container">
                 <nav class="navbar top-header">
                     <div class="container">
-                        <div class="row full-width philosopher-font">
+                        <div class="row full-width philosopher-font small-banner">
                             <div class="col col-12 col-lg-6 col-md-12 col-sm-12">
                                 <div class="text-xl-lef gray-text">
                                     Dott.ssa <b>Simona Bettoli</b> | Psicologa@Genova - Via XXV Aprile 8/6
@@ -120,7 +121,7 @@ $url = $_SERVER['REQUEST_URI'];
                 <div class="container zero-padding">
                     <div class="row auto-margin">
                         <div class="col col-3 col-lg-3 col-md-3 col-sm-3">
-                            <img src="img/default/logo_150.png">
+                            <img src="img/default/logo_150.png" class="logo-immage">
                         </div>
                         <div class="col col-lg-9 col-md-9 col-sm-9 banner-text philosopher-font zero-padding" id="banner-text">
                             <div class="container font-x-large">
@@ -130,7 +131,7 @@ $url = $_SERVER['REQUEST_URI'];
                                 <p class="philosopher-font">Simona Bettoli</p>
                             </div>
                             <div class="container text-lg-right font-x-large">
-                                <p>Psicologa</p>
+                                <p class="float-right">Psicologa</p>
                             </div>
                         </div>
                     </div>
@@ -142,7 +143,7 @@ $url = $_SERVER['REQUEST_URI'];
         <main>
             <div class="container zero-padding">
                 <div class="row" id="main-container">
-                    <div class="col-12 col-lg-9 col-md-9 col-sm-12" id="carusel-column">
+                    <div class="col-12 col-lg-9 col-md-12 col-sm-12" id="carusel-column">
                         <div class="container zero-padding no-margin full-width" id="main-carusel-container">
                             <!-- Slider -->
                             <div class="cd-testimonials-wrapper cd-container z-depth-1 zero-padding" id="carusel-container">
@@ -177,7 +178,7 @@ $url = $_SERVER['REQUEST_URI'];
                     </div>
 
                     <!-- Right menu container-->
-                    <div id="main-right-column" class="col-12 col-lg-3 col-md-3 col-sm-12 zero-padding">
+                    <div id="main-right-column" class="col-12 col-lg-3 col-md-12 col-sm-12 zero-padding">
                         <div class="container zero-padding">
                             <img src="img/default/profilo_simo.jpg" class="right-col-profile-image">
                             <div class="right-col-profile-image-footer philosopher-font">
@@ -217,18 +218,15 @@ $url = $_SERVER['REQUEST_URI'];
 
                         <!-- Social container -->
                         <div class="row social-container">
-                            <div id="linkedin" class="col-4 col-lg-4 col-md-4 col-sm-4 social">
+                            <div id="linkedin" class="col-6 col-lg-6 col-md-6 col-sm-6 social">
                                 <img src="img/default/icona_linkedin.png" class="prevent-pointer">
                             </div>
 
-                            <div id="facebook" class="col-4 col-lg-4 col-md-4 col-sm-4 social">
+                            <div id="facebook" class="col-6 col-lg-6 col-md-6 col-sm-6 social">
                                 <img src="img/default/icona_fb.png" class="prevent-pointer">
-                            </div>
-
-                            <div class="col-4 col-lg-4 col-md-4 col-sm-4 social">
                                 <div class="facebook">
-                                    <div class="fb-like" data-href="https://www.facebook.com/psicologaatgenova/" data-width="100" data-layout="box_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
-                                </div>
+                                    <div class="fb-like" data-href="https://www.facebook.com/psicologaatgenova/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>                                </div>
+
                             </div>
                         </div>
                         <div class="col-12 col-lg-12 col-md-12 col-sm-12">
@@ -240,12 +238,12 @@ $url = $_SERVER['REQUEST_URI'];
             </div>
             <div class="container bottom-header-container zero-padding philosopher-font">
                 <div class="row" id="bottom-header-row">
-                    <div class="col col-lg-3 col-md-3">
+                    <div class="col col-lg-3 col-md-3 bottom-column">
                         <div class="bottom-image-container" id="bottom-contact-immage">
                             <img src="img/default/icona_contatti.png" class="bottom-image prevent-pointer">
                         </div>
                         <div class="bottom-text-container">
-                            <h4 class="center-text font-x-large">CONTATTI</h4>
+                            <h4 class="center-text font-x-large philosopher-font">CONTATTI</h4>
 
                             <p class="center-text">Tel: 333 87.37.231<br>
                                 Email: <a href="mailto:psicologaatgenova@gmail.com?Subject=" target="_top" class="email">
@@ -253,33 +251,33 @@ $url = $_SERVER['REQUEST_URI'];
                             </p>
                         </div>
                     </div>
-                    <div class="col col-lg-3 col-md-3">
+                    <div class="col col-lg-3 col-md-3 bottom-column">
                         <div class="bottom-image-container" id="bottom-where-immage">
                             <img src="img/default/icona_dove_sono.png" class="bottom-image prevent-pointer" id="bottom-dove">
                         </div>
                         <div class="bottom-text-container">
-                            <h4 class="center-text font-x-large">DOVE SONO</h4>
+                            <h4 class="center-text font-x-large philosopher-font">DOVE SONO</h4>
 
                             <p class="center-text">Via XXV Aprile, 8/6<br>
                                 Genova, Liguria, CAP 16121
                         </div>
                     </div>
-                    <div class="col col-lg-3 col-md-3">
+                    <div class="col col-lg-3 col-md-3 bottom-column">
                         <div class="bottom-image-container" id="bottom-about-immage">
                             <img src="img/default/icona_chi_sono.png" class="bottom-image prevent-pointer" id="bottom-chi">
                         </div>
                         <div class="bottom-text-container">
-                            <h4 class="center-text font-x-large">CHI SONO</h4>
+                            <h4 class="center-text font-x-large philosopher-font">CHI SONO</h4>
 
                             <p class="center-text">Psicologa<br>Analisi Transazionale - EMDR</p>
                         </div>
                     </div>
-                    <div class="col col-lg-3 col-md-3">
+                    <div class="col col-lg-3 col-md-3 bottom-column">
                         <div class="bottom-image-container" id="bottom-services-immage">
                             <img src="img/default/icona_servizi.png" class="bottom-image prevent-pointer" id="bottom-services">
                         </div>
                         <div class="bottom-text-container">
-                            <h4 class="center-text font-x-large">SERVIZI</h4>
+                            <h4 class="center-text font-x-large philosopher-font">SERVIZI</h4>
 
                             <p class="center-text">Colloqui psicologici<br>individuali e di coppia</p>
                         </div>

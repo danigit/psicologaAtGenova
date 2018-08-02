@@ -9,17 +9,17 @@ function mouseHover(element, tag) {
     let childrens = Array.prototype.slice.call(element.children);
     childrens.forEach(function (child) {
         if(child.firstChild)
-            changePointer(child.getElementsByTagName(tag)[0]);
+            changePointer(child.getElementsByTagName(tag)[0], '#0099FF');
         else
             changePointer(child);
     });
-    changePointer(document.querySelector('#fast-contact'));
+    changePointer(document.querySelector('#fast-contact'), '#6666CC');
 }
 
-function changePointer(elem) {
+function changePointer(elem, color) {
     elem.onmouseenter = function(){
         elem.style.cursor = 'pointer';
-        elem.style.color = '#0099FF';
+        elem.style.color = color;
     };
     elem.onmouseleave = function () {
         elem.style.color = "#808080"

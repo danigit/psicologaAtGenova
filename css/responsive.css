@@ -1,0 +1,78 @@
+@media (min-width: 992px) and (max-width: 1200px){
+    .small-banner{
+        font-size: small;
+    }
+
+    header{
+        padding-top: 78px;
+    }
+
+    #fast-contact{
+        font-size: medium;
+    }
+
+    #cloud{
+        font-size: xx-small;
+    }
+
+    .bottom-text-container{
+        font-size: smaller;
+    }
+
+    .font-x-large{
+        font-size: large;
+    }
+
+    .bottom-image{
+        padding: 0 45px;
+    }
+
+    .cd-testimonials p{
+        line-height: 1.4;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    header{
+        padding-top: 49px;
+    }
+
+    .logo-immage{
+        padding: 10px;
+    }
+
+    .right-col-profile-image, #cloud, .top-header{
+        display: none;
+    }
+
+    .cd-testimonials p{
+        line-height: 1.4;
+        font-size: 1.2rem;
+    }
+
+    .social-container{
+        display: none;
+    }
+
+    .top-menu-item{
+        font-size: small;
+    }
+
+    .bottom-image{
+        padding: 0 45px;
+    }
+
+    .bottom-text-container{
+        font-size: smaller;
+    }
+
+    .font-x-large{
+        font-size: large;
+    }
+
+    .email{
+        font-size: x-small;
+    }
+}

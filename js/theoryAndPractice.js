@@ -112,7 +112,6 @@ function openArticle(title) {
                     + '<div class="col-12 col-lg-12 col-md-12 col-sm-12" id="left-column">'
                     + '<div id="content">' + output;
                 article += '</div></div></div>';
-                console.log('article: ' + article);
                 changeLayout(caruselColumn, article);
             }
         }

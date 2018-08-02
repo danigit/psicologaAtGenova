@@ -9,7 +9,7 @@ var aboutMe = '<div class="container">'
     + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font font-large">'
     + '<p><b><i>&lt;&lt;Perché hai deciso di fare la psicologa?&gt;&gt;    &lt;&lt;Per capire come funziona la mente e '
     + 'aiutare le persone!&gt;&gt; </i></b></p><br>'
-    + "<h2 class='d-inline' style='font-family: Philosopher'>H</h2>"
+    + "<h2 class='d-inline philosopher-font'>H</h2>"
     + "<p class='d-inline'>o sempre avuto una grande curiosità verso tutto ciò che riguarda la psiche: "
     + "trovare le risposte alle domande su come funziona la mente, perché facciamo quello che facciamo e come "
     + "possiamo smettere di ripetere quello che non ci fa stare bene,"
@@ -68,7 +68,7 @@ var services = '<div class="container">'
     + '</div> </div>'
     + '<div class="row">'
     + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font font-large">'
-    + "<h2 class='d-inline' style='font-family: Philosopher'>N</h2><p class='d-inline'>ella mia pratica clinica mi "
+    + "<h2 class='d-inline philosopher-font'>N</h2><p class='d-inline'>ella mia pratica clinica mi "
     + "occupo di adolescenti, adulti e coppie.</p><br><br>"
     + "<p>In particolare mi dedico ai seguenti ambiti:</p><br>"
 
@@ -105,7 +105,7 @@ var eventi = '<div class="container">'
     + '</div></div> '
     + '<div class="row" >'
     + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font font-large"> '
-    + "<h2 class='d-inline' style='font-family: Philosopher'>C</h2><p class='d-inline'>onsiderate le numerose richieste "
+    + "<h2 class='d-inline philosopher-font'>C</h2><p class='d-inline'>onsiderate le numerose richieste "
     + "pervenute, in autunno verranno riproposti gli incontri su <b>ansia</b> e <b>depressione</b>, arricchiti dalle "
     + "osservazioni e dagli spunti forniti dai partecipanti all’edizione primaverile.</p><br><br>"
     + "<p>Verranno proposti inoltre incontri su altri argomenti di interesse psicologico.</p><br>"
@@ -117,7 +117,7 @@ var eventi = '<div class="container">'
     + '</div></div> '
     + '<div class="row"> '
     + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font font-large"> '
-    + "<h2 class='d-inline' style='font-family: Philosopher'>Praticando la psicologia</h2><br><b><br>"
+    + "<h2 class='d-inline philosopher-font'>Praticando la psicologia</h2><br><b><br>"
     + "<p>Incontri gratuiti</b> teorico-pratici sui temi dell\'ansia e della depressione</p><br>"
     + '<p>SABATO 3 MARZO 2018 - H 15:00</p><br><p>SABATO7 APRILE 2018 - H 15:00</p><br><br>'
     + '<img src="../psicologaAtGenova/img/default/praticando.jpg" class="blue-border"><br><br>'
@@ -199,7 +199,7 @@ var transactional = '<div class="container">'
     + '</div></div> '
     + '<div class="row"> '
     + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font font-large"> '
-    + "<h2 class='d-inline' style='font-family: Philosopher'>L</h2><p class='d-inline'>\’approccio Analitico Transazionale viene "
+    + "<h2 class='d-inline philosopher-font'>L</h2><p class='d-inline'>\’approccio Analitico Transazionale viene "
     + "utilizzato nel trattamento di disturbi psicologici di ogni tipo, essendo un metodo di psicoterapia <b>individuale</b>, "
     + "di <b>coppia</b>, di <b>gruppo</b> e <b>familiare</b> di comprovata efficacia.</p><br><br>"
     + "<p>Si tratta di una psicoterapia integrata, che attraverso l’utilizzo di tecniche <b>cognitive</b>, "
@@ -229,8 +229,8 @@ var emdr = '<div class="container">'
     + '<img src="../psicologaAtGenova/img/default/EMDR.jpg" class="blue-border"><br><br>'
     + '</div></div> '
     + '<div class="row"'
-    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font font-large">'
-    + "<h2 class='d-inline' style='font-family: Philosopher'>L</h2><p class='d-inline'>\’EMDR (Eye Movement Desensitization "
+    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font font-large"> '
+    + "<h2 class='d-inline philosopher-font'>L</h2><p class='d-inline'>’EMDR (Eye Movement Desensitization "
     + "and Reprocessing, in italiano: Desensibilizzazione e Rielaborazione attraverso i Movimenti Oculari) è un metodo psicoterapico "
     + "strutturato che facilita il trattamento di diverse psicopatologie e problemi legati sia ad <b>eventi traumatici</b>, "
     + "che a esperienze più comuni ma <b>emotivamente stressanti</b>.</p><br>"
@@ -260,7 +260,7 @@ var training = '<div class="container">'
     + '</div></div> '
     + '<div class="row"> '
     + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font font-large"> '
-    + "<h2 class='d-inline' style='font-family: Philosopher'>I</h2><p class='d-inline'>l Training Autogeno è una tecnica "
+    + "<h2 class='d-inline philosopher-font'>I</h2><p class='d-inline'>l Training Autogeno è una tecnica "
     + "di auto-distensione psicofisiologica, mirata alla gestione dello stress e delle emozioni, utile nel miglioramento "
     + "del benessere, di performance sportive, ma anche nel trattamento dei disturbi d\’ansia e psicosomatici. Si basa "
     + "sull\’apprendimento (training) di una serie di esercizi di concentrazione psichica, e sul concetto di \“autogenicità\”,"
@@ -283,7 +283,7 @@ var relax = '<div class="container">'
     + '</div></div> '
     + '<div class="row"> '
     + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font font-large"> '
-    + "<h2 class='d-inline' style='font-family: Philosopher'>S</h2><p class='d-inline'>pesso, sono proprio le persone "
+    + "<h2 class='d-inline philosopher-font'>S</h2><p class='d-inline'>pesso, sono proprio le persone "
     + "che avrebbero maggior bisogno di lavorare con tecniche di rilassamento psico-corporeo (perché stressate o vittime "
     + "di ansia e panico) che non si sentono a loro agio nell\’usare queste tecniche, poiché credono che sia importante "
     + "essere sempre vigili e in allerta per guardarsi da eventuali pericoli. Hanno paura di perdere il controllo e di "
@@ -321,7 +321,7 @@ var technique = '<div class="container">'
     + '</div></div> '
     + '<div class="row"> '
     + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font font-large"> '
-    + "<h2 class='d-inline' style='font-family: Philosopher'>T</h2><p class='d-inline'>ali tecniche mirano a riattivare "
+    + "<h2 class='d-inline philosopher-font'>T</h2><p class='d-inline'>ali tecniche mirano a riattivare "
     + "la percezione e le risorse interiori orientando la mente al corpo e alle immagini interiori, stimolando la "
     + "<b>creatività</b> e la <b>consapevolezza di sé</b>, delle proprie emozioni e delle proprie risorse.</p><br><br>"
     + "<p>Nel creare un\’immagine, mnemonica o irreale, il cervello causa cambiamenti corporei concreti e cambiamenti "
