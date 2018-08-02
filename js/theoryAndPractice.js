@@ -77,18 +77,18 @@ function createArticleRows(articles) {
 
 function createArticleRow(article) {
     return '<div class="row bottom-border article-row" data-name="' + article.title.replace(/\s/g, '').toLowerCase() + '">' +
-        '<div class="col col-lg-3 col-md-3 col-sm-3 prevent-pointer">' +
+        '<div class="col col-lg-3 prevent-pointer">' +
         '<img src="' + article.images_path + '" class="blue-border prevent-pointer">' +
         '</div>' +
         //
-        '<div class="col col-lg-9 col-md-9 col-sm-9 prevent-pointer">' +
+        '<div class="col col-lg-9 col-md-12 col-sm-12 prevent-pointer">' +
         //
         '<div class="row margin-20-bottom prevent-pointer">' +
-        '<div class="col col-lg-1 col-md-1 col-sm-1 prevent-pointer">' +
+        '<div class="col col-lg-1 col-md-1 prevent-pointer">' +
 
         '</div> ' +
-        '<div class="col col-lg-11 col-md-11 col-sm-11 font-large philosopher-font blue-text prevent-pointer">' +
-        '<p class="prevent-pointer philosopher-font bold-text">' + article.title + '</p>' +
+        '<div class="col col-lg-11 col-md-12 col-sm-12 font-large philosopher-font blue-text prevent-pointer">' +
+        '<p class="prevent-pointer philosopher-font text-center bold-text">' + article.title + '</p>' +
         '</div> ' +
         '</div> ' +
         //

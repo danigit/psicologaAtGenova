@@ -57,6 +57,9 @@ window.onload = function () {
     });
 
     populateCloud();
+
+    document.querySelector('#carusel-column').classList.remove('col-md-9');
+    document.querySelector('#carusel-column').classList.add('col-md-12');
 };
 
 function populateCloud() {

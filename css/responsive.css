@@ -29,7 +29,7 @@
 
     .cd-testimonials p{
         line-height: 1.4;
-        font-size: 1.2rem;
+        font-size: 1.0rem;
     }
 }
 
@@ -43,17 +43,13 @@
         padding: 10px;
     }
 
-    .right-col-profile-image, #cloud, .top-header{
+    .right-col-profile-image, #cloud, .top-header, .social-container{
         display: none;
     }
 
     .cd-testimonials p{
         line-height: 1.4;
         font-size: 1.2rem;
-    }
-
-    .social-container{
-        display: none;
     }
 
     .top-menu-item{
@@ -74,5 +70,103 @@
 
     .email{
         font-size: x-small;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    header{
+        padding-top: 58px;
+    }
+
+    .menu-collapse-button-immage{
+        width: 40px;
+    }
+
+    .collapse.show{
+        display: inherit;
+    }
+
+    .top-menu-list{
+        border-bottom: 0;
+        border-radius: 0;
+    }
+
+    .banner-text{
+        margin: auto;
+    }
+
+    .right-col-profile-image, #cloud, .top-header, .small-text-banner, .facebook, .bottom-header-container{
+        display: none;
+    }
+
+    .banner-name{
+        font-size: 55px;
+    }
+}
+
+@media (min-width: 399px) and (max-width: 575px) {
+    .right-col-profile-image, #cloud, .top-header, .small-text-banner, .facebook, .bottom-header-container, .text-lg-right{
+        display: none;
+    }
+
+    .menu-collapse-button-immage{
+        width: 40px;
+    }
+
+    .collapse.show{
+        display: inherit;
+    }
+
+    .top-menu-list{
+        border-bottom: 0;
+        border-radius: 0;
+    }
+
+    .banner-immage{
+        display: none;
+    }
+
+    .banner-name{
+        font-size: 55px;
+    }
+
+    .banner-text{
+        margin: auto;
+    }
+
+}
+
+@media (max-width: 398px) {
+    .right-col-profile-image, #cloud, .top-header, .small-text-banner, .facebook, .bottom-header-container, .text-lg-right{
+        display: none;
+    }
+
+    .menu-collapse-button-immage{
+        width: 40px;
+    }
+
+    .collapse.show{
+        display: inherit;
+    }
+
+    .top-menu-list{
+        border-bottom: 0;
+        border-radius: 0;
+    }
+
+    .banner-immage{
+        display: none;
+    }
+
+    .banner-text{
+        margin: auto;
+    }
+
+    .banner-name{
+        font-size: 45px;
+    }
+
+    .menu-content-element{
+        font-size: initial;
     }
 }

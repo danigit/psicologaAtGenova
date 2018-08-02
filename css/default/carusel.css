@@ -383,7 +383,6 @@ Main components
 }
 
 #carusel-container{
-  height: 460px;
   margin-top: 1em!important;
 }
 /* The only keyword is to say that the older browsers should ignore this media */

@@ -96,3 +96,11 @@
 .position-absolute{
     position: absolute;
 }
+
+.fit-content{
+    width: fit-content;
+}
+
+.margin-0-left{
+    margin-left: 0;
+}

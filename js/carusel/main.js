@@ -21,6 +21,13 @@ function loadSlider() {
         console.log('see all');
         showHideElement(document.querySelector('.navbar-expand-md'), 'hide');
         showHideElement(document.querySelector('.top-header'), 'hide');
+        document.querySelector('#main-right-column').style.zIndex = -1;
+        let bottomContainer = document.querySelector('#bottom-header-row').children;
+        console.log('header ' + bottomContainer.children);
+        Array.from(bottomContainer).forEach(function (child) {
+            console.log('child: ' + child);
+            child.style.zIndex = -1;
+        });
         $('body').css('overflow', 'hidden');
     });
 
@@ -29,6 +36,11 @@ function loadSlider() {
         $('.cd-testimonials-all').removeClass('is-visible');
         showHideElement(document.querySelector('.navbar-expand-md'), 'show');
         showHideElement(document.querySelector('.top-header'), 'show');
+        document.querySelector('#main-right-column').style.zIndex = 0;
+        let bottomContainer = document.querySelector('#bottom-header-row');
+        Array.from(bottomContainer).forEach(function (child) {
+            child.style.zIndex = 0;
+        });
         $('body').css('overflow', 'auto');
     });
 

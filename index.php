@@ -83,9 +83,9 @@ $url = $_SERVER['REQUEST_URI'];
 
                 <!-- menu navbar-->
                 <nav class="navbar navbar-expand-md navbar-light bg-white zero-padding">
-                    <button class="navbar-toggler collapsed top-menu-button" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    <button class="navbar-toggler collapsed top-menu-button auto-margin" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <img src="img/default/logo_150.png">
+                        <img src="img/default/logo_150.png" class="menu-collapse-button-immage">
                     </button>
                     <div class="navbar-collapse collapse menu-nav" id="navbarCollapse">
                         <ul class="navbar-nav mr-auto top-menu-list">
@@ -119,19 +119,21 @@ $url = $_SERVER['REQUEST_URI'];
             <!-- banner-->
             <nav class="navbar zero-padding no-shadow">
                 <div class="container zero-padding banner">
-                    <div class="row auto-margin">
-                        <div class="col col-3 col-lg-3 col-md-3 col-sm-3">
+                    <div class="row full-width auto-margin">
+                        <div class="col col-3 col-lg-3 col-sm-3 banner-immage">
                             <img src="img/default/logo_150.png" class="logo-immage">
                         </div>
                         <div class="col col-lg-9 col-md-9 col-sm-9 banner-text philosopher-font zero-padding" id="banner-text">
-                            <div class="container font-x-large">
-                                <p>Dott.ssa</p>
-                            </div>
-                            <div class="container banner-name">
-                                <p class="philosopher-font">Simona Bettoli</p>
-                            </div>
-                            <div class="container text-lg-right font-x-large">
-                                <p class="float-right">Psicologa</p>
+                            <div class="container fit-content margin-0-left">
+                                <div class="container font-x-large small-text-banner">
+                                    <p>Dott.ssa</p>
+                                </div>
+                                <div class="container banner-name">
+                                    <p class="philosopher-font">Simona Bettoli</p>
+                                </div>
+                                <div class="container text-lg-right font-x-large">
+                                    <p class="float-right">Psicologa</p>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -35,3 +35,11 @@ textarea{
     padding: 0;
     box-shadow: 0 0 5px 5px #0099FF;
 }
+
+.banner-immage{
+    display: block;
+}
+
+.logo-immage{
+    float: right;
+}

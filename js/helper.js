@@ -119,12 +119,12 @@ function resizeMainPage(type) {
     let caruselColumn = document.querySelector('#carusel-column');
     switch (type){
         case 'large':
-            caruselColumn.classList.remove('col-lg-9', 'col-md-9', 'col-sm-9');
+            caruselColumn.classList.remove('col-lg-9', 'col-md-9', 'col-sm-12');
             caruselColumn.classList.add( 'col-lg-12', 'col-md-12', 'col-sm-12');
             break;
         case 'small':
             caruselColumn.classList.remove( 'col-lg-12', 'col-md-12', 'col-sm-12');
-            caruselColumn.classList.add('col-lg-9', 'col-md-9', 'col-sm-9');
+            caruselColumn.classList.add('col-lg-9', 'col-md-9', 'col-sm-12');
     }
 
 }

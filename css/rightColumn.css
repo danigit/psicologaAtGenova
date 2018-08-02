@@ -1,5 +1,5 @@
 #main-right-column{
-    z-index: -1;
+    z-index: 0;
 }
 
 .right-col-profile-image{
@@ -74,6 +74,8 @@
     border-color: #6666CC!important;
 }
 
-#facebook img, #linkedin img{
-    padding: 0 20px;
+.social img{
+    width: 60px;
+    display: block;
+    margin: auto;
 }
