@@ -1,6 +1,7 @@
 #main-right-column{
     z-index: -1;
 }
+
 .right-col-profile-image{
     margin: 10px 0 0 0;
     box-shadow: 0 9px 6px -1px rgba(124, 124, 125, 1);

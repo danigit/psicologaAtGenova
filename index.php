@@ -118,7 +118,7 @@ $url = $_SERVER['REQUEST_URI'];
             </div>
             <!-- banner-->
             <nav class="navbar zero-padding no-shadow">
-                <div class="container zero-padding">
+                <div class="container zero-padding banner">
                     <div class="row auto-margin">
                         <div class="col col-3 col-lg-3 col-md-3 col-sm-3">
                             <img src="img/default/logo_150.png" class="logo-immage">

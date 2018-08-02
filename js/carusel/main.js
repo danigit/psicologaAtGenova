@@ -18,15 +18,18 @@ function loadSlider() {
     //open the testimonials modal page
     $('.cd-see-all').on('click', function () {
         $('.cd-testimonials-all').addClass('is-visible');
-        $('.top-menu').hide();
-        $(".main").css('overflow', 'hidden');
+        console.log('see all');
+        showHideElement(document.querySelector('.navbar-expand-md'), 'hide');
+        showHideElement(document.querySelector('.top-header'), 'hide');
+        $('body').css('overflow', 'hidden');
     });
 
     //close the testimonials modal page
     $('.cd-testimonials-all .close-btn').on('click', function () {
         $('.cd-testimonials-all').removeClass('is-visible');
-        $('.top-menu').show();
-        $('.main').css('overflow-y', 'scroll');
+        showHideElement(document.querySelector('.navbar-expand-md'), 'show');
+        showHideElement(document.querySelector('.top-header'), 'show');
+        $('body').css('overflow', 'auto');
     });
 
     $(document).keyup(function (event) {

@@ -31,7 +31,6 @@ footer, header, hgroup, menu, nav, section {
 body {
     height: 100vh;
     font-weight: normal;
-    z-index: -1;
 }
 
 ol, ul {
