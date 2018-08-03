@@ -10,7 +10,7 @@ mysqli_report(MYSQLI_REPORT_STRICT);
 //th3b3st0f
 class Connection
 {
-    const PATH = "localhost", USERNAME = "root", PASSWORD = "dani", DATABASE = "web";
+    const PATH = "localhost", USERNAME = "danielfotografo", PASSWORD = "", DATABASE = "my_danielfotografo";
     private $connection;
 
     /**

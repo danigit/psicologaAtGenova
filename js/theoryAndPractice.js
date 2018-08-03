@@ -10,7 +10,7 @@ let theoryAndPractice =
     //
     '<div id="models" class="row">' +
     '<div class="category menu-content-element full-width text-center font-x-large prevent-pointer philosopher-font bold-text">' +
-    'MODELLI TEORICI <img class="arrow" src="../psicologaAtGenova/img/default/freccia_up.png">' +
+    'MODELLI TEORICI <img class="arrow" src="../img/default/freccia_up.png">' +
     '</div></div> ' +
     //
     '<div class="row">' +
@@ -21,7 +21,7 @@ let theoryAndPractice =
     //
     '<div id="couple" class="row">' +
     '<div class="category menu-content-element full-width center-text font-x-large prevent-pointer philosopher-font bold-text">' +
-    'PSICOLOGIA DI COPPIA <img class="arrow" src="../psicologaAtGenova/img/default/freccia_up.png">' +
+    'PSICOLOGIA DI COPPIA <img class="arrow" src="../img/default/freccia_up.png">' +
     '</div></div> ' +
     //
     '<div class="row">' +
@@ -32,7 +32,7 @@ let theoryAndPractice =
     //
     '<div id="inspiration" class="row">' +
     '<div class="category menu-content-element full-width center-text font-x-large prevent-pointer philosopher-font bold-text">' +
-    'ISPIRAZIONI <img class="arrow" src="../psicologaAtGenova/img/default/freccia_up.png">' +
+    'ISPIRAZIONI <img class="arrow" src="../img/default/freccia_up.png">' +
     '</div></div> ' +
     //
     '<div class="row">' +

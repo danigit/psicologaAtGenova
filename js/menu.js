@@ -206,10 +206,10 @@ function articolsCategoryEvents(container, category) {
     let modelContainer = document.querySelector(container);
     if (modelContainer.style.display === 'none') {
         showHideElement(modelContainer, 'show');
-        category.getElementsByTagName('img')[0].src = "../psicologaAtGenova/img/default/freccia_up.png";
+        category.getElementsByTagName('img')[0].src = "../img/default/freccia_up.png";
     }
     else {
         showHideElement(modelContainer, 'hide');
-        category.getElementsByTagName('img')[0].src = "../psicologaAtGenova/img/default/freccia_down.png"
+        category.getElementsByTagName('img')[0].src = "../img/default/freccia_down.png"
     }
 }

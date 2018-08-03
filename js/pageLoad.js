@@ -6,40 +6,40 @@ window.onload = function () {
     if(url !== ""){
         console.log(url);
         switch (url){
-            case '/psicologaAtGenova/home':
+            case '/home':
                 clickButton('home', false);
                 break;
-            case '/psicologaAtGenova/about':
+            case '/about':
                 clickButton('about', false);
                 break;
-            case '/psicologaAtGenova/services':
+            case '/services':
                 clickButton('services', false);
                 break;
-            case '/psicologaAtGenova/events':
+            case '/events':
                 clickButton('events', false);
                 break;
-            case '/psicologaAtGenova/theory-practice':
+            case '/theory-practice':
                 clickButton('theory-practice', false);
                 break;
-            case '/psicologaAtGenova/contact':
+            case '/contact':
                 clickButton('contact', false);
                 break;
-            case '/psicologaAtGenova/transactional':
+            case '/transactional':
                 clickButton('transactional', false);
                 break;
-            case '/psicologaAtGenova/emdr':
+            case '/emdr':
                 clickButton('emdr', false);
                 break;
-            case '/psicologaAtGenova/training':
+            case '/training':
                 clickButton('training', false);
                 break;
-            case '/psicologaAtGenova/relax':
+            case '/relax':
                 clickButton('relax', false);
                 break;
-            case '/psicologaAtGenova/technique':
+            case '/technique':
                 clickButton('technique', false);
                 break;
-            case '/psicologaAtGenova/emdr_le8fasideltrattamento':
+            case '/emdr_le8fasideltrattamento':
                 openArticle('emdr:le8fasideltrattamento');
                 showHideElement(document.querySelector('#main-right-column'), 'hide');
                 resizeMainPage('large');

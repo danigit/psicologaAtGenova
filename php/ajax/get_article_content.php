@@ -14,7 +14,7 @@ class get_article_content extends cs_interaction
 
     protected function get_db_informations(){
 
-        $this->content = file_get_contents("http://localhost/psicologaAtGenova/articlesText/" . $this->title . '.txt');
+        $this->content = file_get_contents("http://danielfotografo.altervista.org/articlesText/" . $this->title . '.txt');
 
         if(is_error($this->content))
             $this->json_error("Errore sconosciuto");
