@@ -34,6 +34,7 @@ function changeLayout(element, content) {
 
 
 function httpPost(url, input) {
+    console.log(url);
     return new Promise(function (resolve, reject) {
         let httpReq = new XMLHttpRequest();
 

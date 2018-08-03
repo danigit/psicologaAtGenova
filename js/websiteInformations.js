@@ -93,7 +93,7 @@ let services =
 
 let eventi =
     '<br><p style="text-align: center;"><span style="font-size: 60px; color: rgb(0, 153, 255);" class="philosopher-font">Eventi in programma</span></p><br>' +
-    '<p style="text-align: center;"><img src="../img/default/prossimi_eventi.jpg" style="width: 926px;" class="fr-fic fr-dib"></p>'+
+    '<p style="text-align: center;"><img src="../img/default/prossimi_eventi.jpg" class="fr-fic fr-dib blue-border"></p>'+
     '<p style="text-align: center;"><br></p>'+
     '<p style="text-align: justify;"><span style="font-size: 30px;">C</span><span style="font-size: 18px;">onsiderate le ' +
     'numerose richieste pervenute, in autunno verranno riproposti gli incontri su <strong>ansia</strong> e <strong>depressione' +
@@ -106,7 +106,7 @@ let eventi =
     'della depressione</span></p><br>'+
     '<p><span style="font-size: 18px;">SABATO 3 MARZO 2018 - H 15:00</span></p>'+
     '<p><span style="font-size: 18px;">SABATO7 APRILE 2018 - H 15:00</span></p> <br>'+
-    '<p><img src="../img/default/praticando.jpg"style="width: 926px;" class="fr-fic fr-dib"></p> <br>'+
+    '<p><img src="../img/default/praticando.jpg" class="fr-fic fr-dib blue-border"></p> <br>'+
     '<p style="text-align: justify;"><span style="font-size: 18px;">Presso il ' +
     '<a href="https://www.genovapsicologia.it/" rel="noopener noreferrer" target="_blank">Centro di Psicoterapia 2.0</a> ' +
     '(Via XXV Aprile 8/6 &ndash; Genova), in collaborazione con la ' +
@@ -181,8 +181,7 @@ var contact = '<div class="container">'
 let transactional =
     '<br> <p style="text-align: center;"><span style="font-size: 60px; color: rgb(0, 153, 255);" class="philosopher-font">' +
     'Analisi Transazionale</span></p> <br>' +
-    '<p style="text-align: justify;"><img src="../img/default/psicoterapia_analitico_transazionale.jpg" style="' +
-    'width: 1000px;" class="fr-fic fr-dib"><span style="font-size: 18px;"><br></span></p><br>'+
+    '<p style="text-align: justify;"><img src="../img/default/psicoterapia_analitico_transazionale.jpg" class="fr-fic fr-dib blue-border"><span style="font-size: 18px;"><br></span></p><br>'+
     '<p style="text-align: justify;"><span style="font-size: 30px;" class="philosopher-font">L</span><span style="font-size: 18px">&rsquo;approccio Analitico Transazionale viene ' +
     'utilizzato nel trattamento di disturbi psicologici di ogni tipo, essendo un metodo di psicoterapia <strong>individuale' +
     '</strong>, di <strong>coppia</strong>, di <strong>gruppo</strong> e <strong>familiare</strong>di comprovata efficacia.' +
@@ -206,40 +205,9 @@ let transactional =
     '<p><span style="font-size: 18px;"><a href="https://www.eatanews.org/" rel="noopener noreferrer" target="_blank">' +
     'European Association for Transactional Analysis</a></span></p>';
 
-var transactio = '<div class="container">'
-    + '<div class="row">'
-    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center display-4 page-title philosopher-font blue-text">'
-    + 'Analisi Transazionale'
-    + '</div></div> '
-    + '<div class="row">'
-    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12">'
-    + '<img src="../img/default/psicoterapia_analitico_transazionale.jpg" class="blue-border"><br><br>'
-    + '</div></div> '
-    + '<div class="row"> '
-    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font font-large"> '
-    + "<h2 class='d-inline philosopher-font'>L</h2><p class='d-inline'>\’approccio Analitico Transazionale viene "
-    + "utilizzato nel trattamento di disturbi psicologici di ogni tipo, essendo un metodo di psicoterapia <b>individuale</b>, "
-    + "di <b>coppia</b>, di <b>gruppo</b> e <b>familiare</b> di comprovata efficacia.</p><br><br>"
-    + "<p>Si tratta di una psicoterapia integrata, che attraverso l’utilizzo di tecniche <b>cognitive</b>, "
-    + "<b>comportamentali</b>, <b>gestaltiche</b> e <b>del profondo</b>, può avere una durata <b>breve</b> (<b>risolvere "
-    + "un sintomo</b> o problema specifico, con l\’obiettivo di un cambiamento comportamentale e del suo mantenimento nel "
-    + "tempo) o relativamente <b>più lunga</b> (in questo caso la terapia non è rivolta solo ad un sollievo dai sintomi, "
-    + "bensì alla <b>ristrutturazione della personalità</b>). In ogni caso, paziente e psicologo valuteranno insieme e "
-    + "stabiliranno in accordo il piano terapeutico.</p><br>"
-    + "<p>Come funziona? Attraverso un linguaggio comprensibile e concreto, la persona diviene cosciente dei propri "
-    + "<b>schemi psicologici</b>, <b>emotivi</b>, <b>di pensiero e di comportamento</b> (i propri <b>giochi</b> preferiti, "
-    + "il sistema di <b>copione</b>, l\’economia di <b>carezze</b> ecc.) e può decidere consapevolmente di modificarli "
-    + "per raggiungere gli obiettivi di guarigione, di sviluppo o di miglioramento desiderati.<br><br>"
-    + '</div></div>'
-    + "<hr class='horizontal-line'>"
-    + '<p class="font-x-large">LINK</p><br>'
-    + '<p><a href="http://www.aiat.it/" target="-_blank" class="blue-text">A.I.A.T</a></p>'
-    + '<p><a href="http://www.eatanews.org/" target="_blank" class="blue-text" ">EATA</a></p>'
-    + '</div> ';
-
 let emdr =
     '<br><p style="text-align: center;"><span style="font-size: 60px; color: rgb(0, 153, 255);" class="philosopher-font">EMDR</span></p> <br>'+
-    '<p style="text-align: center;"><img data-fr-image-pasted="true" src="../img/default/EMDR.jpg" class="fr-fic fr-dii"></p><br>'+
+    '<p style="text-align: center;"><img data-fr-image-pasted="true" src="../img/default/EMDR.jpg" class="fr-fic fr-dii blue-border"></p><br>'+
     '<p style="text-align: justify;"><span style="font-size: 30px;" class="philosopher-font">L</span><span style="font-size: 18px;">&rsquo;EMDR ' +
     '(Eye Movement Desensitization and Reprocessing, in italiano: Desensibilizzazione e Rielaborazione attraverso i ' +
     'Movimenti Oculari) &egrave; un metodo psicoterapico strutturato che facilita il trattamento di diverse psicopatologie ' +
@@ -258,137 +226,87 @@ let emdr =
     'origine a molte disfunzioni. Numerosi studi neurofisiologici hanno documentato i&nbsp;<strong>rapidi ' +
     'effetti post-trattamento</strong> EMDR.</span></p> <br>'+
     '<hr class="horizontal-line" ><br>'+
-    '<p><span style="font-size: 24px;">LINK</span></p>'+
+    '<p><span style="font-size: 24px;">LINK</span></p><br>'+
     '<p> <a href="http://emdr.it/" target="_blank"></a></p>'+
     '<p><a href="http://emdr.it/" rel="noopener noreferrer" target="_blank"><span style="font-size: 18px;">Eye Movement ' +
     'Desensitization and Reprocessing</span></a></p>';
 
-var em = '<div class="container">'
-    + '<div class="row">'
-    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center display-4 page-title philosopher-font blue-text">'
-    + 'EMDR'
-    + '</div></div> '
-    + '<div class="row">'
-    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12">'
-    + '<img src="../img/default/EMDR.jpg" class="blue-border"><br><br>'
-    + '</div></div> '
-    + '<div class="row"'
-    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font font-large"> '
-    + "<h2 class='d-inline philosopher-font'>L</h2><p class='d-inline'>’EMDR (Eye Movement Desensitization "
-    + "and Reprocessing, in italiano: Desensibilizzazione e Rielaborazione attraverso i Movimenti Oculari) è un metodo psicoterapico "
-    + "strutturato che facilita il trattamento di diverse psicopatologie e problemi legati sia ad <b>eventi traumatici</b>, "
-    + "che a esperienze più comuni ma <b>emotivamente stressanti</b>.</p><br>"
-    + "<p>È un approccio psicoterapico interattivo e standardizzato, scientificamente comprovato da più di 20 studi "
-    + "randomizzati controllati condotti su pazienti traumatizzati e documentato in centinaia di pubblicazioni che ne "
-    + "riportano l\’efficacia nel trattamento di numerose psicopatologie inclusi la depressione, l\’ansia, le fobie, il "
-    + "lutto acuto, i sintomi somatici e le dipendenze.</p><br>"
-    + "<p>L\’Organizzazione Mondiale della Sanità nel 2013 ha riconosciuto l\’EMDR come trattamento d\’elezione "
-    + "(<i>evidence-based</i>) per i disturbi legati allo stress e a esperienze traumatiche.</p><br>"
-    + "<p>La terapia EMDR ha come base teorica il modello AIP (Adaptive Information Processing) che affronta i "
-    + "<b>ricordi non elaborati</b> che possono dare origine a molte disfunzioni. Numerosi studi neurofisiologici hanno "
-    + "documentato i <b>rapidi effetti post-trattamento</b> EMDR.</p><br><br>"
-    + '</div></div>'
-    + "<hr class='horizontal-line'>"
-    + '<p class="font-x-large">LINK</p><br>'
-    + '<p><a href="http://emdr.it/" target="_blank" class="blue-text">EMDR</a></p>'
-    + '</div>';
+let training =
+    '<br><p style="text-align: center;"><span style="font-size: 60px; color: rgb(0, 153, 255);" class="philosopher-font">Training Autogeno</span></p> <br>'+
+    '<p style="text-align: center;"><img data-fr-image-pasted="true" src="../img/default/training_autogeno.jpg" ' +
+    'class="fr-fic fr-dii blue-border"> </p> <br>'+
+    '<p style="text-align: justify;"><span style="font-size: 30px;" class="philosopher-font">I</span><span style="font-size: 18px;">l Training ' +
+    'Autogeno &egrave; una tecnica di auto-distensione psicofisiologica, mirata alla gestione dello stress e delle emozioni, ' +
+    'utile nel miglioramento del benessere, di performance sportive, ma anche nel trattamento dei disturbi d&rsquo;ansia e ' +
+    'psicosomatici. Si basa sull&rsquo;apprendimento (training) di una serie di esercizi di concentrazione psichica, e sul ' +
+    'concetto di &ldquo;autogenicit&agrave;&rdquo;, cio&egrave; la capacit&agrave; di indurre determinate modificazioni ' +
+    'di funzioni involontarie a livello dell&rsquo;apparato respiratorio, dell&rsquo;apparato muscolare, del sistema ' +
+    'cardiovascolare e del sistema neurovegetativo.</span></p><br>'+
+    '<p style="text-align: justify;"><span style="font-size: 18px;">Una volta sperimentata e appresa, tale tecnica pu&ograve; ' +
+    'essere utilizzata autonomamente in qualsiasi momento di bisogno, al fine di alleviare stati di ansia e stress e recuperare ' +
+    'energie e concentrazione.</span></p>';
 
-var training = '<div class="container">'
-    + '<div class="row">'
-    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center display-4 page-title philosopher-font blue-text">'
-    + 'Training Autogeno'
-    + '</div></div> '
-    + '<div class="row">'
-    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12" id="analisi-image">'
-    + '<img src="../img/default/training_autogeno.jpg" class="blue-border"><br><br>'
-    + '</div></div> '
-    + '<div class="row"> '
-    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font font-large"> '
-    + "<h2 class='d-inline philosopher-font'>I</h2><p class='d-inline'>l Training Autogeno è una tecnica "
-    + "di auto-distensione psicofisiologica, mirata alla gestione dello stress e delle emozioni, utile nel miglioramento "
-    + "del benessere, di performance sportive, ma anche nel trattamento dei disturbi d\’ansia e psicosomatici. Si basa "
-    + "sull\’apprendimento (training) di una serie di esercizi di concentrazione psichica, e sul concetto di \“autogenicità\”,"
-    + " cioè la capacità di indurre determinate modificazioni di funzioni involontarie a livello dell\’apparato respiratorio, "
-    + "dell\’apparato muscolare, del sistema cardiovascolare e del sistema neurovegetativo.</p><br><br>"
-    + "<p>Una volta sperimentata e appresa, tale tecnica può essere utilizzata autonomamente in qualsiasi momento di "
-    + "bisogno, al fine di alleviare stati di ansia e stress e recuperare energie e concentrazione.</p><br><br>"
-    + '</div></div>'
-    + "<hr class='horizontal-line'>"
-    + '</div> ';
+let relax =
+    '<br> <p style="text-align: center;"><span style="font-size: 60px; color: rgb(0, 153, 255);;" class="philosopher-font">Tecniche di rilassamento ' +
+    'psico-corporeo</span></p> <br>' +
+    '<p style="text-align: center;"><img data-fr-image-pasted="true" src="../img/default/psi_benessere.jpg" ' +
+    'class="fr-fic fr-dii blue-border"></p> <br>'+
+    '<p style="text-align: justify;"><span style="font-size: 30px;" class="philosopher-font">S</span><span style="font-size: 18px;">pesso, sono proprio' +
+    ' le persone che avrebbero maggior bisogno di lavorare con tecniche di rilassamento psico-corporeo (perch&eacute; stressate' +
+    ' o vittime di ansia e panico) che non si sentono a loro agio nell&rsquo;usare queste tecniche, poich&eacute; credono ' +
+    'che sia importante essere sempre vigili e in allerta per guardarsi da eventuali pericoli. Hanno paura di perdere il ' +
+    'controllo e di lasciarsi andare.</span></p><br>' +
+    '<p style="text-align: justify;"><span style="font-size: 18px;">Ogni individuo, inoltre, attribuisce al termine rilassamento ' +
+    'un significato assolutamente personale: un trattamento pu&ograve; essere ottimo per una persona ma risultare di difficile' +
+    ' accettazione per un&rsquo;altra.</span></p><br>'+
+    '<p style="text-align: justify;"><span style="font-size: 18px;">Per questi motivi le tecniche di rilassamento che ' +
+    'propongo sono molteplici, scelte accuratamente in base alle necessit&agrave;, caratteristiche e desideri della persona:</span></p><br>'+
+    '<ul class="ul-formatting" >'+
+    '<li style="text-align: justify;"><span style="font-size: 18px;"><strong>mindfulness</strong> (tecnica meditativa ' +
+    'che infonde un senso di rilassamento, pienezza e benessere, riduce l&rsquo;ansia, regola le emozioni)</span></li>'+
+    '<li style="text-align: justify;"><span style="font-size: 18px;"><strong>osservazione guidata del respiro e ' +
+    'tecniche di respirazione</strong> (respirazione quadrata, diaframmatica, toracica, frenata, controllata &ldquo;' +
+    '4-7-8&rdquo; ecc.; le tecniche di respirazione risultano fondamentali nella gestione di disturbi d&rsquo;' +
+    'ansia e attacchi di panico)</span></li>'+
+    '<li style="text-align: justify;"><span style="font-size: 18px;"><strong>rilassamento progressivo di Jacobson' +
+    '</strong> (contrazione/decontrazione volontaria di fasci muscolari)</span></li>'+
+    '<li style="text-align: justify;"><span style="font-size: 18px;"><strong>rilassamento frazionato di Vogt</strong> ' +
+    '(interessa l&rsquo;apparato muscolare, vascolare e respiratorio, e favorisce la visualizzazione di immagini)' +
+    '</span></li>'+
+    '<li style="text-align: justify;"><span style="font-size: 18px;"><strong>body scanner</strong> (rilassamento ' +
+    'progressivo mirato a facilitare un processo di consapevolezza delle percezioni che derivano da tutto il corpo)' +
+    '</span></li>'+
+    '</ul><br>'+
+    '<hr style="text-align: justify;" class="horizontal-line"> <br>'+
+    '<p style="text-align: justify;"><span style="font-size: 18px;"><strong>Obiettivo</strong>: ristabilire un contatto ' +
+    'sano di comunicazione mente-corpo per migliorare il benessere in generale o attivando un lavoro su problemi ' +
+    'specifici.</span></p>';
 
-var relax = '<div class="container">'
-    + '<div class="row">'
-    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center display-4 page-title philosopher-font blue-text">'
-    + 'Tecniche di rilassamento psico-corporeo'
-    + '</div></div> '
-    + '<div class="row">'
-    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12" id="analisi-image">'
-    + '<img src="../img/default/psi_benessere.jpg" class="blue-border"><br><br>'
-    + '</div></div> '
-    + '<div class="row"> '
-    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font font-large"> '
-    + "<h2 class='d-inline philosopher-font'>S</h2><p class='d-inline'>pesso, sono proprio le persone "
-    + "che avrebbero maggior bisogno di lavorare con tecniche di rilassamento psico-corporeo (perché stressate o vittime "
-    + "di ansia e panico) che non si sentono a loro agio nell\’usare queste tecniche, poiché credono che sia importante "
-    + "essere sempre vigili e in allerta per guardarsi da eventuali pericoli. Hanno paura di perdere il controllo e di "
-    + "lasciarsi andare.</p><br><br>"
-    + "<p>Ogni individuo, inoltre, attribuisce al termine rilassamento un significato assolutamente personale: un "
-    + "trattamento può essere ottimo per una persona ma risultare di difficile accettazione per un\’altra.</p><br>"
-    + "<p>Per questi motivi le tecniche di rilassamento che propongo sono molteplici, scelte accuratamente in base alle "
-    + "necessità, caratteristiche e desideri della persona:</p><br>"
-    + '<ul class="ul-formatting">'
-    + '<li><b>mindfulness</b> (tecnica meditativa che infonde un senso di rilassamento, pienezza e benessere, riduce '
-    + 'l\’ansia, regola le emozioni)</li>'
-    + '<li><b>osservazione guidata del respiro e tecniche di respirazione</b> (respirazione quadrata, diaframmatica, '
-    + 'toracica, frenata, controllata “4-7-8” ecc.; le tecniche di respirazione risultano fondamentali nella gestione di '
-    + 'disturbi d\’ansia e attacchi di panico)</li>'
-    + '<li><b>rilassamento progressivo di Jacobson</b> (contrazione/decontrazione volontaria di fasci muscolari)</li>'
-    + '<li><b>rilassamento frazionato di Vogt</b> (interessa l’apparato muscolare, vascolare e respiratorio, e favorisce '
-    + 'la visualizzazione di immagini)</li>'
-    + '<li><b>body scanner</b> (rilassamento progressivo mirato a facilitare un processo di consapevolezza delle '
-    + 'percezioni che derivano da tutto il corpo)</li>'
-    + '</ul>'
-    + '<br><p><b class="blue-text">Obiettivo</b>: ristabilire un contatto sano di comunicazione '
-    + 'mente-corpo per migliorare il benessere in generale o attivando un lavoro su problemi specifici.</b><br><br><br>'
-    + '</div></div>'
-    + "<hr class='horizontal-line'>"
-    + '</div>';
-
-var technique = '<div class="container">'
-    + '<div class="row">'
-    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center display-4 page-title philosopher-font blue-text">'
-    + 'Tecnniche Induttive e Immaginative'
-    + '</div></div> '
-    + '<div class="row">'
-    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12" id="analisi-image">'
-    + '<img src="../img/default/immagination.jpg" class="blue-border"><br><br>'
-    + '</div></div> '
-    + '<div class="row"> '
-    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 open-font font-large"> '
-    + "<h2 class='d-inline philosopher-font'>T</h2><p class='d-inline'>ali tecniche mirano a riattivare "
-    + "la percezione e le risorse interiori orientando la mente al corpo e alle immagini interiori, stimolando la "
-    + "<b>creatività</b> e la <b>consapevolezza di sé</b>, delle proprie emozioni e delle proprie risorse.</p><br><br>"
-    + "<p>Nel creare un\’immagine, mnemonica o irreale, il cervello causa cambiamenti corporei concreti e cambiamenti "
-    + "comportamentali: in funzione del cambiamento desiderato sarà possibile costruire immagini e suggestioni ad hoc.</p><br>"
-    + "<p>Queste tecniche risultano essere utili per indurre dei cambiamenti:</p><br>"
-    + '<ul class="ul-formatting" ">'
-    + '<li>sull\'umore</li>'
-    + '<li>sulla salute</li>'
-    + '<li>per il successo professionale</li>'
-    + '<li>per rafforzare la sicurezza di sé e l\'autostima</li>'
-    + '<li>per rafforzare la memoria e la capacità di concentrazione</li>'
-    + '<li>per visualizzare e risolvere problemi</li>'
-    + '<li>per pensarsi in contesti e modi diversi</li>'
-    + '<li>per accedere a risorse interne di cui non si è consapevoli</li>'
-    + '</ul><br>'
-    + '<p>Il <b>Sogno guidato</b> è uno stato mentale semi-ipnoide, a metà fra la veglia ed il sonno,  caratterizzato '
-    + 'da rilassamento globale.</p> <br>'
-    + '<p>La guida del terapeuta è direttiva, e accompagna il paziente in modo preciso per costruire immagini e suggestioni'
-    + ' in funzione dell\’obiettivo desiderato.</p><br>'
-    + '<p>La <b>Visualizzazione Guidata</b> lascia più spazio al paziente nella produzione di immagini proprie, facendo '
-    + 'emergere contenuti personali grazie ad un accompagnamento che lascia spazio alla fantasia e creatività spontanea '
-    + 'della persona.</p><br><br>'
-    + '</div></div>'
-    + "<hr class='horizontal-line'>"
-    + '</div> </div>'
-    + '</div></div>';
+let technique =
+    '<br> <p style="text-align: center;"><span style="font-size: 60px; color: rgb(0, 153, 255);" class="philosopher-font">' +
+    'Tecnniche Induttive e Immaginative</span></p> <br>'+
+    '<p><img data-fr-image-pasted="true" src="../img/default/immagination.jpg" class="fr-fic fr-dii blue-border"> </p> <br>'+
+    '<p style="text-align: justify"><span style="font-size: 30px;" class="philosopher-font">T</span><span style="font-size: 18px;">ali tecniche mirano a riattivare la percezione ' +
+    'e le risorse interiori orientando la mente al corpo e alle immagini interiori, stimolando la <strong>creativit&agrave;' +
+    '</strong> e la <strong>consapevolezza di s&eacute;</strong>, delle proprie emozioni e delle proprie risorse.</span></p><br>'+
+    '<p style="text-align: justify"><span style="font-size: 18px;">Nel creare un&rsquo;immagine, mnemonica o irreale, il cervello causa cambiamenti '+
+    'corporei concreti e cambiamenti comportamentali: in funzione del cambiamento desiderato sar&agrave; possibile costruire' +
+    ' immagini e suggestioni ad hoc.</span></p><br>'+
+    '<p style="text-align: justify"><span style="font-size: 18px;">Queste tecniche risultano essere utili per indurre dei cambiamenti:</span></p>'+
+    '<ul class="ul-formatting" >'+
+    '<li style="text-align: justify"><span style="font-size: 18px;">sull&#39;umore</span></li>'+
+    '<li style="text-align: justify"><span style="font-size: 18px;">sulla salute</span></li>'+
+    '<li style="text-align: justify"><span style="font-size: 18px;">per il successo professinale</span></li>'+
+    '<li style="text-align: justify"><span style="font-size: 18px;">per rafforzare la sicurezza di s&eacute; el&#39;autostima</span></li>'+
+    '<li style="text-align: justify"><span style="font-size: 18px;">per rafforzare la memoria e la capacit&agrave; di concentrazione</span>/li>'+
+    '<li style="text-align: justify"><span style="font-size: 18px;">per visualizzare e risolvere problemi</span></li>'+
+    '<li style="text-align: justify"><span style="font-size: 18px;">per pensarsi in contesti e modi diversi</span></li'+
+    '<li style="text-align: justify"><span style="font-size: 18px;">per accedere a risorse interne di cui non si &egrave consapevoli</span></li>'+
+    '</ul><br>' +
+    '<p style="text-align: justify"><span style="font-size: 18px;">Il <strong>Sogno guidato</strong> &egrave; uno stato mentale semi-ipnoide, a ' +
+    'met&agrave; fra la veglia ed il sonno, caratterizzato da rilassamento globale.</span></p><br>'+
+    '<p style="text-align: justify"><span style="font-size: 18px;">La guida del terapeuta &egrave; direttiva, e accompagna il paziente in modo ' +
+    'preciso per costruire immagini e suggestioni in funzione dell&rsquo;obiettivo desiderato.</span></p><br>'+
+    '<p style="text-align: justify"><span style="font-size: 18px;">La&nbsp;<strong>Visualizzazione Guidata</strong> lascia pi&ugrave; spazio al ' +
+    'paziente nella produzione di immagini proprie, facendo emergere contenuti personali grazie ad un accompagnamento ' +
+    'che lascia spazio alla fantasia e creativit&agrave; spontanea della persona.</span></p>';
