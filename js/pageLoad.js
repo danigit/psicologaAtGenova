@@ -60,6 +60,39 @@ window.onload = function () {
 
     document.querySelector('#carusel-column').classList.remove('col-md-9');
     document.querySelector('#carusel-column').classList.add('col-md-12');
+
+    window.onresize = function () {
+        let immageColumn;
+        let content;
+        if (document.querySelector('#articles') !== null && window.innerWidth >= 576){
+            console.log('inside if');
+            immageColumn = document.querySelectorAll('#article-immage-column');
+            immageColumn.forEach(function (elem) {
+                if(elem.style.display === 'none')
+                    showHideElement(elem, 'show');
+            });
+
+            content = document.querySelectorAll('#article-logo');
+            content.forEach(function (elem) {
+                if(elem.style.display === 'none')
+                    showHideElement(elem, 'show')
+            })
+        }else if(document.querySelector('#articles') !== null && window.innerWidth < 576){
+            console.log('inside else');
+            immageColumn = document.querySelectorAll('#article-immage-column');
+            immageColumn.forEach(function (elem) {
+                if(elem.style.display !== 'none')
+                    showHideElement(elem, 'hide');
+            });
+
+            content = document.querySelectorAll('#article-logo');
+            content.forEach(function (elem) {
+                if(elem.style.display !== 'none')
+                    showHideElement(elem, 'hide')
+            })
+        }
+    }
+
 };
 
 function populateCloud() {
@@ -82,4 +115,29 @@ function loadSliderContent() {
             }
         }
     )
+}
+
+function smallDevicesArticleListDisplay() {
+    let immageColumn;
+    let content;
+    let mutationManager = function(mutationRecords) {
+        mutationRecords.forEach(function (elem) {
+            console.log('Elem id: ' + elem.target.id);
+            if(window.innerWidth < 576 && elem.target.id === 'models-container'){
+                immageColumn = document.querySelectorAll('#article-immage-column');
+                content = document.querySelectorAll('#article-logo');
+                immageColumn.forEach(function (elem) {
+                    showHideElement(elem, 'hide');
+                });
+
+                content.forEach(function (elem) {
+                    showHideElement(elem, 'hide')
+                });
+            }
+        })
+    };
+
+    let observer = new MutationObserver(mutationManager);
+
+    observer.observe(document.querySelector('#carusel-column'), { childList: true, subtree: true });
 }

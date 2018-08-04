@@ -98,10 +98,7 @@ function clickButton(button, state) {
                 "HO PAURA DELLE MIE <b class='porpora-text'>SENSAZIONI</b>, DICONO SEMPRE LA <b class='porpora-text'>VERITA'</b></p>"
             break;
         case 'fast-contact':
-            setTopMenu(document.querySelector('#contact'));
-            changeLayout(caruselColumn, contact);
-            scrollToTop();
-            pushHistory(button, state);
+            clickButton('contact', true);
             break;
         case 'transactional':
             setTopMenu(document.querySelector('#services'));
