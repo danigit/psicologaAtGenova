@@ -23,7 +23,7 @@ function myMap() {
 
 
         var infoWindow = new google.maps.InfoWindow({
-            //content: "" + addStudioImage()
+            content: "Centro di Psicoterapia 2.0"
         });
 
         google.maps.event.addListener(marker, 'click', function () {

@@ -31,16 +31,20 @@
         line-height: 1.4;
         font-size: 1.0rem;
     }
+
+    .title{
+        font-size: 40px!important;
+    }
+
+    .subtitle{
+        font-size: 22px!important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 
     header{
         padding-top: 49px;
-    }
-
-    .logo-immage{
-        padding: 10px;
     }
 
     .right-col-profile-image, #cloud, .top-header, .social-container{
@@ -70,6 +74,18 @@
 
     .email{
         font-size: x-small;
+    }
+
+    .title{
+        font-size: 35px!important;
+    }
+
+    .subtitle{
+        font-size: 20px!important;
+    }
+
+    .fit-content{
+        width: fit-content!important;
     }
 }
 
@@ -102,10 +118,27 @@
     .banner-name{
         font-size: 55px;
     }
+
+    .title{
+        font-size: 35px!important;
+    }
+
+    .subtitle{
+        font-size: 20px!important;
+    }
+
+    .logo-immage{
+        width: 80px;
+    }
 }
 
 @media (min-width: 399px) and (max-width: 575px) {
-    .right-col-profile-image, #cloud, .top-header, .small-text-banner, .facebook, .bottom-header-container, .text-lg-right{
+    header{
+        padding-top: 45px;
+    }
+
+    .right-col-profile-image, #cloud, .top-header, .small-text-banner, .facebook, .bottom-header-container,
+    #article-immage-column, #article-logo{
         display: none;
     }
 
@@ -130,14 +163,47 @@
         font-size: 55px;
     }
 
+    .container{
+        width: auto!important;
+    }
+
+    .banner-name p{
+        text-align: center;
+    }
+
     .banner-text{
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    .title{
+        font-size: 24px!important;
+    }
+
+    .subtitle{
+        font-size: 20px!important;
+    }
+
+    #main-container{
+        margin-top: 30px;
+    }
+
+    .margin-0-left{
         margin: auto;
     }
 
+    .text-lg-right{
+        font-size: medium;
+    }
 }
 
 @media (max-width: 398px) {
-    .right-col-profile-image, #cloud, .top-header, .small-text-banner, .facebook, .bottom-header-container, .text-lg-right{
+    header{
+        padding-top: 45px;
+    }
+
+    .right-col-profile-image, #cloud, .top-header, .small-text-banner, .facebook, .bottom-header-container, .text-lg-right,
+    #article-immage-column, #article-logo{
         display: none;
     }
 
@@ -160,6 +226,7 @@
 
     .banner-text{
         margin: auto;
+        padding-top: 10px;
     }
 
     .banner-name{
@@ -168,5 +235,17 @@
 
     .menu-content-element{
         font-size: initial;
+    }
+
+    .title{
+        font-size: 24px!important;
+    }
+
+    .subtitle{
+        font-size: 20px!important;
+    }
+
+    #main-container{
+        margin-top: 30px;
     }
 }

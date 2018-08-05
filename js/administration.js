@@ -7,6 +7,7 @@ document.querySelector('#insert').onclick = function () {
     if(document.querySelector('.fr-box').classList.contains('fr-code-view')){
         $('#modalInsertArticle').modal();
         Array.from(document.querySelectorAll('.CodeMirror-line')).forEach(function (line) {
+            console.log('line: ' + line);
             string += line.textContent;
         })
     }else{

@@ -2,12 +2,11 @@
 //adds the content in the main page when the button Chi Sono is pressed
 
 let aboutMe =
-    '<br><p style="text-align: center;" xmlns="http://www.w3.org/1999/html"><span style="font-size: 60px;' +
-    'color: rgb(0, 153, 255);" class="philosopher-font">Profilo professionale </span></></p>' +
-    '<p style="text-align: center;"> <br><br><br> </p>' +
-    '<p><span style="font-size: 18px"><strong><em>&lt;&lt;Perch&eacute; hai deciso di fare la psicologa?&gt;&gt; &lt;&lt;Per capire come funziona la ' +
+    '<br><p style="text-align: center;" xmlns="http://www.w3.org/1999/html"><span style="font-size: 45px; line-height: 1;' +
+    'color: rgb(0, 153, 255);" class="philosopher-font">Profilo professionale </span></></p><br><br><br>' +
+    '<p style="text-align: justify"><span style="font-size: 18px"><strong><em>&lt;&lt;Perch&eacute; hai deciso di fare la psicologa?&gt;&gt; &lt;&lt;Per capire come funziona la ' +
     'mente e aiutare le persone!&gt;&gt;</em></strong></span></p><br>' +
-    '<p><span style="font-size: 30px" class="philosopher-font">H</span><span style="font-size: 18px">o sempre avuto una grande curiosit&agrave; ' +
+    '<p style="text-align: justify"><span style="font-size: 30px" class="philosopher-font">H</span><span style="font-size: 18px">o sempre avuto una grande curiosit&agrave; ' +
     'verso tutto ci&ograve; che riguarda la psiche: trovare le risposte alle domande su come funziona la mente, ' +
     'perch&eacute; facciamo quello che facciamo e come possiamo smettere di ripetere quello che non ci fa stare ' +
     'bene, comprendere le dinamiche che regolano (e dis-regolano) le emozioni, i pensieri, la comunicazione, ' +
@@ -32,7 +31,7 @@ let aboutMe =
     '<p style="text-align: justify;"><span style="font-size: 18px;">La mia formazione &egrave; proseguita con la ' +
     'frequenza della Scuola di <strong>Specializzazione in Psicoterapia</strong> (ITAT &ndash; Torino) ad orientamento ' +
     '<strong>Analitico-Transazionale</strong>, grazie alla quale ho imparato <strong>tecniche cognitive, comportamentali, ' +
-    'psicodinamiche, relazionali e gestaltiche</strong> per affrontare le sfidee gli eventi ai quali la vita ci espone: ' +
+    'psicodinamiche, relazionali e gestaltiche</strong> per affrontare le sfide e gli eventi ai quali la vita ci espone: ' +
     'nel mio studio presso il <a href="https://www.genovapsicologia.it/" rel="noopener noreferrer" target="_blank">' +
     'Centro di Psicoterapia 2.0</a> seguo adolescenti e adulti nell&#39;accompagnamento in <strong>periodi ' +
     'difficili della vita</strong> (lutti, separazioni, malattia propria o di una persona cara, ecc.), nell&#39;' +
@@ -59,10 +58,10 @@ let aboutMe =
     '<hr style="text-align: justify;" class="horizontal-line">'+
     '<p style="text-align: justify;"><span style="font-size: 18px;"><br></span></p>'+
     '<p style="text-align: justify;"><span style="font-size: 18px; color: rgb(0, 153, 255);"><strong>Ricevo su appuntamento ' +
-    'a Genova presso il mio studio nel Centro di Psicoterapia 2.0 situato in Via XXV Aprile 8/6.</strong></span></p>";';
+    'presso il mio studio nel Centro di Psicoterapia 2.0 situato in Via XXV Aprile 8/6 - Genova.</strong></span></p>';
 
 let services =
-    '<br><p style="text-align: center;"><span style="font-size: 60px;"><span style="color: rgb(0, 153, 255);" class="philosopher-font">Attivit&agrave; ' +
+    '<br><p style="text-align: center;"><span style="font-size: 45px; line-height: 1;"><span style="color: rgb(0, 153, 255);" class="philosopher-font">Attivit&agrave; ' +
     'professionale</span></></span> </p><br><br>'+
     '<p><span style="font-size: 30px;" class="philosopher-font">N</span><span style="font-size: 18px;">ella mia pratica clinica mi occupo di ' +
     'adolescenti, adulti e coppie.</span></p><br>' +
@@ -76,7 +75,7 @@ let services =
     '<li><span style="font-size: 18px;">sostegno alla&nbsp;<strong>genitorialit&agrave;</strong> naturale, adottiva, affidataria</span></li>' +
     '<li><span style="font-size: 18px;">sostegno nell&rsquo;elaborazione del&nbsp;<strong>lutto</strong></span></li>' +
     '<li><span style="font-size: 18px;">elaborazione&nbsp;<strong>traumi</strong> passati o recenti</span></li>' +
-    '<li><span style="font-size: 18px;">percorsi per la&nbsp;<strong>egolazione delle emozioni</strong> (Es. gestione della rabbia, di stati ansiosi, ecc.)</span></li>' +
+    '<li><span style="font-size: 18px;">percorsi per la&nbsp;<strong>regolazione delle emozioni</strong> (Es. gestione della rabbia, di stati ansiosi, ecc.)</span></li>' +
     '<li><span style="font-size: 18px;">percorsi per l&rsquo;aumento e il mantenimento di una buona&nbsp;<strong>autostima</strong></span></li>' +
     '</ul><br>'+
     '<p style="text-align: justify;"><span style="font-size: 18px;">Considerando che la scelta di intraprendere un ' +
@@ -87,20 +86,20 @@ let services =
     '<br>'+
     '<hr class="horizontal-line">' +
     '<br>'+
-    '<p><span style="font-size: 18px;"><strong>N.B.</strong> Le fatture relative alle prestazioni psicologiche sono fatture ' +
+    '<p style="text-align: justify"><span style="font-size: 18px;" class="blue-text"><strong>N.B.</strong> Le fatture relative alle prestazioni psicologiche sono fatture ' +
     'sanitarie a tutti gli effetti e, come tali, sono detraibili al momento della dichiarazione dei redditi nella misura ' +
     'del 19%.</span></p>';
 
 let eventi =
-    '<br><p style="text-align: center;"><span style="font-size: 60px; color: rgb(0, 153, 255);" class="philosopher-font">Eventi in programma</span></p><br>' +
+    '<br><p style="text-align: center;"><span style="font-size: 45px; line-height: 1; color: rgb(0, 153, 255);" class="philosopher-font">Eventi in programma</span></p><br>' +
     '<p style="text-align: center;"><img src="../img/default/prossimi_eventi.jpg" class="fr-fic fr-dib blue-border"></p>'+
     '<p style="text-align: center;"><br></p>'+
     '<p style="text-align: justify;"><span style="font-size: 30px;">C</span><span style="font-size: 18px;">onsiderate le ' +
     'numerose richieste pervenute, in autunno verranno riproposti gli incontri su <strong>ansia</strong> e <strong>depressione' +
     '</strong>, arricchiti dalle osservazioni e dagli spunti forniti dai partecipanti all&rsquo;edizione primaverile.</span></p>' +
-    '<br><p><span style="font-size: 18px;">Verranno proposti inoltre incontri su altri argomenti di interesse psicologico.</span></p>'+
+    '<br><p style="text-align: justify"><span style="font-size: 18px;">Verranno proposti inoltre incontri su altri argomenti di interesse psicologico.</span></p>'+
     '<p><span style="font-size: 18px;">A breve tutte le informazioni!</span></p> <br>'+
-    '<p style="text-align: center;"><span style="font-size: 60px; color: rgb(0, 153, 255);" class="philosopher-font">Eventi passati</span></p><br>'+
+    '<p style="text-align: center;"><span style="font-size: 45px; line-height: 1; color: rgb(0, 153, 255);" class="philosopher-font">Eventi passati</span></p><br>'+
     '<h2><span style="font-size: 30px;" class="philosopher-font">Praticando la psicologia</span></h2><br>'+
     '<p><span style="font-size: 18px;"><strong>Incontri gratuiti</strong> teorico-pratici sui temi dell&#39;ansia e ' +
     'della depressione</span></p><br>'+
@@ -137,11 +136,11 @@ let eventi =
 
 var contact = '<div class="container">'
     + '<div class="row">'
-    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center display-4 page-title philosopher-font blue-text">'
+    + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center page-title philosopher-font blue-text" style="font-size: 45px; line-height: 1">'
     + 'Come e dove trovarmi<br>'
     + '</div> </div>'
     + '<div class="text-center open-font font-large">'
-    + '<h4>Per ogni dubbio, richiesta informazioni, o per fissare un primo colloquio gratuito, compila il form qui sotto, ti risponderò al più presto:</h4><br><br>'
+    + '<h5>Per ogni dubbio, richiesta informazioni, o per fissare un primo colloquio gratuito, compila il form qui sotto, ti risponderò al più presto:</h5><br><br>'
     + '</div>'
     + '<p class="open-font" id="forced-fields">I campi contrassegnati con l\'asterisco (*) sono obbligatori.</p><br>'
     + '<form id="contactForm" action="#" method="post" name="contact">'
@@ -166,11 +165,26 @@ var contact = '<div class="container">'
     + '<label for="form4">Contenuto*</label>'
     + '</div>'
     + '</form>'
+    + '<div class="checkbox checkbox-success">'
+    + '<div class="accept-licence">'
+    + '<div class="cntr">'
+    + '<label for="cbx" class="label-cbx">'
+    + '<input id="cbx" type="checkbox" class="invisible">'
+    + '<div class="checkbox">\n'
+    + '<svg width="20px" height="20px" viewBox="0 0 20 20">'
+    + '<path d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"></path>'
+    + '<polyline points="4 11 8 15 16 6"></polyline>'
+    + '</svg>'
+    + '</div>'
+    + '<span>Acconsento al trattamento dei dati, ai sensi del GDPR (General Data Protection Regulation) con riferimento al Regolamento UE 2016/679 sulla protezione dei dati in vigore dal 25/05/2018</span>'
+    + '</label>'
+    + '</div>'
+    + '</div><br><br>'
     + '<div class="text-center">'
     + '<button class="btn btn-default" id="send-mail">Invia</button>'
     + '<div class="call"><br>'
-    + '<h4>Oppure invia un SMS e ti richiamerò non appena mi sarà possibile:<br>'
-    + '<span><i class="fa fa-phone"> </i></span> 333 87 37 231</p></h4><br><br>'
+    + '<h5>Oppure invia un SMS e ti richiamerò non appena mi sarà possibile:<br>'
+    + '<span><i class="fa fa-phone"> </i></span> 333 87 37 231</p></h5><br><br>'
     + '</div> </div> </div>'
     + '<div class="row">'
     + '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">'
@@ -184,7 +198,7 @@ let transactional =
     '<p style="text-align: justify;"><img src="../img/default/psicoterapia_analitico_transazionale.jpg" class="fr-fic fr-dib blue-border"><span style="font-size: 18px;"><br></span></p><br>'+
     '<p style="text-align: justify;"><span style="font-size: 30px;" class="philosopher-font">L</span><span style="font-size: 18px">&rsquo;approccio Analitico Transazionale viene ' +
     'utilizzato nel trattamento di disturbi psicologici di ogni tipo, essendo un metodo di psicoterapia <strong>individuale' +
-    '</strong>, di <strong>coppia</strong>, di <strong>gruppo</strong> e <strong>familiare</strong>di comprovata efficacia.' +
+    '</strong>, di <strong>coppia</strong>, di <strong>gruppo</strong> e <strong>familiare</strong> di comprovata efficacia.' +
     '</span></p><br>'+
     '<p style="text-align: justify;"><span style="font-size: 18px;">Si tratta di una psicoterapia integrata, che attraverso ' +
     'l&rsquo;utilizzo di tecniche <strong>cognitive</strong>, <strong>comportamentali</strong>, <strong>gestaltiche</strong> ' +
@@ -296,11 +310,11 @@ let technique =
     '<ul class="ul-formatting" >'+
     '<li style="text-align: justify"><span style="font-size: 18px;">sull&#39;umore</span></li>'+
     '<li style="text-align: justify"><span style="font-size: 18px;">sulla salute</span></li>'+
-    '<li style="text-align: justify"><span style="font-size: 18px;">per il successo professinale</span></li>'+
-    '<li style="text-align: justify"><span style="font-size: 18px;">per rafforzare la sicurezza di s&eacute; el&#39;autostima</span></li>'+
-    '<li style="text-align: justify"><span style="font-size: 18px;">per rafforzare la memoria e la capacit&agrave; di concentrazione</span>/li>'+
+    '<li style="text-align: justify"><span style="font-size: 18px;">per il successo professionale</span></li>'+
+    '<li style="text-align: justify"><span style="font-size: 18px;">per rafforzare la sicurezza di s&eacute; e l&#39;autostima</span></li>'+
+    '<li style="text-align: justify"><span style="font-size: 18px;">per rafforzare la memoria e la capacit&agrave; di concentrazione</span></li>'+
     '<li style="text-align: justify"><span style="font-size: 18px;">per visualizzare e risolvere problemi</span></li>'+
-    '<li style="text-align: justify"><span style="font-size: 18px;">per pensarsi in contesti e modi diversi</span></li'+
+    '<li style="text-align: justify"><span style="font-size: 18px;">per pensarsi in contesti e modi diversi</span></li>'+
     '<li style="text-align: justify"><span style="font-size: 18px;">per accedere a risorse interne di cui non si &egrave consapevoli</span></li>'+
     '</ul><br>' +
     '<p style="text-align: justify"><span style="font-size: 18px;">Il <strong>Sogno guidato</strong> &egrave; uno stato mentale semi-ipnoide, a ' +

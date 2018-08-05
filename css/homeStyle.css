@@ -26,12 +26,12 @@ header{
 }
 
 .banner-text{
-    padding-top: 15px;
+    padding-top: 0;
 }
 
 .banner-name{
     font-weight: bold;
-    font-size: 77px;
+    font-size: 70px;
 }
 
 #cloud{
@@ -42,4 +42,14 @@ header{
     border-top: 1px solid #0099FF;
     border-radius: 100px;
     font-family: "Bree Serif", Serif;
+}
+
+.botom-footer{
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 2px solid #0099FF;
+}
+
+#main-container{
+    margin-top: 50px;
 }

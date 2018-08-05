@@ -8,6 +8,9 @@ let words = [
             mouseout: function () {
                 this.style.color = '#6666CC';
             },
+            click: function () {
+                articlesHistory('emdr:le8fasideltrattamento', true);
+            }
         }},
     {text: "Copione", weight: 1.4},
     {text: "Driver", weight: 2.1},
@@ -27,7 +30,18 @@ let words = [
     {text: "Adozione e Affido", weight: 2.1},
     {text: "Regolazione emotiva", weight: 2.2},
     {text: "Errori", weight: 3.1},
-    {text: "Mindfulness", weight: 0.9},
+    {text: "Mindfulness", weight: 6.3, handlers:{
+            mouseover: function () {
+                this.style.color = '#0099FF';
+                this.style.cursor = 'pointer';
+            },
+            mouseout: function () {
+                this.style.color = '#6666CC';
+            },
+            click: function () {
+                clickButton('relax', true);
+            }
+        }},
     {text: "Disturbi di personalità", weight: 2.4},
     {text: "Disturbo da stress post-traumatico", weight: 1.3},
     {text: "Tristezza", weight: 1.4},
@@ -37,21 +51,7 @@ let words = [
     {text: "Disturbi di personalità", weight: 2.1},
     {text: "Narcisismo", weight: 2.2},
     {text: "Co-dipendenza", weight: 3.8},
-    {text: "Analisi Transazionale", weight: 5},
-    {text: "Disturbi alimentari", weight: 2.2},
-    {text: "Rilassamento", weight: 1},
-    {text: "Imagery", weight: 1.5},
-    {text: "Training autogeno", weight: 1.7},
-    {text: "Respirazione", weight: 2},
-    {text: "Dipendenza affettiva", weight: 6.8},
-    {text: "Adolescenti", weight: 0.9},
-    {text: "Simbiosi", weight: 2.4},
-    {text: "Psicodiagnosi", weight: 1.3},
-    {text: "Anoressia", weight: 1.4},
-    {text: "Bulimia", weight: 2.1},
-    {text: "Disfunzioni sessuali", weight: 2.2},
-    {text: "Disturbo bipolare", weight: 3.1},
-    {text: "Psicoeducazione", weight: 10.9, handlers:{
+    {text: "Analisi Transazionale", weight: 5.0, handlers:{
             mouseover: function () {
                 this.style.color = '#0099FF';
                 this.style.cursor = 'pointer';
@@ -59,6 +59,56 @@ let words = [
             mouseout: function () {
                 this.style.color = '#6666CC';
             },
+            click: function () {
+                clickButton('transactional', true);
+            }
+        }},
+    {text: "Disturbi alimentari", weight: 2.2},
+    {text: "Rilassamento", weight: 1},
+    {text: "Imagery", weight: 7.0,handlers:{
+            mouseover: function () {
+                this.style.color = '#0099FF';
+                this.style.cursor = 'pointer';
+            },
+            mouseout: function () {
+                this.style.color = '#6666CC';
+            },
+            click: function () {
+                clickButton('technique', true);
+            }
+        }},
+    {text: "Training autogeno", weight: 6.0, handlers:{
+            mouseover: function () {
+                this.style.color = '#0099FF';
+                this.style.cursor = 'pointer';
+            },
+            mouseout: function () {
+                this.style.color = '#6666CC';
+            },
+            click: function () {
+                clickButton('training', true);
+            }
+        }},
+    {text: "Respirazione", weight: 2},
+    {text: "Dipendenza affettiva", weight: 2.4},
+    {text: "Adolescenti", weight: 0.9},
+    {text: "Simbiosi", weight: 2.4},
+    {text: "Psicodiagnosi", weight: 1.3},
+    {text: "Anoressia", weight: 1.4},
+    {text: "Bulimia", weight: 2.1},
+    {text: "Disfunzioni sessuali", weight: 2.2},
+    {text: "Disturbo bipolare", weight: 3.1},
+    {text: "Psicologia di coppia", weight: 10.9, handlers:{
+            mouseover: function () {
+                this.style.color = '#0099FF';
+                this.style.cursor = 'pointer';
+            },
+            mouseout: function () {
+                this.style.color = '#6666CC';
+            },
+            click: function () {
+                articlesHistory('coppiechefunzionanobenevscoppiedisfunzionali:10indicatori', true);
+            }
         }},
     {text: "Attaccamento disorganizzato", weight: 2.4},
     {text: "Paura", weight: 1.3},
@@ -77,7 +127,18 @@ let words = [
     {text: "Autonomia", weight: 2},
     {text: "Trauma", weight: 6.8},
     {text: "Sogni", weight: 0.9},
-    {text: "Cambiamento", weight: 2.4},
+    {text: "Cambiamento", weight: 6.8, handlers:{
+            mouseover: function () {
+                this.style.color = '#0099FF';
+                this.style.cursor = 'pointer';
+            },
+            mouseout: function () {
+                this.style.color = '#6666CC';
+            },
+            click: function () {
+                articlesHistory('autobiografiaincinquebrevicapitoli', true);
+            }
+        }},
     {text: "Separazione/divorzio", weight: 1.3},
     {text: "Transessualità", weight: 1.4},
     {text: "Bisessualità", weight: 2.1},
@@ -87,9 +148,11 @@ let words = [
 
 
 function addCarousel(title, content, immage, url) {
+    console.log('URL file: ' + url);
 
-    var slide = '<li><img src="' + immage + '" class="carusel-immage"><p class="carusel-paragraph open-font">' +
-        '<a href="' + url + '" class="black-text"><span id="carousel-title" class="philosopher-font black-text">' + title + '</span><br><br>'
+    var slide = '<li><img src="' + immage + '" class="carusel-immage"><p class="carusel-paragraph open-font" data-name="' +
+        title.replace(/\s/g, "").toLowerCase() + '">' +
+        '<a href="' + url + '" class="black-text prevent-pointer"><span id="carousel-title" class="philosopher-font black-text">' + title + '</span><br><br>'
         + content + '</a></p></li>';
 
     var allArticles = '<li class="cd-testimonials-item" id="' + title + '" >'

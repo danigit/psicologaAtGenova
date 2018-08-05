@@ -12,9 +12,11 @@ function menuInteraction(){
     document.onclick = function (event) {
         let butt = event.target;
         if(event.target.classList.contains('article-row')) {
+            console.log('article-row pressed');
             //theoryMouseEvents(butt.getAttribute('data-name'));
-            openArticle(event.target.getAttribute('data-name'));
-            pushHistory(event.target.getAttribute('data-name').replace(':', '_'), true);
+            articlesHistory(event.target.getAttribute('data-name'), true);
+        }else if(event.target.classList.contains('carusel-paragraph')){
+            articlesHistory(event.target.getAttribute('data-name'), true);
         }
         else
             clickButton(event.target.id, true);
@@ -144,11 +146,8 @@ function clickButton(button, state) {
         case 'inspiration':
             articolsCategoryEvents('#inspiration-container', document.querySelector('#inspiration'));
             break;
-        case 'cloud_word_1':
-            clickButton('emdr', true);
-            break;
-        case 'cloud_word_0':
-            clickButton('training', true);
+        case 'cloud_word_4':
+            articlesHistory('autobiografiaincinquebrevicapitoli', true);
             break;
         case 'facebook':
             window.open('https://www.facebook.com/psicologaatgenova/', '_blank');
@@ -207,6 +206,6 @@ function articolsCategoryEvents(container, category) {
     }
     else {
         showHideElement(modelContainer, 'hide');
-        category.getElementsByTagName('img')[0].src = "../img/default/freccia_down.png"
+        category.getElementsByTagName('img')[0].src = "../img/default/freccia_down.png";
     }
 }

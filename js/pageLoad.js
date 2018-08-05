@@ -1,6 +1,7 @@
 window.onload = function () {
     menuInteraction();
     carusel = document.getElementById('main-carusel-container');
+    $('#carusel-container').css('height', 'auto');
     setTopMenu(document.querySelector('#home'));
 
     if(url !== ""){
@@ -40,10 +41,10 @@ window.onload = function () {
                 clickButton('technique', false);
                 break;
             case '/emdr_le8fasideltrattamento':
-                openArticle('emdr:le8fasideltrattamento');
-                showHideElement(document.querySelector('#main-right-column'), 'hide');
-                resizeMainPage('large');
-                setTopMenu(document.querySelector('#theory-practice'));
+                articlesHistory('emdr:le8fasideltrattamento', true)
+                break;
+            case '/coppiechefunzionanobenevscoppiedisfunzionali_10indicatori':
+                articlesHistory('coppiechefunzionanobenevscoppiedisfunzionali:10indicatori', true);
                 break;
             default:
                 clickButton('home', false);
@@ -53,7 +54,13 @@ window.onload = function () {
 
     window.addEventListener('popstate', function () {
         let button = location.pathname.split('/').pop();
-        clickButton(button, false);
+        if (button === 'home' || button === 'services' || button === 'about' || button === 'contact' || button === 'events'
+            || button === 'theory-practice' || button === 'transactional' || button === 'emdr' || button === 'training'
+            || button === 'relax' || button === 'technique')
+            clickButton(button, false);
+        else {
+            articlesHistory(button.replace(/_/g, ':'), false);
+        }
     });
 
     populateCloud();
@@ -63,7 +70,6 @@ window.onload = function () {
 
     window.onresize = function () {
         let immageColumn;
-        let content;
         if (document.querySelector('#articles') !== null && window.innerWidth >= 576){
             console.log('inside if');
             immageColumn = document.querySelectorAll('#article-immage-column');
@@ -71,12 +77,6 @@ window.onload = function () {
                 if(elem.style.display === 'none')
                     showHideElement(elem, 'show');
             });
-
-            content = document.querySelectorAll('#article-logo');
-            content.forEach(function (elem) {
-                if(elem.style.display === 'none')
-                    showHideElement(elem, 'show')
-            })
         }else if(document.querySelector('#articles') !== null && window.innerWidth < 576){
             console.log('inside else');
             immageColumn = document.querySelectorAll('#article-immage-column');
@@ -84,13 +84,12 @@ window.onload = function () {
                 if(elem.style.display !== 'none')
                     showHideElement(elem, 'hide');
             });
-
-            content = document.querySelectorAll('#article-logo');
-            content.forEach(function (elem) {
-                if(elem.style.display !== 'none')
-                    showHideElement(elem, 'hide')
-            })
         }
+
+        if(window.innerWidth > 768)
+            document.querySelector('.top-menu-button').style.display = 'none';
+        else if(window.innerWidth < 767)
+            document.querySelector('.top-menu-button').style.display = 'block';
     }
 
 };
@@ -109,7 +108,7 @@ function loadSliderContent() {
             if(data.result){
                 let i = 0;
                 Array.from(data.articles).forEach(function (article) {
-                    addCarousel(article.title, article.description, article.images_path);
+                    addCarousel(article.title, article.description, article.images_path, article.file_path);
                 });
                 loadSlider();
             }
@@ -117,27 +116,10 @@ function loadSliderContent() {
     )
 }
 
-function smallDevicesArticleListDisplay() {
-    let immageColumn;
-    let content;
-    let mutationManager = function(mutationRecords) {
-        mutationRecords.forEach(function (elem) {
-            console.log('Elem id: ' + elem.target.id);
-            if(window.innerWidth < 576 && elem.target.id === 'models-container'){
-                immageColumn = document.querySelectorAll('#article-immage-column');
-                content = document.querySelectorAll('#article-logo');
-                immageColumn.forEach(function (elem) {
-                    showHideElement(elem, 'hide');
-                });
-
-                content.forEach(function (elem) {
-                    showHideElement(elem, 'hide')
-                });
-            }
-        })
-    };
-
-    let observer = new MutationObserver(mutationManager);
-
-    observer.observe(document.querySelector('#carusel-column'), { childList: true, subtree: true });
+function articlesHistory(name, state) {
+    openArticle(name);
+    showHideElement(document.querySelector('#main-right-column'), 'hide');
+    resizeMainPage('large');
+    setTopMenu(document.querySelector('#theory-practice'));
+    pushHistory(name.replace(/:/g, '_'), state);
 }

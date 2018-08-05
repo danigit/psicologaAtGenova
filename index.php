@@ -11,6 +11,7 @@ $url = $_SERVER['REQUEST_URI'];
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="author" content="Daniel Surpanu">
 
+        <link rel="shortcut icon" href="img/default/logo_150.png">
         <title>Dott.ssa Simona Bettoli Psicologa</title>
 
         <!-- carousel -->
@@ -42,6 +43,7 @@ $url = $_SERVER['REQUEST_URI'];
         <link href="css/contentLayout.css" type="text/css" rel="stylesheet">
         <link href="css/theoryAndPractice.css" type="text/css" rel="stylesheet">
         <link href="css/responsive.css" type="text/css" rel="stylesheet">
+        <link href="css/checkbox.css" type="text/css" rel="stylesheet">
 
         <!-- facebook script and redirect variable-->
         <script>
@@ -125,13 +127,13 @@ $url = $_SERVER['REQUEST_URI'];
                         </div>
                         <div class="col col-lg-9 col-md-9 col-sm-9 banner-text philosopher-font zero-padding" id="banner-text">
                             <div class="container fit-content margin-0-left">
-                                <div class="container font-x-large small-text-banner">
+                                <div class="container font-large small-text-banner">
                                     <p>Dott.ssa</p>
                                 </div>
                                 <div class="container banner-name">
                                     <p class="philosopher-font">Simona Bettoli</p>
                                 </div>
-                                <div class="container text-lg-right font-x-large">
+                                <div class="container text-lg-right font-large">
                                     <p class="float-right">Psicologa</p>
                                 </div>
                             </div>
@@ -318,6 +320,15 @@ $url = $_SERVER['REQUEST_URI'];
                 </div>
             </div>
             <!-- /.Central Modal -->
+
+            <!-- End of Footer container -->
+            <div id="botom-footer">
+                <div class="row">
+                    <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center botom-footer">
+                        <p>Dott.ssa SIMONA BETTOLI - Psicologa iscritta all'albo della Liguria n° 2556 - C.F.: BTTSMN81H43D969Z - P.iva: 02458670995</p>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <!-- jquery -->

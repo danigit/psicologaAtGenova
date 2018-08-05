@@ -1,7 +1,7 @@
 let theoryAndPractice =
     '<div id="cantainer" >' +
     '<div class="row">' +
-    '<div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center display-4 page-title philosopher-font blue-text">' +
+    '<div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center page-title philosopher-font blue-text" style="font-size: 45px;">' +
     'ARTICOLI' +
     '</div></div>' +
     //
@@ -76,6 +76,7 @@ function createArticleRows(articles) {
 }
 
 function createArticleRow(article) {
+    console.log('immage path: ' + article.images_path);
     return '<div class="row bottom-border article-row" data-name="' + article.title.replace(/\s/g, '').toLowerCase() + '">' +
         '<div id="article-immage-column" class="col col-lg-3 prevent-pointer">' +
         '<img src="' + article.images_path + '" class="blue-border prevent-pointer">' +
@@ -84,9 +85,6 @@ function createArticleRow(article) {
         '<div id="article-content" class="col col-lg-9 col-md-12 col-sm-12 prevent-pointer">' +
         //
         '<div class="row margin-20-bottom prevent-pointer">' +
-        '<div id="article-logo" class="col col-lg-1 col-md-1 prevent-pointer">' +
-
-        '</div> ' +
         '<div class="col col-lg-11 col-md-12 col-sm-12 font-large philosopher-font blue-text prevent-pointer">' +
         '<p class="prevent-pointer philosopher-font text-center bold-text">' + article.title + '</p>' +
         '</div> ' +
@@ -106,9 +104,9 @@ function openArticle(title) {
     promise.then(
         function (data) {
             if(data.result){
-                var html = decodeEntities(data.content);
-                var output = decorateString(html);
-                var article = '<div class="row" id="article-view">'
+                let html = decodeEntities(data.content);
+                let output = decorateString(html);
+                let article = '<div class="row" id="article-view">'
                     + '<div class="col-12 col-lg-12 col-md-12 col-sm-12" id="left-column">'
                     + '<div id="content">' + output;
                 article += '</div></div></div>';

@@ -34,8 +34,13 @@ function loadSlider() {
     //close the testimonials modal page
     $('.cd-testimonials-all .close-btn').on('click', function () {
         $('.cd-testimonials-all').removeClass('is-visible');
-        showHideElement(document.querySelector('.navbar-expand-md'), 'show');
-        showHideElement(document.querySelector('.top-header'), 'show');
+        document.querySelector('.navbar-expand-md').style.display = 'flex';
+        if(window.innerWidth > 991)
+            showHideElement(document.querySelector('.top-header'), 'show');
+        else if(window.innerWidth < 767){
+            showHideElement(document.querySelector('.top-header'), 'hide');
+            document.querySelector('.top-menu-button').style.display = 'block';
+        }
         document.querySelector('#main-right-column').style.zIndex = 0;
         let bottomContainer = document.querySelector('#bottom-header-row');
         Array.from(bottomContainer).forEach(function (child) {
