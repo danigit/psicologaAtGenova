@@ -10,11 +10,11 @@ $url = $_SERVER['REQUEST_URI'];
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="author" content="Daniel Surpanu">
-        <meta property="og:image" content="http://www.psicologaatgenova.it/img/default/profilo_simo.jpg" />
-        <meta property="og:title" content="Psicologa a GENOVA" />
+        <meta property="og:image" content="https://www.psicologaatgenova.it/img/default/profilo_simo.jpg" />
+        <meta property="og:title" content="Psicologa" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Psicologa certificata EMDR, riceve su appuntamento a Genova, via XXV Aprile 8/6" />
-<!--        <meta property="og:url" content="http://www.psicologaatgenova.it/" />-->
+        <meta property="og:url" content="https://www.psicologaatgenova.it/" />
 
         <link rel="shortcut icon" href="img/default/logo_150.png">
         <title>Dott.ssa Simona Bettoli Psicologa</title>

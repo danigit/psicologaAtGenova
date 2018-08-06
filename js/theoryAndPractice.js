@@ -135,7 +135,17 @@ function changeFacebookTag(title) {
                 document.querySelector('meta[property="og:image"]').setAttribute('content', data[0].images_path);
                 document.querySelector('meta[property="og:title"]').setAttribute('content', title);
                 document.querySelector('meta[property="og:description"]').setAttribute('content', data[0].description);
+                document.querySelector('meta[property="og:url"]').setAttribute('content', 'http://www.psicologaatgenova.it/' + title.replace(/\s/g, '').replace(/:/g, '_').toLowerCase());
             }
         }
     )
+
+    facebookRefresh();
+}
+
+function facebookRefresh() {
+    let xmlhttp = new XMLHttpRequest();
+    xmlhttp.open('GET', 'https://graph.facebook.com/?ids=https://www.psicologaatgenova.it/&scrape=true', false);
+    xmlhttp.send(null);
+    console.log(xmlhttp.responseText);
 }
