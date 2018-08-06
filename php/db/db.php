@@ -147,21 +147,23 @@ class Connection
 
     function get_article_by_title($title){
 
-        $query = "SELECT file_path FROM articles WHERE name=?";
+        $query = "SELECT description, images_path FROM articles WHERE name=?";
 
         $statement = $this->parse_and_execute_select($query, "s", $title);
 
         if ($statement instanceof DbError)
             return $statement;
 
-        $statement->bind_result($file_path);
-        $fetch = $statement->fetch();
+        $result = $statement->get_result();
 
-        $statement->close();
+        $result_array = array();
 
-        if ($fetch) {
-            return $file_path;
+        //todo da mettere dove serve htmlspecialchars
+        while ($row = $result->fetch_array()) {
+            $result_array[] = array("description" => $row['description'], "images_path" => $row['images_path']);
         }
+
+        return $result_array;
     }
 
     /**

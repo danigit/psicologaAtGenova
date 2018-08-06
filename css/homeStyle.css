@@ -53,3 +53,16 @@ header{
 #main-container{
     margin-top: 50px;
 }
+
+.share-home-button{
+    width: 106px;
+    margin-top: 3px;
+    background-color: #4080FF;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.share-home-button a{
+    color: #ffffff;
+}

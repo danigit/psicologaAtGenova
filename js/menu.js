@@ -5,20 +5,16 @@ let caruselColumn = document.querySelector('#carusel-column');
 let carusel = '';
 
 function menuInteraction(){
-    mouseHover(document.querySelector('.top-menu-list'), 'a', '#0099FF');
-    mouseHover(document.querySelector('#bottom-header-row'), 'div', '');
-    mouseHover(document.querySelector('#linkedin'), 'img', '');
-    mouseHover(document.querySelector('#facebook'), 'div', '');
+    mouseHover(document.querySelector('.top-menu-list'), 'a');
+    mouseHover(document.querySelector('#bottom-header-row'), 'div');
+    mouseHover(document.querySelector('#linkedin'), 'img');
+    mouseHover(document.querySelector('#facebook'), 'div');
     document.onclick = function (event) {
-        let butt = event.target;
         if(event.target.classList.contains('article-row')) {
-            console.log('article-row pressed');
-            //theoryMouseEvents(butt.getAttribute('data-name'));
             articlesHistory(event.target.getAttribute('data-name'), true);
         }else if(event.target.classList.contains('carusel-paragraph')){
             articlesHistory(event.target.getAttribute('data-name'), true);
-        }
-        else
+        }else
             clickButton(event.target.id, true);
     }
 }
@@ -146,8 +142,8 @@ function clickButton(button, state) {
         case 'inspiration':
             articolsCategoryEvents('#inspiration-container', document.querySelector('#inspiration'));
             break;
-        case 'cloud_word_4':
-            articlesHistory('autobiografiaincinquebrevicapitoli', true);
+        case 'banner':
+            clickButton('home', true);
             break;
         case 'facebook':
             window.open('https://www.facebook.com/psicologaatgenova/', '_blank');

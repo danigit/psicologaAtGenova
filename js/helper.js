@@ -8,6 +8,7 @@ function showHideElement(elem, action) {
 function mouseHover(element, tag) {
     let childrens = Array.prototype.slice.call(element.children);
     childrens.forEach(function (child) {
+        console.log('children: ' + child.outerHTML);
         if(child.firstChild)
             changePointer(child.getElementsByTagName(tag)[0], '#0099FF');
         else

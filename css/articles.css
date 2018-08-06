@@ -1,0 +1,12 @@
+.fb-share-button{
+    width: 290px;
+    margin: auto;
+    background-color: #4267B2;
+    text-align: center;
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+.fb-share-button a{
+    color: #ffffff;
+}

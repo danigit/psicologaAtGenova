@@ -100,17 +100,40 @@ function createArticleRow(article) {
 function openArticle(title) {
     let form = new FormData;
     form.append('title', title);
+    let formatedTitle = title.replace(/\s/g, '').toLowerCase();
+    formatedTitle = formatedTitle.replace(/:/g, '_');
     let promise = httpPost('php/ajax/get_article_content.php', form);
     promise.then(
         function (data) {
             if(data.result){
+                changeFacebookTag(title, form);
                 let html = decodeEntities(data.content);
                 let output = decorateString(html);
                 let article = '<div class="row" id="article-view">'
                     + '<div class="col-12 col-lg-12 col-md-12 col-sm-12" id="left-column">'
                     + '<div id="content">' + output;
                 article += '</div></div></div>';
+                article += '<div class="fb-share-button" data-href="http://www.psicologaatgenova.it/' + formatedTitle + '" ' +
+                    'data-layout="button" data-size="large" data-mobile-iframe="true">' +
+                    '<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=www.psicologaatgenova.it/' + formatedTitle + '"' +
+                    ' class="fb-xfbml-parse-ignore philosopher-font">Condividi su facebook</a></div>';
                 changeLayout(caruselColumn, article);
+            }
+        }
+    )
+}
+
+function changeFacebookTag(title, form) {
+    console.log('article title: ' + title);
+    console.log('form: ' + form);
+    let promiseData = httpPost('php/ajax/get_article_by_title.php', form);
+    promiseData.then(
+        function (data) {
+            if(data.result){
+                console.log('data result: ' + data.images_path);
+                document.querySelector('meta[property="og:image"]').setAttribute('content', data.images_path);
+                document.querySelector('meta[property="og:title"]').setAttribute('content', title);
+                document.querySelector('meta[property="og:description"]').setAttribute('content', data.description);
             }
         }
     )
