@@ -14,7 +14,7 @@ $url = $_SERVER['REQUEST_URI'];
         <meta property="og:title" content="Psicologa a GENOVA" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Psicologa certificata EMDR, riceve su appuntamento a Genova, via XXV Aprile 8/6" />
-        <meta property="og:url" content="http://www.psicologaatgenova.it/" />
+<!--        <meta property="og:url" content="http://www.psicologaatgenova.it/" />-->
 
         <link rel="shortcut icon" href="img/default/logo_150.png">
         <title>Dott.ssa Simona Bettoli Psicologa</title>

@@ -9,7 +9,7 @@ let words = [
                 this.style.color = '#6666CC';
             },
             click: function () {
-                articlesHistory('emdr:le8fasideltrattamento', true);
+                articlesHistory('EMDR: le 8 fasi del trattamento', true);
             }
         }},
     {text: "Copione", weight: 1.4},
@@ -107,7 +107,7 @@ let words = [
                 this.style.color = '#6666CC';
             },
             click: function () {
-                articlesHistory('coppiechefunzionanobenevscoppiedisfunzionali:10indicatori', true);
+                articlesHistory('Coppie che funzionano bene VS coppie disfunzionali: 10 indicatori', true);
             }
         }},
     {text: "Attaccamento disorganizzato", weight: 2.4},
@@ -136,7 +136,7 @@ let words = [
                 this.style.color = '#6666CC';
             },
             click: function () {
-                articlesHistory('autobiografiaincinquebrevicapitoli', true);
+                articlesHistory('Autobiografia in cinque brevi capitoli', true);
             }
         }},
     {text: "Separazione/divorzio", weight: 1.3},

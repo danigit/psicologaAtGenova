@@ -23,9 +23,9 @@ class get_article_by_title extends cs_interaction
     }
 
     protected function get_returned_data(){
-        return array('article' => $this->result);
+        return $this->result;
     }
 }
 
-$value = new get_article_by_title();
-$value->execute();
+$articleByTitle = new get_article_by_title();
+$articleByTitle->execute();

@@ -8,7 +8,6 @@ function showHideElement(elem, action) {
 function mouseHover(element, tag) {
     let childrens = Array.prototype.slice.call(element.children);
     childrens.forEach(function (child) {
-        console.log('children: ' + child.outerHTML);
         if(child.firstChild)
             changePointer(child.getElementsByTagName(tag)[0], '#0099FF');
         else
@@ -54,7 +53,7 @@ function httpPost(url, input) {
 }
 
 function resetForm(form){
-    form[0].reset();blu
+    form[0].reset();
     form.find('label').classList.remove('active');
     form.find('i').classList.remove('active').css.color = '';
 }

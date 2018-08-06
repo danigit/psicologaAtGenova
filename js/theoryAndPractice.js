@@ -49,6 +49,7 @@ function createPage() {
     promise.then(
         function (data) {
             if(data.result){
+                console.log('all articles: ' + data.articles);
                 createArticleRows(data.articles);
             }
         }
@@ -76,8 +77,7 @@ function createArticleRows(articles) {
 }
 
 function createArticleRow(article) {
-    console.log('immage path: ' + article.images_path);
-    return '<div class="row bottom-border article-row" data-name="' + article.title.replace(/\s/g, '').toLowerCase() + '">' +
+    return '<div class="row bottom-border article-row" data-name="' + article.title + '">' +
         '<div id="article-immage-column" class="col col-lg-3 prevent-pointer">' +
         '<img src="' + article.images_path + '" class="blue-border prevent-pointer">' +
         '</div>' +
@@ -98,15 +98,15 @@ function createArticleRow(article) {
 }
 
 function openArticle(title) {
+    console.log('title new : ' + title);
     let form = new FormData;
-    form.append('title', title);
     let formatedTitle = title.replace(/\s/g, '').toLowerCase();
-    formatedTitle = formatedTitle.replace(/:/g, '_');
+    form.append('title', formatedTitle);
     let promise = httpPost('php/ajax/get_article_content.php', form);
     promise.then(
         function (data) {
             if(data.result){
-                changeFacebookTag(title, form);
+                //changeFacebookTag(title);
                 let html = decodeEntities(data.content);
                 let output = decorateString(html);
                 let article = '<div class="row" id="article-view">'
@@ -120,20 +120,21 @@ function openArticle(title) {
                 changeLayout(caruselColumn, article);
             }
         }
-    )
+    );
+    changeFacebookTag(title);
 }
 
-function changeFacebookTag(title, form) {
-    console.log('article title: ' + title);
-    console.log('form: ' + form);
-    let promiseData = httpPost('php/ajax/get_article_by_title.php', form);
+function changeFacebookTag(title) {
+    let formData = new FormData;
+    formData.append('title', title);
+    let promiseData = httpPost('php/ajax/get_article_by_title.php', formData);
     promiseData.then(
         function (data) {
             if(data.result){
-                console.log('data result: ' + data.images_path);
-                document.querySelector('meta[property="og:image"]').setAttribute('content', data.images_path);
+                console.log('result' + data[0].images_path);
+                document.querySelector('meta[property="og:image"]').setAttribute('content', data[0].images_path);
                 document.querySelector('meta[property="og:title"]').setAttribute('content', title);
-                document.querySelector('meta[property="og:description"]').setAttribute('content', data.description);
+                document.querySelector('meta[property="og:description"]').setAttribute('content', data[0].description);
             }
         }
     )

@@ -127,24 +127,6 @@ class Connection
         return $result_array;
     }
 
-    function get_all_articles(){
-        $query = "SELECT type, name, description, file_path, images_path FROM articles";
-
-        $result = $this->connection->query($query);
-
-        if ($result === false )
-            return new DbError(DbError::$ERROR_GET_ARTICLES);
-
-        $result_array = array();
-
-        //todo da mettere dove serve htmlspecialchars
-        while ($row = mysqli_fetch_assoc($result)) {
-            $result_array[] = array('type' => $row['type'], 'title' => htmlspecialchars($row['name']), "description" => $row['description'], "images_path" => $row['images_path'], "file_path" => $row['file_path']);
-        }
-
-        return $result_array;
-    }
-
     function get_article_by_title($title){
 
         $query = "SELECT description, images_path FROM articles WHERE name=?";
@@ -160,7 +142,25 @@ class Connection
 
         //todo da mettere dove serve htmlspecialchars
         while ($row = $result->fetch_array()) {
-            $result_array[] = array("description" => $row['description'], "images_path" => $row['images_path']);
+            $result_array[] = array('antani' => 'antaniscapelli', "description" => $row['description'], "images_path" => $row['images_path']);
+        }
+
+        return $result_array;
+    }
+
+    function get_all_articles(){
+        $query = "SELECT type, name, description, file_path, images_path FROM articles";
+
+        $result = $this->connection->query($query);
+
+        if ($result === false )
+            return new DbError(DbError::$ERROR_GET_ARTICLES);
+
+        $result_array = array();
+
+        //todo da mettere dove serve htmlspecialchars
+        while ($row = mysqli_fetch_assoc($result)) {
+            $result_array[] = array('type' => $row['type'], 'title' => htmlspecialchars($row['name']), "description" => $row['description'], "images_path" => $row['images_path'], "file_path" => $row['file_path']);
         }
 
         return $result_array;

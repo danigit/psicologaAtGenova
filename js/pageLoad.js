@@ -5,7 +5,6 @@ window.onload = function () {
     setTopMenu(document.querySelector('#home'));
 
     if(url !== ""){
-        console.log(url);
         switch (url){
             case '/home':
                 clickButton('home', false);
@@ -41,10 +40,13 @@ window.onload = function () {
                 clickButton('technique', false);
                 break;
             case '/emdr_le8fasideltrattamento':
-                articlesHistory('emdr:le8fasideltrattamento', true)
+                articlesHistory('EMDR: le 8 fasi del trattamento', true)
                 break;
             case '/coppiechefunzionanobenevscoppiedisfunzionali_10indicatori':
-                articlesHistory('coppiechefunzionanobenevscoppiedisfunzionali:10indicatori', true);
+                articlesHistory('Coppie che funzionano bene VS coppie disfunzionali: 10 indicatori', true);
+                break;
+            case '/autobiografiaincinquebrevicapitoli':
+                articlesHistory('Autobiografia in cinque brevi capitoli', true);
                 break;
             default:
                 clickButton('home', false);
@@ -59,7 +61,11 @@ window.onload = function () {
             || button === 'relax' || button === 'technique')
             clickButton(button, false);
         else {
-            articlesHistory(button.replace(/_/g, ':'), false);
+            openArticle(button.replace(/_/g, ':'));
+            showHideElement(document.querySelector('#main-right-column'), 'hide');
+            resizeMainPage('large');
+            setTopMenu(document.querySelector('#theory-practice'));
+            pushHistory(button.replace(/:/g, '_').replace(/\s/g, '').toLowerCase(), state);
         }
     });
 
@@ -121,5 +127,5 @@ function articlesHistory(name, state) {
     showHideElement(document.querySelector('#main-right-column'), 'hide');
     resizeMainPage('large');
     setTopMenu(document.querySelector('#theory-practice'));
-    pushHistory(name.replace(/:/g, '_'), state);
+    pushHistory(name.replace(/:/g, '_').replace(/\s/g, '').toLowerCase(), state);
 }
