@@ -13,7 +13,11 @@ function menuInteraction(){
         if(event.target.classList.contains('article-row')) {
             articlesHistory(event.target.getAttribute('data-name'), true);
         }else if(event.target.classList.contains('carusel-paragraph')){
+            document.querySelector('.navbar-expand-md').style.display = 'flex';
+            if(window.innerWidth > 992)
+                showHideElement(document.querySelector('.top-header'), 'show');
             articlesHistory(event.target.getAttribute('data-name'), true);
+            document.querySelector('body').style.overflow = 'auto';
         }else
             clickButton(event.target.id, true);
     }

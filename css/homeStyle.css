@@ -56,7 +56,7 @@ header{
 
 .share-home-button{
     width: 106px;
-    margin-top: 3px;
+    margin: 3px auto;
     background-color: #4080FF;
     text-align: center;
     font-weight: bold;

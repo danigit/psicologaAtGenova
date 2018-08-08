@@ -193,7 +193,7 @@ var contact = '<div class="container">'
     + '</div> </div>';
 
 let transactional =
-    '<br> <p style="text-align: center;"><span style="font-size: 60px; color: rgb(0, 153, 255);" class="philosopher-font">' +
+    '<br> <p style="text-align: center;"><span style="font-size: 45px; color: rgb(0, 153, 255);" class="philosopher-font">' +
     'Analisi Transazionale</span></p> <br>' +
     '<p style="text-align: justify;"><img src="../img/default/psicoterapia_analitico_transazionale.jpg" class="fr-fic fr-dib blue-border"><span style="font-size: 18px;"><br></span></p><br>'+
     '<p style="text-align: justify;"><span style="font-size: 30px;" class="philosopher-font">L</span><span style="font-size: 18px">&rsquo;approccio Analitico Transazionale viene ' +
@@ -220,7 +220,7 @@ let transactional =
     'European Association for Transactional Analysis</a></span></p>';
 
 let emdr =
-    '<br><p style="text-align: center;"><span style="font-size: 60px; color: rgb(0, 153, 255);" class="philosopher-font">EMDR</span></p> <br>'+
+    '<br><p style="text-align: center;"><span style="font-size: 45px; color: rgb(0, 153, 255);" class="philosopher-font">EMDR</span></p> <br>'+
     '<p style="text-align: center;"><img data-fr-image-pasted="true" src="../img/default/EMDR.jpg" class="fr-fic fr-dii blue-border"></p><br>'+
     '<p style="text-align: justify;"><span style="font-size: 30px;" class="philosopher-font">L</span><span style="font-size: 18px;">&rsquo;EMDR ' +
     '(Eye Movement Desensitization and Reprocessing, in italiano: Desensibilizzazione e Rielaborazione attraverso i ' +
@@ -246,7 +246,7 @@ let emdr =
     'Desensitization and Reprocessing</span></a></p>';
 
 let training =
-    '<br><p style="text-align: center;"><span style="font-size: 60px; color: rgb(0, 153, 255);" class="philosopher-font">Training Autogeno</span></p> <br>'+
+    '<br><p style="text-align: center;"><span style="font-size: 45px; color: rgb(0, 153, 255);" class="philosopher-font">Training Autogeno</span></p> <br>'+
     '<p style="text-align: center;"><img data-fr-image-pasted="true" src="../img/default/training_autogeno.jpg" ' +
     'class="fr-fic fr-dii blue-border"> </p> <br>'+
     '<p style="text-align: justify;"><span style="font-size: 30px;" class="philosopher-font">I</span><span style="font-size: 18px;">l Training ' +
@@ -261,7 +261,7 @@ let training =
     'energie e concentrazione.</span></p>';
 
 let relax =
-    '<br> <p style="text-align: center;"><span style="font-size: 60px; color: rgb(0, 153, 255);;" class="philosopher-font">Tecniche di rilassamento ' +
+    '<br> <p style="text-align: center;"><span style="font-size: 45px; color: rgb(0, 153, 255);;" class="philosopher-font">Tecniche di rilassamento ' +
     'psico-corporeo</span></p> <br>' +
     '<p style="text-align: center;"><img data-fr-image-pasted="true" src="../img/default/psi_benessere.jpg" ' +
     'class="fr-fic fr-dii blue-border"></p> <br>'+
@@ -297,7 +297,7 @@ let relax =
     'specifici.</span></p>';
 
 let technique =
-    '<br> <p style="text-align: center;"><span style="font-size: 60px; color: rgb(0, 153, 255);" class="philosopher-font">' +
+    '<br> <p style="text-align: center;"><span style="font-size: 45px; color: rgb(0, 153, 255);" class="philosopher-font">' +
     'Tecnniche Induttive e Immaginative</span></p> <br>'+
     '<p><img data-fr-image-pasted="true" src="../img/default/immagination.jpg" class="fr-fic fr-dii blue-border"> </p> <br>'+
     '<p style="text-align: justify"><span style="font-size: 30px;" class="philosopher-font">T</span><span style="font-size: 18px;">ali tecniche mirano a riattivare la percezione ' +

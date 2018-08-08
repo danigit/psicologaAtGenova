@@ -152,13 +152,14 @@ function addCarousel(title, content, immage, url) {
 
     var slide = '<li><img src="' + immage + '" class="carusel-immage"><p class="carusel-paragraph open-font" data-name="' +
         title.replace(/\s/g, "").toLowerCase() + '">' +
-        '<a href="' + url + '" class="black-text prevent-pointer"><span id="carousel-title" class="philosopher-font black-text">' + title + '</span><br><br>'
+        '<a href="" class="black-text prevent-pointer"><span id="carousel-title" class="philosopher-font black-text">' + title + '</span><br><br>'
         + content + '</a></p></li>';
 
-    var allArticles = '<li class="cd-testimonials-item" id="' + title + '" >'
-        + '<a href="' + url + '" ><p>' + title + '<br><br>' + content + '</p></a>'
-        + '<div class="cd-author">'
-        + '<img src="' + immage + '" alt="Author image"></div> </li>';
+    var allArticles = '<li class="cd-testimonials-item">'
+        + '<p class="carusel-paragraph justify-text" data-name="' + title.replace(/\s/g, "").toLowerCase() + '">'
+        + '' + title.toUpperCase() + '<br><br>' + content + '</p>'
+        + '<div class="cd-author prevent-pointer">'
+        + '<img src="' + immage + '" alt="Immagine articolo" style="margin-top: -50px"></div> </li>';
 
 
     // $('.cd-testimonials').append(slide);

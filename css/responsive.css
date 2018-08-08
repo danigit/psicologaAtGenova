@@ -1,3 +1,60 @@
+@media (min-width: 1201px) and (max-width: 2048px) {
+    .small-banner {
+        font-size: small;
+    }
+
+    .top-menu-list a {
+        padding: 8px 0 6px 0;
+    }
+
+    #carusel-column {
+        padding-right: 40px;
+    }
+
+    .right-col-profile-image {
+        width: 230px;
+        display: block;
+        margin: auto;
+    }
+
+    #main-right-column {
+        padding-left: 30px;
+    }
+
+    .right-col-profile-image-footer p {
+        font-size: medium;
+    }
+
+    .fb-share-button{
+        width: 200px!important;
+        font-size: large!important;
+    }
+
+    .fast-contact {
+        font-size: medium;
+    }
+
+    .bottom-image-container {
+        padding: 0 70px 0 70px;
+    }
+
+    .bottom-text-container .font-x-large {
+        font-size: large;
+    }
+
+    .bottom-text-container p {
+        font-size: small;
+    }
+
+    .botom-footer p {
+        font-size: small;
+    }
+
+    #left-column{
+        padding: 0 150px 150px;
+    }
+}
+
 @media (min-width: 992px) and (max-width: 1200px){
     .small-banner{
         font-size: small;
@@ -94,6 +151,10 @@
         padding-top: 58px;
     }
 
+    #carusel-column{
+        padding: 0;
+    }
+
     .menu-collapse-button-immage{
         width: 40px;
     }
@@ -130,11 +191,19 @@
     .logo-immage{
         width: 80px;
     }
+
+    .botom-footer{
+        font-size: small;
+    }
 }
 
 @media (min-width: 399px) and (max-width: 575px) {
     header{
         padding-top: 45px;
+    }
+
+    #carusel-column{
+        padding: 0;
     }
 
     .right-col-profile-image, #cloud, .top-header, .small-text-banner, .facebook, .bottom-header-container,
@@ -195,11 +264,19 @@
     .text-lg-right{
         font-size: medium;
     }
+
+    .botom-footer{
+        font-size: small;
+    }
 }
 
 @media (max-width: 398px) {
     header{
         padding-top: 45px;
+    }
+
+    #carusel-column{
+        padding: 0;
     }
 
     .right-col-profile-image, #cloud, .top-header, .small-text-banner, .facebook, .bottom-header-container, .text-lg-right,
@@ -247,5 +324,9 @@
 
     #main-container{
         margin-top: 30px;
+    }
+
+    .botom-footer{
+        font-size: x-small;
     }
 }

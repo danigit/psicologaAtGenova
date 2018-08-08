@@ -121,7 +121,7 @@ function openArticle(title) {
             }
         }
     );
-    changeFacebookTag(title);
+    //changeFacebookTag(title);
 }
 
 function changeFacebookTag(title) {
@@ -131,7 +131,6 @@ function changeFacebookTag(title) {
     promiseData.then(
         function (data) {
             if(data.result){
-                console.log('result' + data[0].images_path);
                 document.querySelector('meta[property="og:image"]').setAttribute('content', data[0].images_path);
                 document.querySelector('meta[property="og:title"]').setAttribute('content', title);
                 document.querySelector('meta[property="og:description"]').setAttribute('content', data[0].description);

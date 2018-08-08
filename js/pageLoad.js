@@ -58,14 +58,29 @@ window.onload = function () {
         let button = location.pathname.split('/').pop();
         if (button === 'home' || button === 'services' || button === 'about' || button === 'contact' || button === 'events'
             || button === 'theory-practice' || button === 'transactional' || button === 'emdr' || button === 'training'
-            || button === 'relax' || button === 'technique')
+            || button === 'relax' || button === 'technique') {
             clickButton(button, false);
-        else {
+            document.querySelector('.navbar-expand-md').style.display = 'flex';
+            if (window.innerWidth > 991)
+                showHideElement(document.querySelector('.top-header'), 'show');
+            else if (window.innerWidth < 767) {
+                showHideElement(document.querySelector('.top-header'), 'hide');
+                document.querySelector('.top-menu-button').style.display = 'block';
+            }
+            document.querySelector('body').style.overflow = 'auto';
+        } else {
+            document.querySelector('.navbar-expand-md').style.display = 'flex';
+            if(window.innerWidth > 992) {
+                showHideElement(document.querySelector('.top-header'), 'show');
+            }
+            else if(window.innerWidth < 992)
+                showHideElement(document.querySelector('.top-header'), 'hide');
             openArticle(button.replace(/_/g, ':'));
             showHideElement(document.querySelector('#main-right-column'), 'hide');
             resizeMainPage('large');
             setTopMenu(document.querySelector('#theory-practice'));
-            pushHistory(button.replace(/:/g, '_').replace(/\s/g, '').toLowerCase(), state);
+            pushHistory(button.replace(/:/g, '_').replace(/\s/g, '').toLowerCase(), false);
+            document.querySelector('body').style.overflow = 'auto';
         }
     });
 
@@ -76,26 +91,36 @@ window.onload = function () {
 
     window.onresize = function () {
         let immageColumn;
-        if (document.querySelector('#articles') !== null && window.innerWidth >= 576){
+        if (document.querySelector('#articles') !== null && window.innerWidth >= 576) {
             console.log('inside if');
             immageColumn = document.querySelectorAll('#article-immage-column');
             immageColumn.forEach(function (elem) {
-                if(elem.style.display === 'none')
+                if (elem.style.display === 'none')
                     showHideElement(elem, 'show');
             });
-        }else if(document.querySelector('#articles') !== null && window.innerWidth < 576){
+        } else if (document.querySelector('#articles') !== null && window.innerWidth < 576) {
             console.log('inside else');
             immageColumn = document.querySelectorAll('#article-immage-column');
             immageColumn.forEach(function (elem) {
-                if(elem.style.display !== 'none')
+                if (elem.style.display !== 'none')
                     showHideElement(elem, 'hide');
             });
         }
 
-        if(window.innerWidth > 768)
+        if (window.innerWidth > 768){
             document.querySelector('.top-menu-button').style.display = 'none';
+            document.querySelector('#carusel-column').classList.remove('col-md-9');
+            document.querySelector('#carusel-column').classList.add('col-md-12');
+        }
+        //TODO questi if window.width devo creare un metodo e raggruparli in modo logico
         else if(window.innerWidth < 767)
             document.querySelector('.top-menu-button').style.display = 'block';
+
+        if(window.innerWidth > 992) {
+            showHideElement(document.querySelector('.top-header'), 'show');
+        }
+        else if(window.innerWidth < 992)
+            showHideElement(document.querySelector('.top-header'), 'hide');
     }
 
 };
@@ -125,6 +150,7 @@ function loadSliderContent() {
 function articlesHistory(name, state) {
     openArticle(name);
     showHideElement(document.querySelector('#main-right-column'), 'hide');
+
     resizeMainPage('large');
     setTopMenu(document.querySelector('#theory-practice'));
     pushHistory(name.replace(/:/g, '_').replace(/\s/g, '').toLowerCase(), state);

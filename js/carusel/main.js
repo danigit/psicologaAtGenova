@@ -18,16 +18,17 @@ function loadSlider() {
     //open the testimonials modal page
     $('.cd-see-all').on('click', function () {
         $('.cd-testimonials-all').addClass('is-visible');
-        console.log('see all');
         showHideElement(document.querySelector('.navbar-expand-md'), 'hide');
         showHideElement(document.querySelector('.top-header'), 'hide');
         document.querySelector('#main-right-column').style.zIndex = -1;
+        document.querySelector('.botom-footer').style.zIndex = -1;
         let bottomContainer = document.querySelector('#bottom-header-row').children;
         console.log('header ' + bottomContainer.children);
         Array.from(bottomContainer).forEach(function (child) {
             console.log('child: ' + child);
             child.style.zIndex = -1;
         });
+        mouseHover(document.querySelector('.cd-testimonials-all-list'), 'p');
         $('body').css('overflow', 'hidden');
     });
 
@@ -42,11 +43,12 @@ function loadSlider() {
             document.querySelector('.top-menu-button').style.display = 'block';
         }
         document.querySelector('#main-right-column').style.zIndex = 0;
+        document.querySelector('.botom-footer').style.zIndex = 0;
         let bottomContainer = document.querySelector('#bottom-header-row');
         Array.from(bottomContainer).forEach(function (child) {
             child.style.zIndex = 0;
         });
-        $('body').css('overflow', 'auto');
+        document.querySelector('body').style.overflow = 'auto';
     });
 
     $(document).keyup(function (event) {

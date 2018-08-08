@@ -6,23 +6,29 @@ function showHideElement(elem, action) {
 }
 
 function mouseHover(element, tag) {
+    console.log('mouse hover: ' + element.outerHTML);
     let childrens = Array.prototype.slice.call(element.children);
     childrens.forEach(function (child) {
-        if(child.firstChild)
-            changePointer(child.getElementsByTagName(tag)[0], '#0099FF');
-        else
-            changePointer(child);
+        console.log('child elem: ' + child.outerHTML);
+        if(child.firstChild) {
+            console.log('inside if: ' + child.outerHTML);
+            changePointer(child.getElementsByTagName(tag)[0], '#0099FF', '#808080');
+        } else {
+            console.log('inside else: ' + child.outerHTML);
+            changePointer(child, '#0099ff', '#808080');
+        }
     });
-    changePointer(document.querySelector('#fast-contact'), '#6666CC');
+    changePointer(document.querySelector('#fast-contact'), '#ffffff', '#ffffff');
 }
 
-function changePointer(elem, color) {
+function changePointer(elem, on, out) {
+    console.log('change pointer: ' + elem);
     elem.onmouseenter = function(){
         elem.style.cursor = 'pointer';
-        elem.style.color = color;
+        elem.style.color = on;
     };
     elem.onmouseleave = function () {
-        elem.style.color = "#808080"
+        elem.style.color = out;
     }
 }
 
