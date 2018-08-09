@@ -2,7 +2,7 @@
 //adds the content in the main page when the button Chi Sono is pressed
 
 let aboutMe =
-    '<br><p style="text-align: center;" xmlns="http://www.w3.org/1999/html"><span style="font-size: 45px; line-height: 1;' +
+    '<div class="padding-web-informations"><br><p style="text-align: center;" xmlns="http://www.w3.org/1999/html"><span style="font-size: 45px; line-height: 1;' +
     'color: rgb(0, 153, 255);" class="philosopher-font">Profilo professionale </span></></p><br><br><br>' +
     '<p style="text-align: justify"><span style="font-size: 18px"><strong><em>&lt;&lt;Perch&eacute; hai deciso di fare la psicologa?&gt;&gt; &lt;&lt;Per capire come funziona la ' +
     'mente e aiutare le persone!&gt;&gt;</em></strong></span></p><br>' +
@@ -58,17 +58,17 @@ let aboutMe =
     '<hr style="text-align: justify;" class="horizontal-line">'+
     '<p style="text-align: justify;"><span style="font-size: 18px;"><br></span></p>'+
     '<p style="text-align: justify;"><span style="font-size: 18px; color: rgb(0, 153, 255);"><strong>Ricevo su appuntamento ' +
-    'presso il mio studio nel Centro di Psicoterapia 2.0 situato in Via XXV Aprile 8/6 - Genova.</strong></span></p>';
+    'presso il mio studio nel Centro di Psicoterapia 2.0 situato in Via XXV Aprile 8/6 - Genova.</strong></span></p></div>';
 
 let services =
-    '<br><p style="text-align: center;"><span style="font-size: 45px; line-height: 1;"><span style="color: rgb(0, 153, 255);" class="philosopher-font">Attivit&agrave; ' +
+    '<div class="padding-web-informations"><br><p style="text-align: center;"><span style="font-size: 45px; line-height: 1;"><span style="color: rgb(0, 153, 255);" class="philosopher-font">Attivit&agrave; ' +
     'professionale</span></></span> </p><br><br>'+
     '<p><span style="font-size: 30px;" class="philosopher-font">N</span><span style="font-size: 18px;">ella mia pratica clinica mi occupo di ' +
     'adolescenti, adulti e coppie.</span></p><br>' +
     '<p><span style="font-size: 18px;">In particolare mi dedico ai seguenti ambiti:</span></p>'+
     '<ul class="ul-formatting">' +
     '<li><span style="font-size: 18px;"><strong>diagnosi</strong></span></li>' +
-    '<li><span style="font-size: 18px;">orientamento e sostegno per chi presenta un&nbsp;<strong>malessere</strong> noto o al quale non riesce a dare un nome</span></li>' +
+    '<li><span style="font-size: 18px;">orientamento e sostegno per chi presenta un&nbsp;<strong>malessere psicologico</strong></span></li>' +
     '<li><span style="font-size: 18px;">percorsi di riabilitazione per&nbsp;<strong>pazienti psichiatrici</strong> o loro&nbsp;<strong>familiari</strong></span></li>' +
     '<li><span style="font-size: 18px;">problematiche&nbsp;<strong>adolescenziali</strong></span></li>' +
     '<li><span style="font-size: 18px;">relazione di&nbsp;<strong>coppia</strong></span></li>' +
@@ -88,10 +88,10 @@ let services =
     '<br>'+
     '<p style="text-align: justify"><span style="font-size: 18px;" class="blue-text"><strong>N.B.</strong> Le fatture relative alle prestazioni psicologiche sono fatture ' +
     'sanitarie a tutti gli effetti e, come tali, sono detraibili al momento della dichiarazione dei redditi nella misura ' +
-    'del 19%.</span></p>';
+    'del 19%.</span></p></div>';
 
 let eventi =
-    '<br><p style="text-align: center;"><span style="font-size: 45px; line-height: 1; color: rgb(0, 153, 255);" class="philosopher-font">Eventi in programma</span></p><br>' +
+    '<div class="padding-web-informations"><br><p style="text-align: center;"><span style="font-size: 45px; line-height: 1; color: rgb(0, 153, 255);" class="philosopher-font">Eventi in programma</span></p><br>' +
     '<p style="text-align: center;"><img src="../img/default/prossimi_eventi.jpg" class="fr-fic fr-dib blue-border"></p>'+
     '<p style="text-align: center;"><br></p>'+
     '<p style="text-align: justify;"><span style="font-size: 30px;">C</span><span style="font-size: 18px;">onsiderate le ' +
@@ -109,7 +109,7 @@ let eventi =
     '<p style="text-align: justify;"><span style="font-size: 18px;">Presso il ' +
     '<a href="https://www.genovapsicologia.it/" rel="noopener noreferrer" target="_blank">Centro di Psicoterapia 2.0</a> ' +
     '(Via XXV Aprile 8/6 &ndash; Genova), in collaborazione con la ' +
-    '<a href="https://www.facebook.com/milviaspinettapsicologa/" rel="noopener noreferrer" target="_blank">dott. ' +
+    '<a href="https://www.facebook.com/milviaspinettapsicologa/" rel="noopener noreferrer" target="_blank">dott.ssa ' +
     'Milvia Spinetta</a>, vengono proposti al pubblico due incontri per conoscere, sfatare qualche mito, e ' +
     'cominciare ad affrontare i due disturbi pi&ugrave; diffusi della nostra epoca: l&rsquo;<strong>ansia</strong> ' +
     'e la <strong>depressione</strong>.</span></p><br>'+
@@ -118,7 +118,7 @@ let eventi =
     '<p style="text-align: justify;"><span style="font-size: 18px;">SABATO 3 MARZO vi parler&ograve; di cosa &egrave; ' +
     'l&rsquo;ansia dal punto di vista della psicologia clinica, vedremo che ruolo ha rispetto agli altri stati emotivi, ' +
     'conosceremo i vari disturbi d&rsquo;ansia e l&rsquo;approccio alla cura attraverso l&rsquo;Analisi Transazionale.</span></p>'+
-    '<p style="text-align: justify;"><span style="font-size: 18px;">Durante l&rsquo;incontro, per chi ne avr&agrave; ' +
+    '<p style="text-align: justify;"><span style="font-size: 18px;">Durante l&rsquo;incontro, per chi avr&agrave; ' +
     'piacere, verranno distribuiti test di autovalutazione relativi agli argomenti trattati e verr&agrave; proposta una ' +
     'breve esercitazione di mindfulness guidata per l&rsquo;osservazione delle proprie emozioni.</span></p><br>'+
     '<p style="text-align: justify;"><span style="font-size: 18px;">&ldquo;<strong>Uff... Che fatica la vita...' +
@@ -130,11 +130,11 @@ let eventi =
     'riflessioni personali su argomenti specifici introdotti dalla dottoressa per discutere e chiarirne alcuni aspetti, e ' +
     'compilare i test psicologici che verranno proposti.</span></p><br>'+
     '<hr class="horizontal-line"><br>'+
-    '<p style="text-align: justify;"><span style="font-size: 18px; color: rgb(0, 153, 255);">Considerato lo spazio limitato,' +
-    '&egrave; richista l&rsquo;iscrizione per mail (simona.bettoli@gmail.com) o sms (333 873.72.31), specificando ' +
-    'la/ledata/e cui si intende partecipare. Vi aspettiamo!</span></p><br>';
+    '<p style="text-align: justify;"><span style="font-size: 18px; color: rgb(0, 153, 255);">Considerato lo spazio limitato, ' +
+    '&egrave; richista l&rsquo;iscrizione per mail (<a href="mailto:psicologaatgenova@gmail.com?Subject=" target="_top" class="email">' +
+    '<b>psicologaatgenova@gmail.com</b></a>) o sms (333 873.72.31), specificando la/le data/e cui si intende partecipare. Vi aspettiamo!</span></p><br></div>';
 
-var contact = '<div class="container">'
+var contact = '<div class="container padding-web-informations">'
     + '<div class="row">'
     + '<div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center page-title philosopher-font blue-text" style="font-size: 45px; line-height: 1">'
     + 'Come e dove trovarmi<br>'
@@ -184,7 +184,7 @@ var contact = '<div class="container">'
     + '<button class="btn btn-default" id="send-mail">Invia</button>'
     + '<div class="call"><br>'
     + '<h5>Oppure invia un SMS e ti richiamerò non appena mi sarà possibile:<br>'
-    + '<span><i class="fa fa-phone"> </i></span> 333 87 37 231</p></h5><br><br>'
+    + '<span><i class="fa fa-phone"> </i></span> 333 873 72 31</p></h5><br><br>'
     + '</div> </div> </div>'
     + '<div class="row">'
     + '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">'
@@ -193,7 +193,7 @@ var contact = '<div class="container">'
     + '</div> </div>';
 
 let transactional =
-    '<br> <p style="text-align: center;"><span style="font-size: 45px; color: rgb(0, 153, 255);" class="philosopher-font">' +
+    '<div class="padding-web-informations"><br> <p style="text-align: center;"><span style="font-size: 45px; color: rgb(0, 153, 255);" class="philosopher-font">' +
     'Analisi Transazionale</span></p> <br>' +
     '<p style="text-align: justify;"><img src="../img/default/psicoterapia_analitico_transazionale.jpg" class="fr-fic fr-dib blue-border"><span style="font-size: 18px;"><br></span></p><br>'+
     '<p style="text-align: justify;"><span style="font-size: 30px;" class="philosopher-font">L</span><span style="font-size: 18px">&rsquo;approccio Analitico Transazionale viene ' +
@@ -217,10 +217,10 @@ let transactional =
     '<p><span style="font-size: 18px;"><a href="http://www.aiat.it/" rel="noopener noreferrer" target="_blank">' +
     'Associazione Italiana di Analisi Transazionale</a></span></p> <p> <a href="http://www.eatanews.org/" target="_blank"></a> </p>'+
     '<p><span style="font-size: 18px;"><a href="https://www.eatanews.org/" rel="noopener noreferrer" target="_blank">' +
-    'European Association for Transactional Analysis</a></span></p>';
+    'European Association for Transactional Analysis</a></span></p></div>';
 
 let emdr =
-    '<br><p style="text-align: center;"><span style="font-size: 45px; color: rgb(0, 153, 255);" class="philosopher-font">EMDR</span></p> <br>'+
+    '<div class="padding-web-informations"><br><p style="text-align: center;"><span style="font-size: 45px; color: rgb(0, 153, 255);" class="philosopher-font">EMDR</span></p> <br>'+
     '<p style="text-align: center;"><img data-fr-image-pasted="true" src="../img/default/EMDR.jpg" class="fr-fic fr-dii blue-border"></p><br>'+
     '<p style="text-align: justify;"><span style="font-size: 30px;" class="philosopher-font">L</span><span style="font-size: 18px;">&rsquo;EMDR ' +
     '(Eye Movement Desensitization and Reprocessing, in italiano: Desensibilizzazione e Rielaborazione attraverso i ' +
@@ -243,10 +243,10 @@ let emdr =
     '<p><span style="font-size: 24px;">LINK</span></p><br>'+
     '<p> <a href="http://emdr.it/" target="_blank"></a></p>'+
     '<p><a href="http://emdr.it/" rel="noopener noreferrer" target="_blank"><span style="font-size: 18px;">Eye Movement ' +
-    'Desensitization and Reprocessing</span></a></p>';
+    'Desensitization and Reprocessing</span></a></p></div>';
 
 let training =
-    '<br><p style="text-align: center;"><span style="font-size: 45px; color: rgb(0, 153, 255);" class="philosopher-font">Training Autogeno</span></p> <br>'+
+    '<div class="padding-web-informations"><br><p style="text-align: center;"><span style="font-size: 45px; color: rgb(0, 153, 255);" class="philosopher-font">Training Autogeno</span></p> <br>'+
     '<p style="text-align: center;"><img data-fr-image-pasted="true" src="../img/default/training_autogeno.jpg" ' +
     'class="fr-fic fr-dii blue-border"> </p> <br>'+
     '<p style="text-align: justify;"><span style="font-size: 30px;" class="philosopher-font">I</span><span style="font-size: 18px;">l Training ' +
@@ -258,10 +258,10 @@ let training =
     'cardiovascolare e del sistema neurovegetativo.</span></p><br>'+
     '<p style="text-align: justify;"><span style="font-size: 18px;">Una volta sperimentata e appresa, tale tecnica pu&ograve; ' +
     'essere utilizzata autonomamente in qualsiasi momento di bisogno, al fine di alleviare stati di ansia e stress e recuperare ' +
-    'energie e concentrazione.</span></p>';
+    'energie e concentrazione.</span></p></div>';
 
 let relax =
-    '<br> <p style="text-align: center;"><span style="font-size: 45px; color: rgb(0, 153, 255);;" class="philosopher-font">Tecniche di rilassamento ' +
+    '<div class="padding-web-informations"><br> <p style="text-align: center;"><span style="font-size: 45px; color: rgb(0, 153, 255);;" class="philosopher-font">Tecniche di rilassamento ' +
     'psico-corporeo</span></p> <br>' +
     '<p style="text-align: center;"><img data-fr-image-pasted="true" src="../img/default/psi_benessere.jpg" ' +
     'class="fr-fic fr-dii blue-border"></p> <br>'+
@@ -294,10 +294,10 @@ let relax =
     '<hr style="text-align: justify;" class="horizontal-line"> <br>'+
     '<p style="text-align: justify;"><span style="font-size: 18px;"><strong>Obiettivo</strong>: ristabilire un contatto ' +
     'sano di comunicazione mente-corpo per migliorare il benessere in generale o attivando un lavoro su problemi ' +
-    'specifici.</span></p>';
+    'specifici.</span></p></div>';
 
 let technique =
-    '<br> <p style="text-align: center;"><span style="font-size: 45px; color: rgb(0, 153, 255);" class="philosopher-font">' +
+    '<div class="padding-web-informations"><br> <p style="text-align: center;"><span style="font-size: 45px; color: rgb(0, 153, 255);" class="philosopher-font">' +
     'Tecnniche Induttive e Immaginative</span></p> <br>'+
     '<p><img data-fr-image-pasted="true" src="../img/default/immagination.jpg" class="fr-fic fr-dii blue-border"> </p> <br>'+
     '<p style="text-align: justify"><span style="font-size: 30px;" class="philosopher-font">T</span><span style="font-size: 18px;">ali tecniche mirano a riattivare la percezione ' +
@@ -323,4 +323,4 @@ let technique =
     'preciso per costruire immagini e suggestioni in funzione dell&rsquo;obiettivo desiderato.</span></p><br>'+
     '<p style="text-align: justify"><span style="font-size: 18px;">La&nbsp;<strong>Visualizzazione Guidata</strong> lascia pi&ugrave; spazio al ' +
     'paziente nella produzione di immagini proprie, facendo emergere contenuti personali grazie ad un accompagnamento ' +
-    'che lascia spazio alla fantasia e creativit&agrave; spontanea della persona.</span></p>';
+    'che lascia spazio alla fantasia e creativit&agrave; spontanea della persona.</span></p></div>';

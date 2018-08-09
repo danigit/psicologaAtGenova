@@ -11,7 +11,7 @@ $url = $_SERVER['REQUEST_URI'];
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="author" content="Daniel Surpanu">
         <meta property="og:image" content="https://www.psicologaatgenova.it/img/default/profilo_simo.jpg" />
-        <meta property="og:title" content="Psicologa" />
+        <meta property="og:title" content="Psicologa a Genova" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Psicologa certificata EMDR, riceve su appuntamento a Genova, via XXV Aprile 8/6" />
         <meta property="og:url" content="https://www.psicologaatgenova.it/" />
@@ -54,7 +54,6 @@ $url = $_SERVER['REQUEST_URI'];
         <!-- facebook script and redirect variable-->
         <script>
             var url = "<?= $url ?>";
-            console.log('the url is: ' + url);
             <?php $_SESSION['previous_location'] = ""; ?>
             (function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
@@ -260,7 +259,7 @@ $url = $_SERVER['REQUEST_URI'];
                         <div class="bottom-text-container">
                             <h4 class="center-text font-x-large philosopher-font">CONTATTI</h4>
 
-                            <p class="center-text">Tel: 333 87.37.231<br>
+                            <p class="center-text">Tel: 333 873.72.31<br>
                                 Email: <a href="mailto:psicologaatgenova@gmail.com?Subject=" target="_top" class="email">
                                     psicologaatgenova@gmail.com</a>
                             </p>
@@ -274,7 +273,7 @@ $url = $_SERVER['REQUEST_URI'];
                             <h4 class="center-text font-x-large philosopher-font">DOVE SONO</h4>
 
                             <p class="center-text">Via XXV Aprile, 8/6<br>
-                                Genova, Liguria, CAP 16121
+                                Genova
                         </div>
                     </div>
                     <div class="col col-lg-3 col-md-3 bottom-column">
@@ -336,7 +335,7 @@ $url = $_SERVER['REQUEST_URI'];
             <div id="botom-footer">
                 <div class="row">
                     <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center botom-footer">
-                        <p>Dott.ssa SIMONA BETTOLI - Psicologa iscritta all'albo della Liguria n° 2556 - C.F.: BTTSMN81H43D969Z - P.iva: 02458670995</p>
+                        <p>Dott.ssa SIMONA BETTOLI - Psicologa iscritta all'albo della Liguria n° 2556 - C.F.: BTTSMN81H43D969Z - P.iva: 02458670995 | Developed by: <span class="magenta-text bold-text">Daniel Surpanu</span></p>
                     </div>
                 </div>
             </div>

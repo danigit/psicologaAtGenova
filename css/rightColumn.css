@@ -24,7 +24,7 @@
     color: #ffffff;
     background-color: #4080FF;
     border: 2px solid #0099FF;
-    box-shadow: inset 0px 0px 10px #0099FF;
+    box-shadow: inset 0 0 10px #0099FF;
     border-radius: 5px;
 }
 

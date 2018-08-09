@@ -147,6 +147,14 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px){
+    .navbar-expand-md{
+        background-color: #0099FF!important;
+    }
+
+    .top-menu-list{
+        background-color: #ffffff;
+    }
+
     header{
         padding-top: 58px;
     }
@@ -198,6 +206,14 @@
 }
 
 @media (min-width: 399px) and (max-width: 575px) {
+    .navbar-expand-md{
+        background-color: #0099FF!important;
+    }
+
+    .top-menu-list{
+        background-color: #ffffff;
+    }
+
     header{
         padding-top: 45px;
     }
@@ -229,7 +245,7 @@
     }
 
     .banner-name{
-        font-size: 55px;
+        font-size: 50px;
     }
 
     .container{
@@ -268,9 +284,21 @@
     .botom-footer{
         font-size: small;
     }
+
+    .padding-web-informations{
+        padding: 0 15px;
+    }
 }
 
 @media (max-width: 398px) {
+    .navbar-expand-md{
+        background-color: #0099FF!important;
+    }
+
+    .top-menu-list{
+        background-color: #ffffff;
+    }
+
     header{
         padding-top: 45px;
     }
@@ -328,5 +356,9 @@
 
     .botom-footer{
         font-size: x-small;
+    }
+
+    .padding-web-informations{
+        padding: 0 15px;
     }
 }

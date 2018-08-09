@@ -29,7 +29,7 @@ function loadSlider() {
             child.style.zIndex = -1;
         });
         mouseHover(document.querySelector('.cd-testimonials-all-list'), 'p');
-        $('body').css('overflow', 'hidden');
+        document.querySelector('body').style.overflow = 'hidden';
     });
 
     //close the testimonials modal page

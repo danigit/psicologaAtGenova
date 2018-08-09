@@ -84,9 +84,9 @@ function createArticleRow(article) {
         //
         '<div id="article-content" class="col col-lg-9 col-md-12 col-sm-12 prevent-pointer">' +
         //
-        '<div class="row margin-20-bottom prevent-pointer">' +
+        '<div class="row prevent-pointer">' +
         '<div class="col col-lg-11 col-md-12 col-sm-12 font-large philosopher-font blue-text prevent-pointer">' +
-        '<p class="prevent-pointer philosopher-font text-center bold-text">' + article.title + '</p>' +
+        '<p class="prevent-pointer philosopher-font text-center bold-text font-x-large">' + article.title + '</p>' +
         '</div> ' +
         '</div> ' +
         //
@@ -98,7 +98,6 @@ function createArticleRow(article) {
 }
 
 function openArticle(title) {
-    console.log('title new : ' + title);
     let form = new FormData;
     let formatedTitle = title.replace(/\s/g, '').toLowerCase();
     form.append('title', formatedTitle);
@@ -139,7 +138,7 @@ function changeFacebookTag(title) {
         }
     )
 
-    facebookRefresh();
+    //facebookRefresh();
 }
 
 function facebookRefresh() {

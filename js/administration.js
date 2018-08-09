@@ -1,5 +1,3 @@
-//TODO remove messages and clean modal if is not successfull
-
 let string = '';
 
 document.querySelector('#insert').onclick = function () {
@@ -7,7 +5,6 @@ document.querySelector('#insert').onclick = function () {
     if(document.querySelector('.fr-box').classList.contains('fr-code-view')){
         $('#modalInsertArticle').modal();
         Array.from(document.querySelectorAll('.CodeMirror-line')).forEach(function (line) {
-            console.log('line: ' + line);
             string += line.textContent;
         })
     }else{
@@ -63,8 +60,7 @@ document.querySelector('#insertArticleForm').onsubmit = function (event) {
 function resetModal() {
     let formMessage = document.querySelector('#formMsgInsertArticle');
     formMessage.innerHTML = '';
-    let form = document.querySelector('#insertArticleForm');
-    Array.from(form).forEach(function (item) {
+    Array.from(document.querySelector('#insertArticleForm')).forEach(function (item) {
         if(item.classList.contains('form-control'))
             item.value = '';
     })

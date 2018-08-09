@@ -4,25 +4,24 @@
 function myMap() {
 
     let map = null;
-    var latlng = new google.maps.LatLng(44.409138, 8.934794);
-    var mapProp= {
+    let latlng = new google.maps.LatLng(44.409138, 8.934794);
+    let mapProp= {
         scrollwheel: false,
         center: latlng,
         zoom:18
     };
 
     if(document.querySelector('#map')) {
-        console.log('inside map');
         map = new google.maps.Map(document.getElementById("map"), mapProp);
 
-        var marker = new google.maps.Marker({
+        let marker = new google.maps.Marker({
             position: latlng,
             map: map,
             title: 'Il mio studio'
         });
 
 
-        var infoWindow = new google.maps.InfoWindow({
+        let infoWindow = new google.maps.InfoWindow({
             content: "Centro di Psicoterapia 2.0"
         });
 
@@ -30,15 +29,15 @@ function myMap() {
             infoWindow.open(map, marker);
         });
 
-        google.maps.event.addListener(map, 'click', function (event) {
+        google.maps.event.addListener(map, 'click', function () {
             this.setOptions({scrollwheel: true});
         });
 
-        google.maps.event.addListener(map, 'mouseout', function (event) {
+        google.maps.event.addListener(map, 'mouseout', function () {
             this.setOptions({scrollwheel: false});
         });
     }
     else{
-        console.log('no map');
+        console.debug('no map');
     }
 }

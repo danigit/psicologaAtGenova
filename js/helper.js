@@ -6,15 +6,11 @@ function showHideElement(elem, action) {
 }
 
 function mouseHover(element, tag) {
-    console.log('mouse hover: ' + element.outerHTML);
     let childrens = Array.prototype.slice.call(element.children);
     childrens.forEach(function (child) {
-        console.log('child elem: ' + child.outerHTML);
         if(child.firstChild) {
-            console.log('inside if: ' + child.outerHTML);
             changePointer(child.getElementsByTagName(tag)[0], '#0099FF', '#808080');
         } else {
-            console.log('inside else: ' + child.outerHTML);
             changePointer(child, '#0099ff', '#808080');
         }
     });
@@ -22,7 +18,6 @@ function mouseHover(element, tag) {
 }
 
 function changePointer(elem, on, out) {
-    console.log('change pointer: ' + elem);
     elem.onmouseenter = function(){
         elem.style.cursor = 'pointer';
         elem.style.color = on;
@@ -40,7 +35,6 @@ function changeLayout(element, content) {
 
 
 function httpPost(url, input) {
-    console.log(url);
     return new Promise(function (resolve, reject) {
         let httpReq = new XMLHttpRequest();
 
@@ -140,13 +134,11 @@ function decodeEntities(value){
     let elem = document.createElement('textarea');
     elem.innerHTML = value;
     return elem.textContent;
-    //return $('<div>').html(value).text();
 }
 
 
 function decorateString(string) {
-    var position = 0;
-    var str;
+    let str;
     str = string.replace(/style="font-size: 48px/g, ' class="philosopher-font title" style="font-size: 48px');
     str = str.replace(/style="font-size: 24px/g, ' class="philosopher-font subtitle" style="font-size: 24px');
     str = str.replace(/<img/g, "<img style='border: 3px solid #0099FF; width: 100%!important'");
@@ -155,4 +147,8 @@ function decorateString(string) {
     str = str.replace(/<a/g, "<a style='color: #0099FF'");
 
     return str;
+}
+
+function resizePageInterraction(element, width) {
+
 }

@@ -2,7 +2,7 @@ window.onload = function () {
     menuInteraction();
     carusel = document.getElementById('main-carusel-container');
     $('#carusel-container').css('height', 'auto');
-    setTopMenu(document.querySelector('#home'));
+    setMenuButton(document.querySelector('.top-menu-list'), document.querySelector('#home'));
 
     if(url !== ""){
         switch (url){
@@ -78,7 +78,7 @@ window.onload = function () {
             openArticle(button.replace(/_/g, ':'));
             showHideElement(document.querySelector('#main-right-column'), 'hide');
             resizeMainPage('large');
-            setTopMenu(document.querySelector('#theory-practice'));
+            setMenuButton(document.querySelector('.top-menu-list'), document.querySelector('#theory-practice'));
             pushHistory(button.replace(/:/g, '_').replace(/\s/g, '').toLowerCase(), false);
             document.querySelector('body').style.overflow = 'auto';
         }
@@ -92,14 +92,12 @@ window.onload = function () {
     window.onresize = function () {
         let immageColumn;
         if (document.querySelector('#articles') !== null && window.innerWidth >= 576) {
-            console.log('inside if');
             immageColumn = document.querySelectorAll('#article-immage-column');
             immageColumn.forEach(function (elem) {
                 if (elem.style.display === 'none')
                     showHideElement(elem, 'show');
             });
         } else if (document.querySelector('#articles') !== null && window.innerWidth < 576) {
-            console.log('inside else');
             immageColumn = document.querySelectorAll('#article-immage-column');
             immageColumn.forEach(function (elem) {
                 if (elem.style.display !== 'none')
@@ -152,6 +150,6 @@ function articlesHistory(name, state) {
     showHideElement(document.querySelector('#main-right-column'), 'hide');
 
     resizeMainPage('large');
-    setTopMenu(document.querySelector('#theory-practice'));
+    setMenuButton(document.querySelector('.top-menu-list'), document.querySelector('#theory-practice'));
     pushHistory(name.replace(/:/g, '_').replace(/\s/g, '').toLowerCase(), state);
 }

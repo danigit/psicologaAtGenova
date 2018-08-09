@@ -14,7 +14,6 @@ form.onsubmit = function (event) {
                 $('#loginModal').modal('hide');
                 window.location.replace('../administration.php');
             } else {
-                console.log('receving message: ' + data.message);
                 let formMessage = document.querySelector('#formMsgLogin');
                 formMessage.innerHTML = "";
                 formMessage.innerHTML = data.message;

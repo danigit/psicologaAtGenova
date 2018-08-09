@@ -1,7 +1,5 @@
 function sendMail() {
-    console.log(document.querySelector('#send-mail'));
     document.querySelector('#send-mail').onclick = function () {
-        console.log('send clicked');
         if(document.getElementById('cbx').checked) {
             let formData = new FormData(document.querySelector('#contactForm'));
             let promise = httpPost('php/ajax/send_email.php', formData);
