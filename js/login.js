@@ -12,9 +12,8 @@ form.onsubmit = function (event) {
         function (data) {
             if(data.result){
                 $('#loginModal').modal('hide');
-                window.location.replace('../psicologaAtGenova/administration.php');
+                window.location.replace('../administration.php');
             } else {
-                console.log('receving message: ' + data.message);
                 let formMessage = document.querySelector('#formMsgLogin');
                 formMessage.innerHTML = "";
                 formMessage.innerHTML = data.message;

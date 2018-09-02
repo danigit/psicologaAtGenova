@@ -10,7 +10,7 @@ mysqli_report(MYSQLI_REPORT_STRICT);
 //th3b3st0f
 class Connection
 {
-    const PATH = "localhost", USERNAME = "root", PASSWORD = "dani", DATABASE = "web";
+    const PATH = "89.46.111.45", USERNAME = "Sql1108511", PASSWORD = "2b065pk710", DATABASE = "Sql1108511_1";
     private $connection;
 
     /**
@@ -127,8 +127,29 @@ class Connection
         return $result_array;
     }
 
+    function get_article_by_title($title){
+
+        $query = "SELECT description, images_path FROM articles WHERE name=?";
+
+        $statement = $this->parse_and_execute_select($query, "s", $title);
+
+        if ($statement instanceof DbError)
+            return $statement;
+
+        $result = $statement->get_result();
+
+        $result_array = array();
+
+        //todo da mettere dove serve htmlspecialchars
+        while ($row = $result->fetch_array()) {
+            $result_array[] = array('antani' => 'antaniscapelli', "description" => $row['description'], "images_path" => $row['images_path']);
+        }
+
+        return $result_array;
+    }
+
     function get_all_articles(){
-        $query = "SELECT type, name, description, images_path FROM articles";
+        $query = "SELECT type, name, description, file_path, images_path FROM articles";
 
         $result = $this->connection->query($query);
 
@@ -139,29 +160,10 @@ class Connection
 
         //todo da mettere dove serve htmlspecialchars
         while ($row = mysqli_fetch_assoc($result)) {
-            $result_array[] = array('type' => $row['type'], 'title' => htmlspecialchars($row['name']), "description" => $row['description'], "images_path" => $row['images_path']);
+            $result_array[] = array('type' => $row['type'], 'title' => htmlspecialchars($row['name']), "description" => $row['description'], "images_path" => $row['images_path'], "file_path" => $row['file_path']);
         }
 
         return $result_array;
-    }
-
-    function get_article_by_title($title){
-
-        $query = "SELECT file_path FROM articles WHERE name=?";
-
-        $statement = $this->parse_and_execute_select($query, "s", $title);
-
-        if ($statement instanceof DbError)
-            return $statement;
-
-        $statement->bind_result($file_path);
-        $fetch = $statement->fetch();
-
-        $statement->close();
-
-        if ($fetch) {
-            return $file_path;
-        }
     }
 
     /**

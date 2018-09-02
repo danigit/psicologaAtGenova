@@ -384,6 +384,7 @@ Main components
 
 #carusel-container{
   margin-top: 1em!important;
+  height: 429px;
 }
 /* The only keyword is to say that the older browsers should ignore this media */
 @media only screen and (min-width: 576px) {

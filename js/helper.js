@@ -8,21 +8,22 @@ function showHideElement(elem, action) {
 function mouseHover(element, tag) {
     let childrens = Array.prototype.slice.call(element.children);
     childrens.forEach(function (child) {
-        if(child.firstChild)
-            changePointer(child.getElementsByTagName(tag)[0], '#0099FF');
-        else
-            changePointer(child);
+        if(child.firstChild) {
+            changePointer(child.getElementsByTagName(tag)[0], '#0099FF', '#808080');
+        } else {
+            changePointer(child, '#0099ff', '#808080');
+        }
     });
-    changePointer(document.querySelector('#fast-contact'), '#6666CC');
+    changePointer(document.querySelector('#fast-contact'), '#ffffff', '#ffffff');
 }
 
-function changePointer(elem, color) {
+function changePointer(elem, on, out) {
     elem.onmouseenter = function(){
         elem.style.cursor = 'pointer';
-        elem.style.color = color;
+        elem.style.color = on;
     };
     elem.onmouseleave = function () {
-        elem.style.color = "#808080"
+        elem.style.color = out;
     }
 }
 
@@ -52,7 +53,7 @@ function httpPost(url, input) {
 }
 
 function resetForm(form){
-    form[0].reset();blu
+    form[0].reset();
     form.find('label').classList.remove('active');
     form.find('i').classList.remove('active').css.color = '';
 }
@@ -130,20 +131,24 @@ function resizeMainPage(type) {
 }
 
 function decodeEntities(value){
-    return $('<div/>').html(value).text();
+    let elem = document.createElement('textarea');
+    elem.innerHTML = value;
+    return elem.textContent;
 }
 
 
 function decorateString(string) {
-    var position = 0;
-    var str;
-    str = string.replace(/<img/g, "<img style='border: 3px solid #0099FF; width: 100%!important'");
-    str = str.replace(/<ul/g, "<ul class='activity-list ulist'");
+    let str;
+    str = string.replace(/style="font-size: 48px/g, ' class="philosopher-font title" style="font-size: 48px');
+    str = str.replace(/style="font-size: 24px/g, ' class="philosopher-font subtitle" style="font-size: 24px');
+    str = str.replace(/<img/g, "<img style='border: 3px solid #0099FF; width: 100%!important'");
+    str = str.replace(/<ul/g, "<ul class='ul-formatting'");
     str = str.replace(/<hr>/g, "<hr class='horizontal-line'>");
     str = str.replace(/<a/g, "<a style='color: #0099FF'");
-    str = str.replace('font-size: 48px', 'font-size: 48px; font-family: Philosopher');
-    str = str.replace(/font-size: 30px/g, 'font-size: 30px; font-family: Philosopher');
-    //console.log(str)
 
     return str;
+}
+
+function resizePageInterraction(element, width) {
+
 }

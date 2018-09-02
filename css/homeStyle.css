@@ -26,12 +26,12 @@ header{
 }
 
 .banner-text{
-    padding-top: 15px;
+    padding-top: 0;
 }
 
 .banner-name{
     font-weight: bold;
-    font-size: 77px;
+    font-size: 70px;
 }
 
 #cloud{
@@ -41,5 +41,40 @@ header{
     border-bottom: 1px solid #0099FF;
     border-top: 1px solid #0099FF;
     border-radius: 100px;
-    font-family: "Bree Serif", Serif;
+    font-family: "Bree Serif", serif;
+}
+
+.botom-footer{
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 2px solid #0099FF;
+}
+
+#main-container{
+    margin-top: 50px;
+}
+
+.share-home-button{
+    width: 106px;
+    margin: 3px auto;
+    background-color: #4080FF;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.share-home-button a{
+    color: #ffffff;
+}
+
+.top-button{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #0099FF;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 2px 5px;
+    font-weight: bold;
+    font-family: Philosopher, sans-serif;
 }

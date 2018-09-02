@@ -4,28 +4,28 @@ require_once 'cs_interaction.php';
 require_once 'helpers.php';
 
 
-class get_articles extends cs_interaction
+class get_article_by_title extends cs_interaction
 {
-    private $type, $result;
+    private $title, $result;
 
     protected function input_elaboration(){
-        $this->type = $this->validate_string('type');
+        $this->title = $this->validate_string('title');
     }
 
     protected function get_db_informations(){
 
         $connection = $this->get_connection();
 
-        $this->result = $connection->get_articles($this->type);
+        $this->result = $connection->get_article_by_title($this->title);
 
         if(is_error($this->result))
             $this->json_error("Errore sconosciuto");
     }
 
     protected function get_returned_data(){
-        return array('data' => $this->result);
+        return $this->result;
     }
 }
 
-$value = new get_articles();
-$value->execute();
+$articleByTitle = new get_article_by_title();
+$articleByTitle->execute();

@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 class insert_article extends cs_interaction
 {
 
-    private $type, $name, $description, $content, $image_path, $text_path;
+    private $type, $name, $description, $content, $image_path, $temp_immage_path, $database_path, $text_path;
     private $id;
 
     protected function input_elaboration()
@@ -39,7 +39,7 @@ class insert_article extends cs_interaction
         $i = 0;
         $folder = str_replace(' ', '_', $this->name);
         $this->image_path = '../../img/articlesImmages/' . $folder . '/';
-        $this->text_path = '../../articlesText/'. preg_replace('/\s+/', '_', $this->name) . ".txt";
+        $this->text_path = '../../articlesText/'. strtolower(preg_replace('/\s+/', '', $this->name)) . ".txt";
         if(file_exists($this->text_path)) {
             $this->json_error("Un file con questo nome esiste gia'");
         }
@@ -48,13 +48,15 @@ class insert_article extends cs_interaction
 
                 if(!file_exists('../../img/articlesImmages/'. $folder))
                     mkdir('../../img/articlesImmages/'. $folder);
-
-                $this->image_path = $this->image_path . $item;
-
-                if(file_exists($this->image_path)) {
+                $this->temp_immage_path = '';
+                $this->temp_immage_path = $this->image_path . $item;
+                if($i == 0){
+                    $this->database_path = $this->temp_immage_path;
+                }
+                if(file_exists($this->temp_immage_path)) {
                     $this->json_error("Un file con questo nome esiste gia'");
                 }
-                else if(!move_uploaded_file($file['tmp_name'][$i], $this->image_path))
+                else if(!move_uploaded_file($file['tmp_name'][$i], $this->temp_immage_path))
                     $this->json_error("Il file non puo' essere salvato");
                 $i++;
             }
@@ -75,7 +77,7 @@ class insert_article extends cs_interaction
     {
         $connection = $this->get_connection();
 
-        $this->id = $connection->insert_article($this->type, $this->name, $this->description, $this->text_path, $this->image_path, 0, 0, 0 );
+        $this->id = $connection->insert_article($this->type, $this->name, $this->description, $this->text_path, $this->database_path, 0, 0, 0 );
         //$this->id = $connection->insert_article("coppia", "Psicologia di coppia", "Come se fosse antani", "../img/download/servizio.phg", 0, 0, 0 );
 
         if(is_error($this->id)) {

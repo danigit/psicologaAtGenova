@@ -1,5 +1,3 @@
-//TODO remove messages and clean modal if is not successfull
-
 let string = '';
 
 document.querySelector('#insert').onclick = function () {
@@ -62,8 +60,7 @@ document.querySelector('#insertArticleForm').onsubmit = function (event) {
 function resetModal() {
     let formMessage = document.querySelector('#formMsgInsertArticle');
     formMessage.innerHTML = '';
-    let form = document.querySelector('#insertArticleForm');
-    Array.from(form).forEach(function (item) {
+    Array.from(document.querySelector('#insertArticleForm')).forEach(function (item) {
         if(item.classList.contains('form-control'))
             item.value = '';
     })

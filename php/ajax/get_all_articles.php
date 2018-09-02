@@ -13,7 +13,6 @@ class get_all_articles extends cs_interaction
     protected function get_db_informations(){
 
         $connection = $this->get_connection();
-
         $this->result = $connection->get_all_articles();
 
         if(is_error($this->result))

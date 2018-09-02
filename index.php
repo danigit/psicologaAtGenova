@@ -10,7 +10,13 @@ $url = $_SERVER['REQUEST_URI'];
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="author" content="Daniel Surpanu">
+        <meta property="og:image" content="https://www.psicologaatgenova.it/img/default/profilo_simo.jpg" />
+        <meta property="og:title" content="Psicologa a Genova" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Psicologa certificata EMDR, riceve su appuntamento a Genova, via XXV Aprile 8/6" />
+        <meta property="og:url" content="https://www.psicologaatgenova.it/" />
 
+        <link rel="shortcut icon" href="img/default/logo_150.png">
         <title>Dott.ssa Simona Bettoli Psicologa</title>
 
         <!-- carousel -->
@@ -42,11 +48,12 @@ $url = $_SERVER['REQUEST_URI'];
         <link href="css/contentLayout.css" type="text/css" rel="stylesheet">
         <link href="css/theoryAndPractice.css" type="text/css" rel="stylesheet">
         <link href="css/responsive.css" type="text/css" rel="stylesheet">
+        <link href="css/checkbox.css" type="text/css" rel="stylesheet">
+        <link href="css/articles.css" type="text/css" rel="stylesheet">
 
         <!-- facebook script and redirect variable-->
         <script>
             var url = "<?= $url ?>";
-            console.log('the url is: ' + url);
             <?php $_SESSION['previous_location'] = ""; ?>
             (function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
@@ -118,20 +125,20 @@ $url = $_SERVER['REQUEST_URI'];
             </div>
             <!-- banner-->
             <nav class="navbar zero-padding no-shadow">
-                <div class="container zero-padding banner">
-                    <div class="row full-width auto-margin">
+                <div id="banner" class="container zero-padding banner">
+                    <div class="row full-width auto-margin prevent-pointer">
                         <div class="col col-3 col-lg-3 col-sm-3 banner-immage">
                             <img src="img/default/logo_150.png" class="logo-immage">
                         </div>
                         <div class="col col-lg-9 col-md-9 col-sm-9 banner-text philosopher-font zero-padding" id="banner-text">
                             <div class="container fit-content margin-0-left">
-                                <div class="container font-x-large small-text-banner">
+                                <div class="container font-large small-text-banner">
                                     <p>Dott.ssa</p>
                                 </div>
                                 <div class="container banner-name">
                                     <p class="philosopher-font">Simona Bettoli</p>
                                 </div>
-                                <div class="container text-lg-right font-x-large">
+                                <div class="container text-lg-right font-large">
                                     <p class="float-right">Psicologa</p>
                                 </div>
                             </div>
@@ -145,6 +152,9 @@ $url = $_SERVER['REQUEST_URI'];
         <main>
             <div class="container zero-padding">
                 <div class="row" id="main-container">
+<!--                    <div class="top-button">-->
+<!--                        UP-->
+<!--                    </div>-->
                     <div class="col-12 col-lg-9 col-md-12 col-sm-12" id="carusel-column">
                         <div class="container zero-padding no-margin full-width" id="main-carusel-container">
                             <!-- Slider -->
@@ -227,8 +237,13 @@ $url = $_SERVER['REQUEST_URI'];
                             <div id="facebook" class="col-6 col-lg-6 col-md-6 col-sm-6 social">
                                 <img src="img/default/icona_fb.png" class="prevent-pointer">
                                 <div class="facebook">
-                                    <div class="fb-like" data-href="https://www.facebook.com/psicologaatgenova/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>                                </div>
-
+                                    <div class="fb-like" data-href="https://www.facebook.com/psicologaatgenova/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
+                                </div>
+                                <div class="share-home-button-container">
+                                    <div class="share-home-button" data-href="http://www.psicologaatgenova.it/" data-layout="button" data-size="large" data-mobile-iframe="true">
+                                        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=www.psicologaatgenova.it/" class="fb-xfbml-parse-ignore philosopher-font">Condividi</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-lg-12 col-md-12 col-sm-12">
@@ -247,7 +262,7 @@ $url = $_SERVER['REQUEST_URI'];
                         <div class="bottom-text-container">
                             <h4 class="center-text font-x-large philosopher-font">CONTATTI</h4>
 
-                            <p class="center-text">Tel: 333 87.37.231<br>
+                            <p class="center-text">Tel: 333 873.72.31<br>
                                 Email: <a href="mailto:psicologaatgenova@gmail.com?Subject=" target="_top" class="email">
                                     psicologaatgenova@gmail.com</a>
                             </p>
@@ -261,7 +276,7 @@ $url = $_SERVER['REQUEST_URI'];
                             <h4 class="center-text font-x-large philosopher-font">DOVE SONO</h4>
 
                             <p class="center-text">Via XXV Aprile, 8/6<br>
-                                Genova, Liguria, CAP 16121
+                                Genova
                         </div>
                     </div>
                     <div class="col col-lg-3 col-md-3 bottom-column">
@@ -318,6 +333,16 @@ $url = $_SERVER['REQUEST_URI'];
                 </div>
             </div>
             <!-- /.Central Modal -->
+
+            <!-- End of Footer container -->
+            <div id="botom-footer">
+                <div class="row">
+                    <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center botom-footer">
+                        <p>Dott.ssa SIMONA BETTOLI - Psicologa iscritta all'albo della Liguria n° 2556 - C.F.: BTTSMN81H43D969Z - P.iva: 02458670995 | Developed by: <a href="mailto:surpanudaniel@gmail.com?Subject=" target="_top" class="email">
+                                <span class="magenta-text bold-text">Daniel Surpanu</span></a></p>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <!-- jquery -->
@@ -331,6 +356,8 @@ $url = $_SERVER['REQUEST_URI'];
         <!-- maps-->
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYoluX3kHHBNEb_bSvSK8ddYf8pWgXVX8&callback=myMap"
                 type="text/javascript"></script>
+        <!-- linked in -->
+        <script async src="https://static.addtoany.com/menu/page.js"></script>
 
         <!-- carousel -->
         <script src="js/carusel/main.js"></script>

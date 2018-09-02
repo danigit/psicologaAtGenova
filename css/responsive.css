@@ -1,3 +1,60 @@
+@media (min-width: 1201px) and (max-width: 2048px) {
+    .small-banner {
+        font-size: small;
+    }
+
+    .top-menu-list a {
+        padding: 8px 0 6px 0;
+    }
+
+    #carusel-column {
+        padding-right: 40px;
+    }
+
+    .right-col-profile-image {
+        width: 230px;
+        display: block;
+        margin: auto;
+    }
+
+    #main-right-column {
+        padding-left: 30px;
+    }
+
+    .right-col-profile-image-footer p {
+        font-size: medium;
+    }
+
+    .fb-share-button{
+        width: 200px!important;
+        font-size: large!important;
+    }
+
+    .fast-contact {
+        font-size: medium;
+    }
+
+    .bottom-image-container {
+        padding: 0 70px 0 70px;
+    }
+
+    .bottom-text-container .font-x-large {
+        font-size: large;
+    }
+
+    .bottom-text-container p {
+        font-size: small;
+    }
+
+    .botom-footer p {
+        font-size: small;
+    }
+
+    #left-column{
+        padding: 0 150px 150px;
+    }
+}
+
 @media (min-width: 992px) and (max-width: 1200px){
     .small-banner{
         font-size: small;
@@ -31,16 +88,20 @@
         line-height: 1.4;
         font-size: 1.0rem;
     }
+
+    .title{
+        font-size: 40px!important;
+    }
+
+    .subtitle{
+        font-size: 22px!important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 
     header{
         padding-top: 49px;
-    }
-
-    .logo-immage{
-        padding: 10px;
     }
 
     .right-col-profile-image, #cloud, .top-header, .social-container{
@@ -71,11 +132,35 @@
     .email{
         font-size: x-small;
     }
+
+    .title{
+        font-size: 35px!important;
+    }
+
+    .subtitle{
+        font-size: 20px!important;
+    }
+
+    .fit-content{
+        width: fit-content!important;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px){
+    .navbar-expand-md{
+        background-color: #0099FF!important;
+    }
+
+    .top-menu-list{
+        background-color: #ffffff;
+    }
+
     header{
         padding-top: 58px;
+    }
+
+    #carusel-column{
+        padding: 0;
     }
 
     .menu-collapse-button-immage{
@@ -102,10 +187,43 @@
     .banner-name{
         font-size: 55px;
     }
+
+    .title{
+        font-size: 35px!important;
+    }
+
+    .subtitle{
+        font-size: 20px!important;
+    }
+
+    .logo-immage{
+        width: 80px;
+    }
+
+    .botom-footer{
+        font-size: small;
+    }
 }
 
 @media (min-width: 399px) and (max-width: 575px) {
-    .right-col-profile-image, #cloud, .top-header, .small-text-banner, .facebook, .bottom-header-container, .text-lg-right{
+    .navbar-expand-md{
+        background-color: #0099FF!important;
+    }
+
+    .top-menu-list{
+        background-color: #ffffff;
+    }
+
+    header{
+        padding-top: 45px;
+    }
+
+    #carusel-column{
+        padding: 0;
+    }
+
+    .right-col-profile-image, #cloud, .top-header, .small-text-banner, .facebook, .bottom-header-container,
+    #article-immage-column, #article-logo{
         display: none;
     }
 
@@ -127,17 +245,70 @@
     }
 
     .banner-name{
-        font-size: 55px;
+        font-size: 50px;
+    }
+
+    .container{
+        width: auto!important;
+    }
+
+    .banner-name p{
+        text-align: center;
     }
 
     .banner-text{
         margin: auto;
+        padding-top: 10px;
     }
 
+    .title{
+        font-size: 24px!important;
+    }
+
+    .subtitle{
+        font-size: 20px!important;
+    }
+
+    #main-container{
+        margin-top: 30px;
+    }
+
+    .margin-0-left{
+        margin: auto;
+    }
+
+    .text-lg-right{
+        font-size: medium;
+    }
+
+    .botom-footer{
+        font-size: small;
+    }
+
+    .padding-web-informations{
+        padding: 0 15px;
+    }
 }
 
 @media (max-width: 398px) {
-    .right-col-profile-image, #cloud, .top-header, .small-text-banner, .facebook, .bottom-header-container, .text-lg-right{
+    .navbar-expand-md{
+        background-color: #0099FF!important;
+    }
+
+    .top-menu-list{
+        background-color: #ffffff;
+    }
+
+    header{
+        padding-top: 45px;
+    }
+
+    #carusel-column{
+        padding: 0;
+    }
+
+    .right-col-profile-image, #cloud, .top-header, .small-text-banner, .facebook, .bottom-header-container, .text-lg-right,
+    #article-immage-column, #article-logo{
         display: none;
     }
 
@@ -160,6 +331,7 @@
 
     .banner-text{
         margin: auto;
+        padding-top: 10px;
     }
 
     .banner-name{
@@ -168,5 +340,25 @@
 
     .menu-content-element{
         font-size: initial;
+    }
+
+    .title{
+        font-size: 24px!important;
+    }
+
+    .subtitle{
+        font-size: 20px!important;
+    }
+
+    #main-container{
+        margin-top: 30px;
+    }
+
+    .botom-footer{
+        font-size: x-small;
+    }
+
+    .padding-web-informations{
+        padding: 0 15px;
     }
 }

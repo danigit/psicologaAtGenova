@@ -1,0 +1,17 @@
+.fb-share-button{
+    width: 290px;
+    margin: auto;
+    background-color: #4080FF;
+    text-align: center;
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+.fb-share-button a{
+    color: #ffffff;
+}
+
+#left-column{
+    border-bottom: 2px solid #0099FF;
+    margin-bottom: 15px;
+}
